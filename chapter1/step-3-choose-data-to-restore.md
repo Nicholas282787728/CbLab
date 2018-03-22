@@ -1,4 +1,4 @@
-
+## Step 3 - Choose Data to Restore
 
 On this wizard page, you choose what kind of data you need to restore.
 
