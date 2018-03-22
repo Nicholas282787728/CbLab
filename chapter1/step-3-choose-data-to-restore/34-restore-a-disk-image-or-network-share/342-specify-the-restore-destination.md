@@ -1,16 +1,20 @@
 ## 3.4.2 - Specify the Restore Destination
 
-On this wizard page, you need to choose to where to restore your data:
+On this wizard page, you need to choose to where to restore your data.
 
-1. Restore as physical disk
 
-2. Restore as virtual disk
 
-3. Restore as Amazon EC2/EBS/AMI
+Restore as physical disk
 
-4. Restore as Azure VM/Data disk
+Restore as virtual disk
 
-5. Restore as Google Cloud Instance/Image/Disk
+Restore as Amazon EC2/EBS/AMI
+
+Restore as Azure VM/Data disk
+
+Restore as Google Cloud Instance/Image/Disk
+
+
 
 
 
