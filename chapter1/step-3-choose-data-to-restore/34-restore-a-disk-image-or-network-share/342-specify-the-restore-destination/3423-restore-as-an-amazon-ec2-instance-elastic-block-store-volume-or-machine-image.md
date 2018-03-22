@@ -38,15 +38,15 @@ After selecting an account, specify the main settings of a target instance:
 
   When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically.
 
-  Please note that there is a charge for data transfer between regions.
+* 
+* 
+* Please note that there is a charge for data transfer between regions.
 
-  > Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.
+  Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.
 
-  > See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
+  See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
 
-  
-  
-  _**\[What happens with a plan after migrating an instance to another Availability Zone?\]**_
+_**\[What happens with a plan after migrating an instance to another Availability Zone?\]**_
 
 * **Instance type**
 
