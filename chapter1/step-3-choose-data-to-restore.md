@@ -16,5 +16,5 @@ The following topics describe the available options:
 
 * **System State \(including registry information, as well as boot, system and various application configuration files\)**
 
-This option is only available in Windows Server editions of CloudBerry Backup. Please visit the following page to learn more: [Pricing and Licensing Information](https://www.cloudberrylab.com/managed-backup/pricing.aspx).
+This option is only available in Windows Server editions of CloudBerry Backup. Please visit the following page to learn more: [Pricing and Licensing Information](https://www.cloudberrylab.com/managed-backup/pricing.aspx). 
 
