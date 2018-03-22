@@ -16,13 +16,13 @@ First, you need to select whether to restore specific file versions, restore to 
 
 This wizard page provides the following options:
 
+**Restore the latest versions**
 
+Enables you to restore the latest versions of your files available in a backup.
 
+CloudBerry backups include only files/folders that were modified since the previous backup date. As a result, selecting this option will restore only those file versions that were modified before the most recent backup.
 
-
-
-
-
+​
 
 
 
