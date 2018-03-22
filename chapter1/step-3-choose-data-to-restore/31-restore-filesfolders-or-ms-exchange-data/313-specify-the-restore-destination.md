@@ -4,17 +4,14 @@ On this wizard page, you need to select where to restore the selected files.
 
 ![](/assets/specify-restore-destination.png)
 
-You can choose one of the following options:
+You can choose one of the following destinations for your backup:
 
-* **Restore to the original location**
+* **Restore to the original location  
+  **This will restore the selected files to the same directory where the source files were located.
 
-  This will restore the selected files to the same directory where the source files were located.
-
-* **Restore to a specific location**
-
-  This will restore the selected files to a custom directory.
-
-You can make the Restore Wizard to use this location as a default destination for newly created restore plans by enabling a corresponding option.
+* **Restore to a specific location  
+  **This will restore the selected files to a custom directory.  
+  You can make the Restore Wizard to use this location as a default destination for newly created restore plans by enabling a corresponding option.
 
 In addition, you can specify the following options on this wizard page:
 
