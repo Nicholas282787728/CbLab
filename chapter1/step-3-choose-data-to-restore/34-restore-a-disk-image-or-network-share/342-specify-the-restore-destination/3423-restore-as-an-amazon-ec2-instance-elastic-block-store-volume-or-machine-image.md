@@ -10,7 +10,7 @@ This options are detailed further in this article.
 
 ### Restore to Amazon EC2 Instance
 
-​
+​**\[TO DO: What is that?\]**
 
 This feature is supported for the following operation systems:
 
@@ -24,5 +24,5 @@ This feature is supported for the following operation systems:
 
 With this option selected, switching to the next wizard page enables you to specify the settings of a target EC2 instance.
 
-
+![](/assets/image-based-to-ec2-instance-details.png)
 
