@@ -10,7 +10,7 @@ The following options are available:
 
 * [Restore as virtual disk](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3422-restore-to-a-virtual-disk.md)
 
-* Restore as Amazon EC2/EBS/AMI
+* [Restore as Amazon EC2/EBS/AMI](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3423-restore-as-an-amazon-ec2-instance-elastic-block-store-volume-or-machine-image.md)
 
 * Restore as Azure VM/Data disk
 
