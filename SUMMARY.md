@@ -13,8 +13,13 @@
       * [3.1.5 - Schedule Your Restore Plan](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/315-schedule-your-restore-plan.md)
       * [3.1.6 - Customize Email Notifications and System Log Settings](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/316-customize-email-notifications-and-system-log-settings.md)
       * [3.1.7 - Save and Run Your Restore Plan](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/317-save-and-run-your-restore-plan.md)
+    * [3.2 - Restore MS SQL Server Database](chapter1/step-3-choose-data-to-restore/32-restore-ms-sql-server-database.md)
+    * [3.3 - Restore MS SQL Server Backup Files](chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files.md)
+    * [3.4 - Restore a Disk Image or Network Share](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
+    * [3.5 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
 * [Concepts](concepts.md)
   * [Synchronizing Your Repository](concepts/synchronizing-your-repository.md)
   * [Restoring Amazon Glacier Data](concepts/restoring-amazon-glacier-data.md)
   * [General Security Considerations](concepts/general-security-considerations.md)
+  * [Understanding Versions](concepts/understanding-versions.md)
 
