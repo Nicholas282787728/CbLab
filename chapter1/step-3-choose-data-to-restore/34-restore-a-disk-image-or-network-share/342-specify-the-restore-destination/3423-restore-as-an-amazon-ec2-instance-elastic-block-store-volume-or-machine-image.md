@@ -86,13 +86,13 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)                    
+  * **General Purpose SSD \(gp2\)                        
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)                    
+  * **Provisioned IOPS SSD \(io1\)                        
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)                    
+  * **Magnetic \(standard, a previous-generation type\)                        
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
   * _Throughput Optimized HDD \(st1\)_
@@ -148,16 +148,22 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)  
+* **General Purpose SSD \(gp2\)      
   **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)  
+* **Provisioned IOPS SSD \(io1\)      
   **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)  
-  **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\) _or other current volume types.
+* **Magnetic \(standard, a previous-generation type\)      
+  **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using \_General Purpose SSD \(gp2\) \_or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
+
+
+
+
+
+**\[Add a link below\]**
 
 On the next wizard page, select whether you need to use a temporary instance during the restore process.
 
@@ -166,11 +172,10 @@ On the next wizard page, select whether you need to use a temporary instance dur
 The options are described below.
 
 * **Use temporary instance **This option enables faster copying of your files at a higher cost, which depends on the instance type and running time of the restore process.
+
+When selecting this option, you need to specify the settings of your temporary EC2 instance.
+
 * **Do not use temporary instance **This option enables copying your files via a local computer, which is usually slower and depends on the local Internet connection speed.
-
-
-
-
 
 ---
 
