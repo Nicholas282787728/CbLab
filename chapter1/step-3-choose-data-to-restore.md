@@ -6,7 +6,7 @@ On this wizard page, you choose what kind of data you need to restore.
 
 The following topics describe the available options:
 
-* **Files/Folders or MS Exchange Data**
+* [**Files/Folders or MS Exchange Data**](/chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data.md)
 
 * **MS SQL Server Database**
 
