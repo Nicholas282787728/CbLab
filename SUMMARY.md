@@ -19,6 +19,8 @@
       * [3.4.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
       * [3.4.2 - Specify the Restore Destination](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination.md)
         * [3.4.2.1 - Restore to a Physical Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3421-restore-to-a-physical-disk.md)
+        * [3.4.2.2 - Restore to a Virtual Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3422-restore-to-a-virtual-disk.md)
+        * [3.4.2.3 - Restore to an Amazon EC2 Instance, Elastic Block Store Volume, or Machine Image](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3423-restore-as-an-amazon-ec2-instance-elastic-block-store-volume-or-machine-image.md)
     * [3.5 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
 * [Concepts](concepts.md)
   * [Synchronizing Your Repository](concepts/synchronizing-your-repository.md)
