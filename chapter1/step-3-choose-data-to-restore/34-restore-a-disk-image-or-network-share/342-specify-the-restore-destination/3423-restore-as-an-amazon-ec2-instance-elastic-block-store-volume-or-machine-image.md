@@ -10,15 +10,13 @@ This options are detailed further in this article.
 
 ### Restore to Amazon EC2 Instance
 
-This option enables you to restore your disk image to an Amazon EC2 Instance of your choice.
+This option enables you to restore your disk image to an [Amazon EC2 instance](https://aws.amazon.com/ec2/instance-types/) of your choice.
 
 This feature is supported for the following operation systems:
 
-* Windows 2008
-* Windows 2012
-* Windows 2016
-
-_**\[TO DO: What is that?\]**_
+* Windows Server 2008
+* Windows Server 2012
+* Windows Server 2016
 
 With this option selected, switching to the next wizard page enables you to specify the settings of a target EC2 instance.
 
@@ -32,27 +30,29 @@ _**\[Please make sure that the specified account has all required permissions.\]
 
 _**\[Are the following settings required?\]**_
 
-After selecting an account, specify the main settings of a target EC2 instance:
+After selecting an account, specify the main settings of a target instance:
 
 * **Region**
 
-  You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of regions and Availability Zones. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
+  You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of _regions_ and _Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
 
   When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically.
 
   Please note that there is a charge for data transfer between regions.
 
-  Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.
+  > Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.
 
-  **\[What happens with a plan after migrating an instance to another Availability Zone?\]**
+  > See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
 
-  See the following page for more information:[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+  
+  
+  _**\[What happens with a plan after migrating an instance to another Availability Zone?\]**_
 
 * **Instance type**
 
   Amazon EC2 provides a wide selection of instance types optimized to fit different use cases, such as computing, memory use, accelerated computing and optimized storage.
 
-  You can learn about the available instance types on the following page:[https://aws.amazon.com/ec2/instance-types/.](https://aws.amazon.com/ec2/instance-types/.)
+  See [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/) learn about the available instance types.
 
 * **Subnet**
 
