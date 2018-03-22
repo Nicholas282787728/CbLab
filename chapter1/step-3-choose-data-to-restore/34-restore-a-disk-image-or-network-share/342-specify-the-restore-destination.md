@@ -12,8 +12,7 @@ The following options are available:
   You can select which of the partitions to restore on the next wizard page:  
   ![](/assets/image-based-select-partitions.png)  
   
-  
-  [Restoring NTFS Partitions](/concepts/restoring-ntfs-partitions.md)  
+  [Restoring NTFS Partitions](/concepts/restoring-ntfs-partitions.md)
 
 * ### Restore as virtual disk
 * ### Restore as Amazon EC2/EBS/AMI
