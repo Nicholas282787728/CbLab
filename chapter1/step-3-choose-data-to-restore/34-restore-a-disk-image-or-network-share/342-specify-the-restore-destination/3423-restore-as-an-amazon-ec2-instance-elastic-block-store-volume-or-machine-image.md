@@ -78,20 +78,21 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   _**\[What this note on VMware is about?\]**_
 
-  _**\[Do we need to elaborate on Network ACL here? Is it up and running automatically?\]  
-  **_
+  \_\*\*\[Do we need to elaborate on Network ACL here? Is it up and running automatically?\]
+
+  ---
 
 * #### **EBS volume type**
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)  
+  * **General Purpose SSD \(gp2\)    
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)  
+  * **Provisioned IOPS SSD \(io1\)    
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)  
+  * **Magnetic \(standard, a previous-generation type\)    
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
   * _Throughput Optimized HDD \(st1\)_
@@ -100,13 +101,11 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   > See [Amazon EBS Volume Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html) to learn more.
 
-
-
 ---
 
 ### Restore to **Amazon Machine Image \(AMI\)**
 
-
+\[**TO DO\]**
 
 This feature is supported for the following operation systems:
 
@@ -117,21 +116,11 @@ This feature is supported for the following operation systems:
 * Windows Server 2012
 * Windows Server 2016
 
-
-
 * **Elastic Block Store \(EBS\) Volume**
 
   ​
 
   Amazon EBS provides raw storage – just like a hard disk – which you can attach to your EC2 instances. Once attached, you create a file system and get immediate access to your storage. You can create EBS General Purpose \(SSD\) and Provisioned IOPS \(SSD\) volumes up to 16 TB in size, and slower, legacy magnetic volumes.
-
-
-
-
-
-
-
-
 
 
 
