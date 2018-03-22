@@ -8,8 +8,8 @@ To restore an entire disk image, specific volumes in it, or a network share, sel
 
 Then, proceed with the following wizard steps to configure your restore task:
 
-* ...
-* ...
+* [3.4.1 - Select File Versions to Restore](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
+* [3.4.2 - Specify the Restore Destination](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination.md)
 * ...
 
 

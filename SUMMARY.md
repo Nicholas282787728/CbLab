@@ -16,6 +16,8 @@
     * [3.2 - Restore MS SQL Server Database](chapter1/step-3-choose-data-to-restore/32-restore-ms-sql-server-database.md)
     * [3.3 - Restore MS SQL Server Backup Files](chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files.md)
     * [3.4 - Restore a Disk Image or Network Share](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
+      * [3.4.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
+      * [3.4.2 - Specify the Restore Destination](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination.md)
     * [3.5 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
 * [Concepts](concepts.md)
   * [Synchronizing Your Repository](concepts/synchronizing-your-repository.md)
