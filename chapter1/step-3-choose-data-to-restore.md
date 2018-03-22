@@ -10,11 +10,11 @@ The following topics describe the available options:
 
 * [**MS SQL Server Database**](/chapter1/step-3-choose-data-to-restore/32-restore-ms-sql-server-database.md)
 
-* **MS SQL Server Backup Files**
+* [**MS SQL Server Backup Files**](/chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files.md)
 
-* **Disk Image or Network Share \(i**_**mage-based backup**_**\)**
+* [**Disk Image or Network Share**](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)** **_**\(an image-based backup\)**_
 
-* **System State \(including registry information, as well as boot, system and various application configuration files\)**
+* [**System State**](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)** **_**\(including registry information, as well as boot, system and various application configuration files\)**_
 
 This option is only available in Windows Server editions of CloudBerry Backup. Please visit the following page to learn more: [Pricing and Licensing Information](https://www.cloudberrylab.com/managed-backup/pricing.aspx).
 
