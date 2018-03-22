@@ -36,51 +36,51 @@ After selecting an account, specify the main settings of a target instance:
 
   You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of _regions_ and _Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
 
-  When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically.
-
-* 
-* 
-* Please note that there is a charge for data transfer between regions.
-
-  Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.
-
-  See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
+  > When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically.  
+  >   
+  > Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.  
+  >   
+  > Please note that there is a charge for data transfer between regions.  
+  >   
+  > See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
 
 _**\[What happens with a plan after migrating an instance to another Availability Zone?\]**_
+
+
 
 * **Instance type**
 
   Amazon EC2 provides a wide selection of instance types optimized to fit different use cases, such as computing, memory use, accelerated computing and optimized storage.
 
-  See [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/) learn about the available instance types.
+  > See [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/) learn about the available instance types.
 
 * **Subnet**
 
   A virtual private cloud \(VPC\) is a virtual network dedicated to your AWS account. It is logically isolated from other virtual networks in the AWS Cloud. You can launch your AWS resources, such as Amazon EC2 instances, into your VPC.
 
-  A VPC spans all the Availability Zones in the region.
-
-  After creating a VPC, you can add one or more subnets in each Availability Zone.
-
-  See the following page for more information:[https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC\_Subnets.html.](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html.)
+  > A VPC spans all the Availability Zones in the region.
+  >
+  > After creating a VPC, you can add one or more subnets in each Availability Zone.
+  >
+  > See [VPCs and Subnets](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html) for more information[.](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html.)
 
 * **Security group**
 
-  AWS provides two features that you can use to increase security in your VPC:
+  AWS enables you to increase security in your VPC by using the following features:
 
-  * **Security groups**act as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the instance level.
+  * **Security groups **act as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the instance level.
 
-  * **Network access control lists \(ACLs\)**act as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level.
+  * **Network access control lists \(ACLs\) **act as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level.
 
   While you are more likely to use security groups, you can also use network ACLs if you want an additional layer of security for your VPC.
 
   When you launch an instance in a VPC, you can associate one or more security groups that you've created. Each instance in your VPC could belong to a different set of security groups. If you don't specify a security group when you launch an instance, the instance automatically belongs to the default security group for the VPC.
 
-  See the following page to learn about this feature:[https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC\_Security.html.](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html.)
+  See Security to learn more about this feature[.](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html.)
 
-  **\[What this note on VMware is about?\]**
+  _**\[What this note on VMware is about?\]**_
 
-  **\[Do we need to elaborate on Network ACL here? Is it up and running automatically?\]**
+  _**\[Do we need to elaborate on Network ACL here? Is it up and running automatically?\]**_
 
 * **EBS volume type**
 
