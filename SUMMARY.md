@@ -18,6 +18,7 @@
     * [3.4 - Restore a Disk Image or Network Share](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
       * [3.4.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
       * [3.4.2 - Specify the Restore Destination](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination.md)
+        * [3.4.2.1 - Restore to a Physical Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3421-restore-to-a-physical-disk.md)
     * [3.5 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
 * [Concepts](concepts.md)
   * [Synchronizing Your Repository](concepts/synchronizing-your-repository.md)
