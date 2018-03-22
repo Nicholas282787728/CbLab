@@ -1,4 +1,6 @@
-Next, choose what kind of data you need to restore.
+
+
+On this wizard page, you choose what kind of data you need to restore.
 
 ![](/assets/choose-data-to-restore.png)
 
