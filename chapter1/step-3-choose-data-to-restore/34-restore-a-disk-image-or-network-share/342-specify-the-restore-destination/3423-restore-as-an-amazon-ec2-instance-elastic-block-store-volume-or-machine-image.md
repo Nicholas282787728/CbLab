@@ -86,13 +86,13 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)            
+  * **General Purpose SSD \(gp2\)              
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)            
+  * **Provisioned IOPS SSD \(io1\)              
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)            
+  * **Magnetic \(standard, a previous-generation type\)              
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
   * _Throughput Optimized HDD \(st1\)_
@@ -116,11 +116,41 @@ This feature is supported for the following operation systems:
 * Windows Server 2012
 * Windows Server 2016
 
-After switching to the next wizard page, you need to specify 
+After switching to the next wizard page, you need to specify the instance details.
 
+![](/assets/image-based-restore-to-ami-instance-details.png)
 
+First, you need to select an existing, or specify a new _"S3"_ or _"S3 China"_ instance account.
 
+_**\[See the following article to learn how to add a new S3 account to CloudBerry Backup.\]**_
 
+_**\[Please make sure that the specified account has all required permissions.\]**_
+
+_**\[Are the following settings required?\]**_
+
+After selecting an account, specify the main settings of a target instance:
+
+* #### **Region**
+
+  You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of _regions_ and _Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
+
+  > When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically.  
+  >   
+  > Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.  
+  >   
+  > Please note that there is a charge for data transfer between regions.  
+  >   
+  > See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
+
+_**\[What happens with a plan after migrating an instance to another Availability Zone?\]**_
+
+* #### EBS Volume Type
+
+  Amazon EC2 provides a wide selection of instance types optimized to fit different use cases, such as computing, memory use, accelerated computing and optimized storage.
+
+  > See [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/) learn about the available instance types.
+
+* #### 
 
 ---
 
