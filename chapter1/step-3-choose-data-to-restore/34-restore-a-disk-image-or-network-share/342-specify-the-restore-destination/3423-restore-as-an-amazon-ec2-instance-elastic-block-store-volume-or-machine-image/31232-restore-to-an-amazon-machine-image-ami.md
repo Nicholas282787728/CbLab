@@ -21,8 +21,6 @@ _**\[See the following article to learn how to add a new S3 account to CloudBerr
 
 _**\[Please make sure that the specified account has all required permissions.\]**_
 
-
-
 After selecting an account, specify the main settings of a target instance:
 
 * **Region**
@@ -36,13 +34,13 @@ After selecting an account, specify the main settings of a target instance:
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)                                                  
+* **General Purpose SSD \(gp2\)                                                      
   **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)                                                  
+* **Provisioned IOPS SSD \(io1\)                                                      
   **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)                                                  
+* **Magnetic \(standard, a previous-generation type\)                                                      
   **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using \_General Purpose SSD \(gp2\) \_or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
@@ -53,29 +51,31 @@ On the next wizard page, select whether you need to use a temporary instance dur
 
 The options are described below.
 
-* **Use temporary instance **This option enables faster copying of your files at a higher cost, which depends on the instance type and running time of the restore process.
+* **Do not use temporary instance **
+  This option enables copying your files via a local computer, which is usually slower and depends on the local Internet connection speed.
 
-When selecting this option, you need to specify the settings of your temporary EC2 instance on the next wizard page.
+* **Use temporary instance **
+  This option enables faster copying of your files at a higher cost, which depends on the instance type and running time of the restore process.
+
+To use a temporary instance, you need to specify the settings of your temporary EC2 instance on the next wizard page.
 
 First, you need to select an existing, or specify a new "S3" or "S3 China" instance account.
 
-**\[See the following article to learn how to add a new S3 account to CloudBerry Backup.\]**
-
-**\[Please make sure that the specified account has all required permissions.\]**
-
-**\[Are the following settings required?\]**
-
 After selecting an account, specify the main settings of a target instance:
 
-* #### **Region**
+* **Region**
 
-  You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of_regions\_and\_Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
+  You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of _regions_ and _Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
 
-  > When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically. Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone. Please note that there is a charge for data transfer between regions. See[Regions and Availability Zones](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)for more information.
+  > When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically.   
+  >   
+  > Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone.   
+  >   
+  > Please note that there is a charge for data transfer between regions.   
+  >   
+  > See [Regions and Availability Zones](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) for more information.
 
-**\[What happens with a plan after migrating an instance to another Availability Zone?\]**
-
-* #### **Instance type**
+* **Instance type**
 
   Amazon EC2 provides a wide selection of instance types optimized to fit different use cases, such as computing, memory use, accelerated computing and optimized storage.
 
@@ -95,9 +95,9 @@ After selecting an account, specify the main settings of a target instance:
 
   AWS enables you to increase security in your VPC by using the following features:
 
-  * **Security groups**act as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the instance level.
+  * **Security groups **act as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the instance level.
 
-  * **Network access control lists \(ACLs\)**act as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level.
+  * **Network access control lists \(ACLs\) **act as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level.
 
   While you are more likely to use security groups, you can also use network ACLs if you want an additional layer of security for your VPC.
 
@@ -105,13 +105,9 @@ After selecting an account, specify the main settings of a target instance:
   >
   > See [Security](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more about this feature[.](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)
 
-  **\[What this note on VMware is about?\]**
+  The wizard indicates whether [VM import](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) user roles are configured property. See [Configuring a VMimport Role](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) for more information.
 
-  \_\*\*\[Do we need to elaborate on Network ACL here? Is it up and running automatically?\]
-
----
-
-* #### **EBS volume type**
+* **EBS volume type**
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
@@ -121,13 +117,9 @@ After selecting an account, specify the main settings of a target instance:
 
   * **Magnetic \(standard, a previous-generation type\)**A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using\_General Purpose SSD \(gp2\)\_or other current volume types.
 
-  * _Throughput Optimized HDD \(st1\)_
-
-  * _Cold HDD \(sc1\)_
-
   > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
 
-* **Do not use temporary instance **This option enables copying your files via a local computer, which is usually slower and depends on the local Internet connection speed.
+
 
 On the next wizard page, you need to select which partitions to restore.
 
