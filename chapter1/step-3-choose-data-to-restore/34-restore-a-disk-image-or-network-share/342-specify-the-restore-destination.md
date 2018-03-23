@@ -14,7 +14,7 @@ The following options are available:
 
 * [Restore as Azure VM/Data disk](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3424-restore-to-an-azure-vm-or-data-disk.md)
 
-* Restore as Google Cloud Instance/Image/Disk
+* [Restore as Google Cloud Instance/Image/Disk](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3425-restore-to-a-google-cloud-instance-image-or-disk.md)
 
 
 

@@ -31,6 +31,7 @@
           * [3.4.2.5.1 - Restore to a Google Cloud Instance](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3425-restore-to-a-google-cloud-instance-image-or-disk/34251-restore-to-a-google-cloud-instance.md)
           * [3.4.2.5.2 - Restore to a Google Machine Image](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3425-restore-to-a-google-cloud-instance-image-or-disk/34252-restore-to-a-google-machine-image.md)
           * [3.4.2.5.3 - Restore to a Google Data Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3425-restore-to-a-google-cloud-instance-image-or-disk/restore-to-a-google-data-disk.md)
+      * [3.4.3 - Specify a Temporary Instance](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/343-specify-a-temporary-instance.md)
     * [3.5 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
 * [Concepts](concepts.md)
   * [Synchronizing Your Repository](concepts/synchronizing-your-repository.md)
