@@ -2,3 +2,9 @@
 
 
 
+
+
+options:
+
+First, you need to select an existing Azure account or create a new one.
+
