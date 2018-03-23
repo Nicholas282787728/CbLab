@@ -10,27 +10,7 @@ This options are detailed further in this article.
 
 ### Restore to Amazon EC2 Instance
 
-This option enables you to restore your disk image to an [Amazon EC2 instance](https://aws.amazon.com/ec2/instance-types/) of your choice.
 
-This feature is supported for the following operation systems:
-
-* Windows Server 2008
-* Windows Server 2012
-* Windows Server 2016
-
-With this option selected, switching to the next wizard page enables you to specify the settings of a target EC2 instance.
-
-![](/assets/image-based-to-ec2-instance-details.png)
-
-First, you need to select an existing, or specify a new _"S3"_ or _"S3 China"_ instance account.
-
-_**\[See the following article to learn how to add a new S3 account to CloudBerry Backup.\]**_
-
-_**\[Please make sure that the specified account has all required permissions.\]**_
-
-_**\[Are the following settings required?\]**_
-
-After selecting an account, specify the main settings of a target instance:
 
 * #### **Region**
 
@@ -86,13 +66,13 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)                          
+  * **General Purpose SSD \(gp2\)                            
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)                          
+  * **Provisioned IOPS SSD \(io1\)                            
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)                          
+  * **Magnetic \(standard, a previous-generation type\)                            
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
   * _Throughput Optimized HDD \(st1\)_
@@ -148,13 +128,13 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)        
+* **General Purpose SSD \(gp2\)          
   **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)        
+* **Provisioned IOPS SSD \(io1\)          
   **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)        
+* **Magnetic \(standard, a previous-generation type\)          
   **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using \_General Purpose SSD \(gp2\) \_or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
@@ -171,8 +151,6 @@ The options are described below.
 
 When selecting this option, you need to specify the settings of your temporary EC2 instance on the next wizard page.
 
-
-
 F
 
 irst, you need to select an existing, or specify a new "S3" or "S3 China" instance account.
@@ -187,7 +165,7 @@ After selecting an account, specify the main settings of a target instance:
 
 * #### **Region**
 
-  You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of_regions_and_Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
+  You can place Amazon EC2 instances in multiple locations across the globe. These locations are composed of_regions\_and\_Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones.
 
   > When you view your resources, you can only see the resources tied to the region you have specified. This is because regions are isolated from each other, and Amazon AWS does not replicate resources across regions automatically. Some AWS resources might not be available in all regions and Availability Zones. Ensure that you can create the resources you need in the desired regions or Availability Zone before launching an instance in a specific Availability Zone. Please note that there is a charge for data transfer between regions. See[Regions and Availability Zones](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)for more information.
 
@@ -227,9 +205,7 @@ After selecting an account, specify the main settings of a target instance:
 
   \_\*\*\[Do we need to elaborate on Network ACL here? Is it up and running automatically?\]
 
-
-
-  ---
+---
 
 * #### **EBS volume type**
 
@@ -239,15 +215,13 @@ After selecting an account, specify the main settings of a target instance:
 
   * **Provisioned IOPS SSD \(io1\)**The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)**A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using_General Purpose SSD \(gp2\)_or other current volume types.
+  * **Magnetic \(standard, a previous-generation type\)**A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using\_General Purpose SSD \(gp2\)\_or other current volume types.
 
   * _Throughput Optimized HDD \(st1\)_
 
   * _Cold HDD \(sc1\)_
 
   > See[Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)to learn more.
-
-
 
 * **Do not use temporary instance **This option enables copying your files via a local computer, which is usually slower and depends on the local Internet connection speed.
 
