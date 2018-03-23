@@ -8,24 +8,18 @@ With this option selected, switching to the next wizard page enables you to spec
 
 First, you need to select an existing, or specify a new _"S3"_ or _"S3 China"_ instance account.
 
-_**\[See the following article to learn how to add a new S3 account to CloudBerry Backup.\]**_
-
-_**\[Please make sure that the specified account has all required permissions.\]**_
-
-
-
 After selecting an account, specify the main settings of a target EC2 instance:
 
-* **Region  
-  **Amazon EC2 is hosted in multiple locations world-wide that are composed of _regions_ and _Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones. Amazon EC2 provides you the ability to place resources, such as instances, and data in multiple locations. Resources are not replicated across regions unless you do so specifically.
+* **Region**
+  Amazon EC2 is hosted in multiple locations world-wide that are composed of regions and Availability Zones. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones. Amazon EC2 provides you the ability to place resources, such as instances, and data in multiple locations. Resources are not replicated across regions unless you do so specifically.
 
-> Note that there is a charge for data transfer between regions.
->
-> See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
+  > Note that there is a charge for data transfer between regions.
+  >
+  > See [Regions and Availability Zones](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) for more information.
 
-* **Instance type**
+* **Availability Zones**
 
-  Amazon EC2 provides a wide selection of instance types optimized to fit different use cases, such as computing, memory use, accelerated computing and optimized storage.
+  Click **Refresh** to obtain the list of Availability Zones available for this region.
 
   > See[Amazon EC2 Instance Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)learn about the available instance types.
 
@@ -61,13 +55,13 @@ After selecting an account, specify the main settings of a target EC2 instance:
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)                                                  
+  * **General Purpose SSD \(gp2\)                                                    
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)                                                  
+  * **Provisioned IOPS SSD \(io1\)                                                    
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)                                                  
+  * **Magnetic \(standard, a previous-generation type\)                                                    
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
   * _Throughput Optimized HDD \(st1\)_
