@@ -30,6 +30,6 @@
   * [Restoring Amazon Glacier Data](concepts/restoring-amazon-glacier-data.md)
   * [General Security Considerations](concepts/general-security-considerations.md)
   * [Understanding Versions](concepts/understanding-versions.md)
-  * [Restoring NTFS Partitions](concepts/restoring-ntfs-partitions.md)
+  * [Resizing NTFS Partitions](concepts/restoring-ntfs-partitions.md)
   * \(?\) - Specify EC2 Instance Details
 
