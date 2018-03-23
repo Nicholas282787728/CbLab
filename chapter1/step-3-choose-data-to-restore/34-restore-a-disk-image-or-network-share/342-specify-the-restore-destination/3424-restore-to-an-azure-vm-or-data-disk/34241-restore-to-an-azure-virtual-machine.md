@@ -11,14 +11,15 @@ First, you need to select an existing Azure account or create and configure a ne
 After you selected an account, specify the following options:
 
 * Computer name
-* **Location**
+* **Location**  
   Specifies the virtual machine's location.  
-  Azure operates in multiple data centers around the world that are grouped into geographic regions, giving you flexibility in choosing where to build your applications. See [Regions and availability for virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions-and-availability) to learn how and where your virtual machines operate in Azure, along with your options to maximize performance, availability, and redundancy. 
+  Azure operates in multiple data centers around the world that are grouped into geographic regions, giving you flexibility in choosing where to build your applications. See [Regions and availability for virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions-and-availability) to learn how and where your virtual machines operate in Azure, along with your options to maximize performance, availability, and redundancy.
 
-* **Resource group**
-  Specifies the container that holds related resources for an Azure solution. See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups) for more information.
+* **Resource group**  
+  Specifies the container that holds related _resources_ \(such as virtual machines, storage accounts, web apps, databases, and virtual networks\) for an Azure solution. See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups) for more information.
 
 * Virtual machine size
+
 * Network
 * Subnet
 * Storage
