@@ -2,14 +2,14 @@
 
 This option enables you to restore your disk image to an [Amazon Machine Image \(AMI\)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) of your choice.
 
-This feature is supported for the following operation systems:
-
-* Windows 7
-* Windows 8
-* Windows 10
-* Windows Server 2008
-* Windows Server 2012
-* Windows Server 2016
+> This feature is supported for the following operation systems:
+>
+> * Windows 7
+> * Windows 8
+> * Windows 10
+> * Windows Server 2008
+> * Windows Server 2012
+> * Windows Server 2016
 
 After switching to the next wizard page, you need to specify the instance details.
 
@@ -25,21 +25,24 @@ _**\[Are the following settings required?\]**_
 
 After selecting an account, specify the main settings of a target instance:
 
-* #### **Region**
+* **Region  
+  **Amazon EC2 is hosted in multiple locations world-wide that are composed of _regions_ and _Availability Zones_. Each region is a separate geographic area encompassing multiple, isolated locations known as Availability Zones. Amazon EC2 provides you the ability to place resources, such as instances, and data in multiple locations. Resources are not replicated across regions unless you do so specifically.
 
-_**\[What happens with a plan after migrating an instance to another Availability Zone?\]**_
+> Note that there is a charge for data transfer between regions.
+>
+> See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
 
-* #### EBS Volume Type
+* **EBS Volume Type**
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)                                          
+* **General Purpose SSD \(gp2\)                                                
   **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)                                          
+* **Provisioned IOPS SSD \(io1\)                                                
   **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)                                          
+* **Magnetic \(standard, a previous-generation type\)                                                
   **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using \_General Purpose SSD \(gp2\) \_or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
@@ -76,7 +79,7 @@ After selecting an account, specify the main settings of a target instance:
 
   Amazon EC2 provides a wide selection of instance types optimized to fit different use cases, such as computing, memory use, accelerated computing and optimized storage.
 
-  > See[Amazon EC2 Instance Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)learn about the available instance types.
+  > See [Amazon EC2 Instance Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) learn about the available instance types.
 
 * #### **Subnet**
 
@@ -86,7 +89,7 @@ After selecting an account, specify the main settings of a target instance:
   >
   > After creating a VPC, you can add one or more subnets in each Availability Zone.
   >
-  > See[VPCs and Subnets](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)for more information[.](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)
+  > See [VPCs and Subnets](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) for more information[.](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)
 
 * #### **Security group**
 
@@ -100,7 +103,7 @@ After selecting an account, specify the main settings of a target instance:
 
   > When you launch an instance in a VPC, you can associate one or more security groups that you've created. Each instance in your VPC could belong to a different set of security groups. If you don't specify a security group when you launch an instance, the instance automatically belongs to the default security group for the VPC.
   >
-  > See[Security](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)to learn more about this feature[.](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)
+  > See [Security](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more about this feature[.](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)
 
   **\[What this note on VMware is about?\]**
 
@@ -122,7 +125,7 @@ After selecting an account, specify the main settings of a target instance:
 
   * _Cold HDD \(sc1\)_
 
-  > See[Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)to learn more.
+  > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
 
 * **Do not use temporary instance **This option enables copying your files via a local computer, which is usually slower and depends on the local Internet connection speed.
 
