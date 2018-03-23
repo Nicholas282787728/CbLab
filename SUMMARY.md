@@ -27,6 +27,7 @@
         * [3.4.2.4 - Restore to an Azure VM or Data Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3424-restore-to-an-azure-vm-or-data-disk.md)
           * [3.4.2.4.1 - Restore to an Azure Virtual Machine](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3424-restore-to-an-azure-vm-or-data-disk/34241-restore-to-an-azure-virtual-machine.md)
           * [3.4.2.4.2 - Restore to an Azure Data Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3424-restore-to-an-azure-vm-or-data-disk/34242-restore-to-an-azure-data-disk.md)
+        * [3.4.2.5 - Restore to a Google Cloud Instance, Image, or Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3425-restore-to-a-google-cloud-instance-image-or-disk.md)
     * [3.5 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
 * [Concepts](concepts.md)
   * [Synchronizing Your Repository](concepts/synchronizing-your-repository.md)
