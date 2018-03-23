@@ -12,7 +12,7 @@ The following options are available:
 
 * [Restore as Amazon EC2/EBS/AMI](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3423-restore-as-an-amazon-ec2-instance-elastic-block-store-volume-or-machine-image.md)
 
-* Restore as Azure VM/Data disk
+* [Restore as Azure VM/Data disk](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3424-restore-to-an-azure-vm-or-data-disk.md)
 
 * Restore as Google Cloud Instance/Image/Disk
 
