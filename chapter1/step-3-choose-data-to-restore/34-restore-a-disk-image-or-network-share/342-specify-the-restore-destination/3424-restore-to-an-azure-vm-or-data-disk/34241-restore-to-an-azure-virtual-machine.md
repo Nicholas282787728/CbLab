@@ -2,9 +2,9 @@
 
 This option enables you to restore a disk image to a [Microsoft Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/).
 
+![](/assets/restore-azure-vm-instance.png)
 
-
-With this option selected, switching to the next wizard page enables you to specify the settings of a target EC2 instance.
+With this option selected, switching to the next wizard page enables you to specify the settings of a target virtual machine instance.
 
 First, you need to select an existing Azure account or create a new one.
 
