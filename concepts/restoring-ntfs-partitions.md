@@ -1,4 +1,4 @@
-## Restoring NTFS Partitions
+## Resizing NTFS Partitions
 
 When restoring an NTFS partition, you can customize additional options:
 

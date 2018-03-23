@@ -42,7 +42,7 @@ After switching to the next wizard page, you can specify the destination folder 
 
 ![](/assets/image-based-virtual-select-destination.png)
 
-> When restoring [Amazon Glacier](https://aws.amazon.com/glacier/) data or Amazon S3 files with the [Glacier storage class](https://aws.amazon.com/s3/storage-classes/), you can choose whether or not you need to restore data from Amazon Glacier on the next wizard page. See [Restoring Amazon Glacier Data](/concepts/restoring-amazon-glacier-data.md) to learn more about this feature.
+
 
 
 

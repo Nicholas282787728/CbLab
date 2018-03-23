@@ -6,10 +6,10 @@ On this wizard page, you need to select where to restore the selected files.
 
 You can choose one of the following destinations for your backup:
 
-* **Restore to the original location  
+* **Restore to the original location    
   **This will restore the selected files to the same directory where the source files were located.
 
-* **Restore to a specific location  
+* **Restore to a specific location    
   **This will restore the selected files to a custom directory.  
   You can make the Restore Wizard to use this location as a default destination for newly created restore plans by enabling a corresponding option.
 
@@ -33,15 +33,7 @@ In addition, you can specify the following options on this wizard page:
 
   When a backup is configured to store NTFS permissions assigned to files and folders, you can enable this option to restore these permissions along with the selected files. See the following article online to learn more about this feature:[ ](http://www.ntfs.com/ntfs-permissions.htm.)[NTFS Permissions](http://www.ntfs.com/ntfs-permissions.htm).
 
-When using an Amazon cloud storage, you can choose whether to restore any files located in [Amazon Glacier](https://aws.amazon.com/glacier/) using the corresponding option on this wizard page.
 
-> In most cases, these files do not need to be restored and we recommend that you leave this option disabled. Otherwise, please be informed that restoring these files can be either too slow \(up to several hours\), or too expensive.
->
-> However, if you still need to restore Amazon Glacier data, you can select the preferred data retrieval mode on the next wizard page by choosing the corresponding option.
->
-> ![](/assets/restore-glacier-data.png)
->
-> See [Restoring Amazon Glacier Data](/concepts/restoring-amazon-glacier-data.md) for more information.
 
 
 
