@@ -33,13 +33,13 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)                                      
+* **General Purpose SSD \(gp2\)                                          
   **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)                                      
+* **Provisioned IOPS SSD \(io1\)                                          
   **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)                                      
+* **Magnetic \(standard, a previous-generation type\)                                          
   **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using \_General Purpose SSD \(gp2\) \_or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
@@ -142,7 +142,9 @@ After switching to the next wizard page, you can specify the capacity of the des
 
 ![](/assets/ami-destination-capacity.png)
 
-The wizard indicates the minimum and maximum capacity value. The minimum size is the total target size for all selected partitions on the previous step.
+The wizard indicates the minimum and maximum capacity value, where the minimum size is the total target size for all selected partitions on the previous step.
+
+> When restoring [Amazon Glacier](https://aws.amazon.com/glacier/) data or Amazon S3 files with the [Glacier storage class](https://aws.amazon.com/s3/storage-classes/), you can choose whether or not you need to restore data from Amazon Glacier on the next wizard page. See [Restoring Amazon Glacier Data](/concepts/restoring-amazon-glacier-data.md) to learn more about this feature.
 
 
 
