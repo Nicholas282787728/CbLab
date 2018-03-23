@@ -6,15 +6,11 @@ On this wizard page, you can select whether you need to restore an image to a Go
 
 The following tutorials provide step-by-step instructions on how to set up you Google Cloud account for restoring an image disk:
 
-* ...
-* ...
-* ...
-
-
+* [Restore to a Google Cloud instance](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3425-restore-to-a-google-cloud-instance-image-or-disk/34251-restore-to-a-google-cloud-instance.md)
+* [Restore to a Google machine image](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3425-restore-to-a-google-cloud-instance-image-or-disk/34252-restore-to-a-google-machine-image.md)
+* Restore to a Google data disk
 
 **\[For the first two options:\]**
-
-
 
 > Please be informed that [Google Compute Engine](https://cloud.google.com/compute/docs/instances/windows/) currently supports only the following Windows Server versions:
 >
