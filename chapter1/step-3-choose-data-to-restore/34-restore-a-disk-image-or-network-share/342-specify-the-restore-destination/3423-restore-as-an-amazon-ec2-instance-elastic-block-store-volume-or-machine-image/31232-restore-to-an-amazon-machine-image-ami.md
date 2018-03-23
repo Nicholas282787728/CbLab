@@ -33,13 +33,13 @@ _**\[What happens with a plan after migrating an instance to another Availabilit
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)                                  
+* **General Purpose SSD \(gp2\)                                    
   **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)                                  
+* **Provisioned IOPS SSD \(io1\)                                    
   **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)                                  
+* **Magnetic \(standard, a previous-generation type\)                                    
   **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using \_General Purpose SSD \(gp2\) \_or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
@@ -131,12 +131,8 @@ On the next wizard page, you need to select which partitions to restore.
 ![](/assets/image-based-virtual-select-partitions.png)
 
 > When restoring an NTFS partition, you can customize additional options. See [Restoring NTFS Partitions](/concepts/restoring-ntfs-partitions.md) for more information.
-
-
-
+>
 > Please be informed that UEFI/EFI BIOS and boot partitions are not supported by VM Import/Export with Amazon EC2. See the following document for more information: [VM Import/Export Requirements](https://docs.aws.amazon.com/vm-import/latest/userguide/vmie_prereqs.html).
-
-
 
 You can also reorganize the restored partitions by selecting the corresponding option. This invokes the **Resize Partitions** dialog window where you can create new virtual disks and map the restored partitions to them using the drag-and-drop operation.
 
@@ -146,7 +142,9 @@ After switching to the next wizard page, you can specify the capacity of the des
 
 ![](/assets/ami-destination-capacity.png)
 
-The wizard indicates the minimum and maximum capacity of the destination disk.
+The wizard indicates the minimum and maximum allowed capacity.
+
+
 
 
 
