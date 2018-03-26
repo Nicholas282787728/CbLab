@@ -1,25 +1,12 @@
 ## 3.4.2.4.1 - Restore to an Azure Virtual Machine
 
-as oppsed to amazon \(we take disk and amazon processes it\), azure doesn't care what's on disk
+This wizard page enables you to restore a disk image to a [Microsoft Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/).
 
-amazon uses a single account \(IAM\), azure uses one creds for backup \(storage creds and other creds for restore \(IAM creds\)
-
--&gt; IAM user must have the rights \(see the KB\), there are limitations \(different for standalone and MBS\)
-
-[https://kb.cloudberrylab.com/kb1063/](https://kb.cloudberrylab.com/kb1063/)
-
-two parameters:
-
-* location
-* resource group
-
-
+![](/assets/restore-azure-vm.png)
 
 Before running this wizard, you need to create a new user and select a subscription, region, resource groups and storage account via the [Microsoft Azure Portal](https://portal.azure.com/).
 
-To be able to restore a disk image, you should use a [general-purpose storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options) and not a blob storage, because blob storage accounts support only _block_ and _append blobs_, and not _page blobs_ on on which virtual machines are stored. Page blobs are only available in general-purpose accounts and they do not provide [zone-redundant storage \(ZRS\)](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage).
-
-
+> To be able to restore a disk image, you should use a [general-purpose storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options) and not a blob storage, because blob storage accounts support only _block_ and _append blobs_, and not _page blobs_ on on which virtual machines are stored. Page blobs are only available in general-purpose accounts and they do not provide [zone-redundant storage \(ZRS\)](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage).
 
 
 
@@ -41,7 +28,7 @@ THERE is :
 
 * premium storage accs \(only to store page blobs, but expensive as uses SSD, only used for storing VM disks\) - it cannot store boot diagmostics \(can be disable\). Use a regular acc instead.
 
-This wizard page enables you to restore a disk image to a [Microsoft Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/).
+
 
 ![](/assets/restore-azure-vm-instance.png)
 
