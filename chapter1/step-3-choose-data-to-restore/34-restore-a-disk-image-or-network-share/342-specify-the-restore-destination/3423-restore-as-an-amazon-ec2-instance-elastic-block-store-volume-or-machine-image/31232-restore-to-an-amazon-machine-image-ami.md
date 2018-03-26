@@ -15,7 +15,9 @@ After switching to the next wizard page, you need to specify the instance detail
 
 ![](/assets/image-based-restore-to-ami-instance-details.png)
 
-First, you need to select an existing, or specify a new _"S3"_ or _"S3 China"_ instance account.
+First, you need to select an existing, or specify a new _"S3"_ or _"S3 China"_ instance account. See the following article to learn how to add a new S3 account to CloudBerry Backup: [Signing up for Amazon S3](https://help.cloudberrylab.com/cloudberry-backup/signing-up-for-the-cloud/amazon-aws/signing-up-for-amazon-s3).
+
+> Please make sure that the specified account has [all required permissions](/concepts/permissions.md).
 
 After selecting an account, specify the main settings of a target instance:
 
@@ -30,18 +32,16 @@ After selecting an account, specify the main settings of a target instance:
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)                                                                              
+* **General Purpose SSD \(gp2\)                                                                                
   **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)                                                                              
+* **Provisioned IOPS SSD \(io1\)                                                                                
   **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)                                                                              
+* **Magnetic \(standard, a previous-generation type\)                                                                                
   **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
-
-
 
 
 
