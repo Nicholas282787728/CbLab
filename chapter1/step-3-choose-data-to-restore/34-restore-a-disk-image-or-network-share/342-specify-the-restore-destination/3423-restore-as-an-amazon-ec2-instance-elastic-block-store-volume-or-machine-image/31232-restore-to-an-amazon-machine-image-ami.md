@@ -24,24 +24,32 @@ After selecting an account, specify the main settings of a target machine image:
 * **Region**  
   Amazon EC2 is hosted in multiple locations world-wide that are composed of separate geographic areas _\(regions\)_. Amazon EC2 provides you with the ability to place resources, such as instances, and data in multiple locations. Resources are not replicated across regions unless you do so specifically.
 
-  > Note that there is a charge for data transfer between regions. For this reason, please make sure that you restore your data to the same region where the original backup is stored, unless you are required to transfer your data to another region.  
-  >   
-  > When restoring a disk to an existing virtual machine, the disk must belong to the same Availability Zone as the target machine.
+  > Please be informed that transferring data between different regions takes more time than performing data transfer within a single region.
+  >
+  > When restoring a disk for an existing virtual machine, the disk must belong to the same Availability Zone as the machine to which you are going to attach the disk.
   >
   > See [Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for more information.
+
+  The wizard indicates whether your VM import user roles are configured property for the selected account, because AWS will not perform input operations without appropriate permissions. You can create a VM import role in one of the following ways:
+
+  * You can [manually configure a VM import role](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#);
+
+  * You can grant the required IAM permissions to an [IAM user](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) whose account is used for restoring backups.
+
+    The wizard will automatically create a VM import role when it detects that none of the above configurations are available.
 
 * **EBS Volume Type**
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-* **General Purpose SSD \(gp2\)                                                                                          
-  **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
+  * **General Purpose SSD \(gp2\)  
+    **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-* **Provisioned IOPS SSD \(io1\)                                                                                          
-  **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
+  * **Provisioned IOPS SSD \(io1\)  
+    **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-* **Magnetic \(standard, a previous-generation type\)                                                                                          
-  **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
+  * **Magnetic \(standard, a previous-generation type\)  
+    **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.
 

@@ -6,5 +6,3 @@ After launching CloudBerry Backup, you can run the Restore Wizard by pressing **
 
 ![](/assets/restore-button.png)
 
-
-
