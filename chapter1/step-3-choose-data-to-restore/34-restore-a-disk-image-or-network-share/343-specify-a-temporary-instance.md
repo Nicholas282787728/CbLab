@@ -2,6 +2,26 @@
 
 **\[more details - any recommendations on which to choose? any errors/precautions\]**
 
+**do not choose micro nano instances \(t2-micro, t1 nano, ets.\)**
+
+t-instances up to large \(medium-large\)
+
+several stages:
+
+* Raising a temp machine. This time does not depend on anything ~ 4 min
+* The time to install the client
+* The time to process an image-based backup - !
+* The time to process the created image by AWS - we cannot do anything - the longest \(depends on size, region, other factors\)
+
+{{AWS has a script to check a machine whose image is made checks for import requirements. When "a machine wasn't able to launch or establish connection:
+
+* Any mismatch does not guarantee that it fails. 
+* The script is outdated. A user can take this script and check the backed up machine using this script \(troubleshooting\) but without any warrant
+* 
+}}
+
+
+
 On this wizard page, you can select whether you need to use a temporary instance during the restore process.
 
 ![](/assets/image-based-restore-to-ami-temp-instance.png)
@@ -58,20 +78,20 @@ After selecting an account, specify the main settings of a target instance:
   >
   > See [Security](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more about this feature[.](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#)
 
-* **AMI            
+* **AMI              
   **Enables you to select a target Amazon Machine Image.
 
 * **EBS volume type**
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)    
+  * **General Purpose SSD \(gp2\)      
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)    
+  * **Provisioned IOPS SSD \(io1\)      
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)    
+  * **Magnetic \(standard, a previous-generation type\)      
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
   > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.

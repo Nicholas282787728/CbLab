@@ -8,8 +8,6 @@ When using an Amazon cloud storage, you can choose whether to restore any files 
 >
 > However, if you still need to restore Amazon Glacier data, you can select the preferred data retrieval mode on the next wizard page by choosing the corresponding option.
 
-
-
 When choosing to restore data from Amazon Glacier, you can select among the following three data retrieval modes:
 
 * ### **Standard**
@@ -54,7 +52,9 @@ When choosing to restore data from Amazon Glacier, you can select among the foll
 
   **\[??? - If you exceed that limit, expect errors on the part of Amazon.\]**
 
-You don't need to specify whether an expedited retrieval is On-Demand or Provisioned. If you have purchased provisioned capacity, then all expedited retrievals are automatically served through your provisioned capacity.
+> You don't need to specify whether an expedited retrieval is On-Demand or Provisioned. If you have purchased provisioned capacity, then all expedited retrievals are automatically served through your provisioned capacity.
+>
+> See the following document to learn more about this feature: [Provisioned Capacity](https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-steps.html#api-downloading-an-archive-two-steps-retrieval-expedited-capacity).
 
-See the following document to learn more about this feature: [Provisioned Capacity](https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-steps.html#api-downloading-an-archive-two-steps-retrieval-expedited-capacity).
+
 

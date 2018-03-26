@@ -36,6 +36,8 @@ After choosing the appropriate scheduling settings, you can enable the following
 
   Use this option to interrupt a restore process if it runs for too long.
 
+**\[What happens to the half-baked restore files? Are they gone?\]**
+
 * **Run missed scheduled backup immediately when computer starts up**
 
   This option is only available if you enabled restore on schedule. It makes a restore routine run automatically at startup, in case it was missed for any reason.
