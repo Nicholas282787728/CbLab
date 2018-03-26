@@ -8,69 +8,45 @@ Before running this wizard, you need to create a new user and select a subscript
 
 > To be able to restore a disk image, you should use a [general-purpose storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options) and not a blob storage, because blob storage accounts support only _block_ and _append blobs_, and not _page blobs_ on on which virtual machines are stored. Page blobs are only available in general-purpose accounts and they do not provide [zone-redundant storage \(ZRS\)](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage).
 
-
-
-Never disable boot diagnostics \(because you won't be able what;s going - access to VM only via RDP \(unlike vmware\) -&gt; you need OS, betwork, RDP service, external IP address etc.
-
-Boot Diag - is a machine's screenshot.
-
-When using an Azure this is OK
-
-But when import on Azure, enable boot diag.
-
-Azure launches as is silently without any warning \(regardless of whether OS is launched\) and you are charged
-
-This helps during emergency recovery \(as skips diagnostics gives extra speed\)
-
-* find links to this specifics \(installing Azure agent, add-ons etc. on your VM \)
-
-THERE is :
-
-* premium storage accs \(only to store page blobs, but expensive as uses SSD, only used for storing VM disks\) - it cannot store boot diagmostics \(can be disable\). Use a regular acc instead.
-
-
-
-![](/assets/restore-azure-vm-instance.png)
-
-With this option selected, switching to the next wizard page enables you to specify the settings of a target virtual machine instance.
-
-First, you need to select an existing Azure account or create and configure a new one.
+Next, you need to select an existing Azure account or create and configure a new one on this wizard page.
 
 After you selected an account, specify the following options:
 
 * **Computer name**  
-  Specifies the computer name assigned to the target virtual machine.
+  Specifies the name of the created virtual machine.
 
 * **Location**  
-  Specifies the virtual machine's [location](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions-and-availability).  
-  The selected location determines the available resource groups \(see below\).
+  Specifies the virtual machine's [location](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions-and-availability). The selected location determines the available _resource groups_ \(see below\).
+
+  > Please be informed that transferring data between different locations takes more time than performing data transfer within a single location.
 
 * **Resource group**  
   Specifies the container that holds related _resources_ \(such as virtual machines, storage accounts, web apps, databases, and virtual networks\) for an Azure solution. See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups) for more information.
 
-* **Virtual machine size**  
+* **VM size**  
   Specifies the size of the target virtual machine. See the following documents for more information:
 
   * [Sizes for Windows virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes)  
   * [Sizes for Linux virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes)
 
 * **Network**  
-  When you create an Azure virtual machine, you must create a _virtual network \(VNet\)_ or use an existing VNet.  
-  See the following document for more information: [Virtual networks and virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/network-overview).
+  When you create an Azure virtual machine, you must create a new [_virtual network \(VNet\)_](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/network-overview) or use an existing one.
 
   > The specifies network must belong to the same location and resource group as the specified _storage _\(see below\). Otherwise, you will not be able to set up a virtual machine.
 
 * **Subnet**  
-  Specifies the subnet in the virtual network.  
-  A subnet is a range of IP addresses in the VNet. You can divide a VNet into multiple \_subnets \_for organization and security. Each NIC in a VM is connected to one subnet in one VNet. NICs connected to subnets \(same or different\) within a VNet can communicate with each other without any extra configuration.  
-  See the following document for more information: [Virtual networks and virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/network-overview).
+  Specifies the subnet in the virtual network.
+
+  > A subnet is a range of IP addresses in the VNet. You can divide a VNet into multiple _subnets_ for organization and security. Each NIC in a VM is connected to one subnet in one VNet. NICs connected to subnets \(same or different\) within a VNet can communicate with each other without any extra configuration.
+  >
+  > See the following document for more information: [Virtual networks and virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/network-overview).
 
 * **Storage**  
   Specifies the storage on the target virtual machine.
 
-  > The specifies storage must belong to the same location and resource group as the specified _network _\(see above\). Otherwise, you will not be able to set up a virtual machine.
-
-  See the following document to learn about the available storage options: [About disks storage for Azure Windows VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds).
+  > The specified storage must belong to the same location and resource group as the specified _network _\(see above\). Otherwise, you will not be able to set up a virtual machine.
+  >
+  > See the following document to learn about the available storage options: [About disks storage for Azure Windows VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds).
 
 * **Container**  
   Specifies the bucket to which the virtual machine's disks will be placed.
@@ -78,10 +54,22 @@ After you selected an account, specify the following options:
 * **Boot diagnostic storage**  
   Specifies the storage for [boot diagnostic files](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/boot-diagnostics).
 
+  > We strongly recommend that you never disable boot diagnostics when restoring a disk image on an Azure machine. Otherwise, you will not be able to find out the reason of why the restore process has failed. This is because an Azure virtual machine can only be accessed via the Remote Desktop Protocol \(RDP\), and unlike a VMware workstation, you cannot access an Azure virtual machine unless it has an operating system, network, RDP service and external IP address assigned to it.
+  >
+  > You may need to disable boot diagnostics during an emergency recovery when the recovery speed is of highest importance. In most other cases, boot diagnostics provides a machine's screenshot that may become critical for accessing the restored machine. Please keep in mind that Azure launches a virtual machine silently, without any warnings, and you will be charged regardless of whether or not its operating system has been launched and of whether or not you are able to access the restored machine.
+
+  To workaround this issue, you may wish to install an Azure Virtual Machine Agent. See the following documents for more information:
+
+  * [Azure Virtual Machine Agent overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/agent-user-guide)
+  * [OMS virtual machine extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-oms)
+  * [Virtual machine extensions and features for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features)
+
+    > You need to use a _regular storage account _for storing boot diagnostics. The _premium account_ is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
+
 * **Operating system**  
-  Specifies the operating system of the target virtual machine \(Windows or Linux\):
+  Specifies the operating system of the target virtual machine.
 
-\[**this is useful when restoring from VM \(for image based use Windows - strongly recommend\) - we cannot detect yet\]**
+  > We do not recommend that you choose Linux as an operation system when restoring your image-based backups to an Azure virtual machine. Please use Windows instead to avoid any problems with accessing the created machine after it has been restored.
 
-Next, ...
+
 
