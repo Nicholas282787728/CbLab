@@ -41,4 +41,5 @@
   * [Understanding Versions](concepts/understanding-versions.md)
   * [Resizing NTFS Partitions](concepts/restoring-ntfs-partitions.md)
   * [Restoring MS Exchange Data](concepts/restoring-ms-exchange-data.md)
+  * [Granting IAM Role Permissions to an Amazon S3 Account](concepts/permissions.md)
 
