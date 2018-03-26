@@ -41,5 +41,5 @@
   * [Understanding Versions](concepts/understanding-versions.md)
   * [Resizing NTFS Partitions](concepts/restoring-ntfs-partitions.md)
   * [Restoring MS Exchange Data](concepts/restoring-ms-exchange-data.md)
-  * [Granting Permissions to an Amazon IAM Role](concepts/permissions.md)
+  * [Granting EC2 Permissions to an Amazon IAM Role](concepts/permissions.md)
 
