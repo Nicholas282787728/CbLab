@@ -1,5 +1,13 @@
 ## Step 5 - Schedule Your Restore Plan
 
+**consider do you need this, as costs the money **
+
+**this is emergency recovery \(the machine instance ID will differ as a result, so you cannot override your VM\)**
+
+
+
+
+
 On this wizard page, you can specify the schedule settings to make your restore routine run automatically.
 
 ![](/assets/schedule-your-restore-plan.png)
@@ -36,7 +44,9 @@ After choosing the appropriate scheduling settings, you can enable the following
 
   Use this option to interrupt a restore process if it runs for too long.
 
-**\[What happens to the half-baked restore files? Are they gone?\]**
+\[!!! - **Never use it**. We cannot prognose this time. Half-baked result.  \]
+
+
 
 * **Run missed scheduled backup immediately when computer starts up**
 
