@@ -6,3 +6,7 @@ After launching CloudBerry Backup, you can run the Restore Wizard by pressing **
 
 ![](/assets/restore-button.png)
 
+Alternatively, you can switch to the application's **Backup Storage** tab and right-click a disk image that you wish to restore. This invokes a context menu where you can select a required option.
+
+![](/assets/image-restore-context-menu-ec2.png)
+
