@@ -22,12 +22,12 @@ After you selected an account, specify the following options:
 * **Resource group**  
   Specifies the container that holds related _resources_ \(such as virtual machines, storage accounts, web apps, databases, and virtual networks\) for an Azure solution. See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups) for more information.
 
+  > Both the restored data disk and the virtual machine on which it is supposed to be mounted should belong to the same resource group and storage.
+
 * **Storage**  
   Specifies the [disk storage](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds) on the target virtual machine.
 
-  > The specified storage must belong to the same location and resource group as the specified _network _\(see above\). Otherwise, you will not be able to set up a virtual machine. See the following Knowledge Base article for more information: [Cannot specify all Azure Virtual Machine instance details in the restore wizard](https://kb.cloudberrylab.com/kb1063/).
-
-  **\[check this\]**
+  > Both the restored data disk and the virtual machine on which it is supposed to be mounted should belong to the same resource group and storage.
 
 * **Container**  
   Specifies the bucket to which the data disk will be placed.
