@@ -1,7 +1,5 @@
 ## 3.4.2.4.1 - Restore to an Azure Virtual Machine
 
-**\[Do we need to add any notes about using temp.instances here?\]**
-
 This wizard page enables you to restore a disk image to a [Microsoft Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/).
 
 ![](/assets/restore-azure-vm.png)
