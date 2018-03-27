@@ -11,3 +11,21 @@ The following tutorials provide step-by-step instructions on how to set up you M
 
 
 
+**\[An overview note comes here:\]**
+
+Unlike Amazon Web Services that provides a single IAM account for managing any user activity, Microsoft Azure uses different sets of credentials for backing up, storing and restoring data.
+
+https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-configure
+
+https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-what-is
+
+
+
+
+
+
+
+
+
+
+

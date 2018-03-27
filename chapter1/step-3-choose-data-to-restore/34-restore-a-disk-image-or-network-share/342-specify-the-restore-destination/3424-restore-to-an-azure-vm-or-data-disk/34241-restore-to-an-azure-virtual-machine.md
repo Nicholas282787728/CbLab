@@ -1,5 +1,9 @@
 ## 3.4.2.4.1 - Restore to an Azure Virtual Machine
 
+**\[Do we need to add any notes about using temp.instances here?\]**
+
+
+
 This wizard page enables you to restore a disk image to a [Microsoft Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/).
 
 ![](/assets/restore-azure-vm.png)
@@ -26,13 +30,14 @@ After you selected an account, specify the following options:
 * **VM size**  
   Specifies the size of the target virtual machine. See the following documents for more information:
 
-  * [Sizes for Windows virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes)  
+  * [Sizes for Windows virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes)
+
   * [Sizes for Linux virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes)
 
 * **Network**  
   When you create an Azure virtual machine, you must create a new [_virtual network \(VNet\)_](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/network-overview) or use an existing one.
 
-  > The specifies network must belong to the same location and resource group as the specified _storage _\(see below\). Otherwise, you will not be able to set up a virtual machine.
+  > The specifies network must belong to the same location and resource group as the specified _storage _\(see below\). Otherwise, you will not be able to set up a virtual machine. See the following Knowledge Base article for more information: [Cannot specify all Azure Virtual Machine instance details in the restore wizard](https://kb.cloudberrylab.com/kb1063/).
 
 * **Subnet**  
   Specifies the subnet in the virtual network.
@@ -42,11 +47,9 @@ After you selected an account, specify the following options:
   > See the following document for more information: [Virtual networks and virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/network-overview).
 
 * **Storage**  
-  Specifies the storage on the target virtual machine.
+  Specifies the [disk storage](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds) on the target virtual machine.
 
-  > The specified storage must belong to the same location and resource group as the specified _network _\(see above\). Otherwise, you will not be able to set up a virtual machine.
-  >
-  > See the following document to learn about the available storage options: [About disks storage for Azure Windows VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds).
+  > The specified storage must belong to the same location and resource group as the specified _network _\(see above\). Otherwise, you will not be able to set up a virtual machine. See the following Knowledge Base article for more information: [Cannot specify all Azure Virtual Machine instance details in the restore wizard](https://kb.cloudberrylab.com/kb1063/).
 
 * **Container**  
   Specifies the bucket to which the virtual machine's disks will be placed.
@@ -64,7 +67,7 @@ After you selected an account, specify the following options:
   * [OMS virtual machine extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-oms)
   * [Virtual machine extensions and features for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features)
 
-    > You need to use a _regular storage account _for storing boot diagnostics. The _premium account_ is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
+    > You need to use a _regular storage account \_for storing boot diagnostics. The \_premium account_ is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
 
 * **Operating system**  
   Specifies the operating system of the target virtual machine.
