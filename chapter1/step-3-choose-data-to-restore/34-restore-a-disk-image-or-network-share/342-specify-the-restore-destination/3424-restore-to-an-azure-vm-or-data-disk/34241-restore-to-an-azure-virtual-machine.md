@@ -4,7 +4,7 @@ This wizard page enables you to restore a disk image to a [Microsoft Azure virtu
 
 ![](/assets/restore-azure-vm.png)
 
-Before running this wizard, you need to create a new user and select a subscription, region, resource groups and storage account via the [Microsoft Azure Portal](https://portal.azure.com/).
+Before running this wizard, you need to create a new user and select a subscription, region, resource groups, as well as create a storage account and virtual network via the [Microsoft Azure Portal](https://portal.azure.com/).
 
 > To be able to restore a disk image, you should use a [general-purpose storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options) and not a blob storage, because blob storage accounts support only _block_ and _append blobs_, and not _page blobs_ on on which virtual machines are stored. Page blobs are only available in general-purpose accounts and they do not provide [zone-redundant storage \(ZRS\)](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage).
 >
@@ -18,7 +18,7 @@ After you selected an account, specify the following options:
   Specifies the name of the created virtual machine.
 
 * **Location**  
-  Specifies the virtual machine's [location](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions-and-availability). The selected location determines the available _resource groups_ \(see below\).
+  Specifies the virtual machine's [location](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/regions-and-availability).
 
   > Please be informed that transferring data between different locations takes more time than performing data transfer within a single location.
 
@@ -28,7 +28,7 @@ After you selected an account, specify the following options:
 * **VM size**  
   Specifies the size of the target virtual machine.
 
-  > The **"Disk size"** value displayed for a virtual machine selected on this wizard page indicates a space allocated by Microsoft Azure for storing various temporary information \(such as swap files and memory page data\). This value is not related to the [total size that a restored disk can have](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md) \(which is limited to **4**TB for Azure virtual machines\). See the following documents for more information:
+  > The **"Disk size"** value displayed for a virtual machine selected on this wizard page indicates a space allocated by Microsoft Azure for storing various temporary information \(such as swap files and memory page data\). This value is not related to the [total size that a restored disk can have](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md) \(which is limited to **2** TB for Azure virtual machines\). See the following documents for more information:
 
   * [Sizes for Windows virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes)
 
@@ -59,20 +59,19 @@ After you selected an account, specify the following options:
 
   > We strongly recommend that you never disable boot diagnostics when restoring a disk image on an Azure machine. Otherwise, you will not be able to find out the reason of why the restore process has failed. This is because an Azure virtual machine can only be accessed via the Remote Desktop Protocol \(RDP\), and unlike a VMware workstation, you cannot access an Azure virtual machine unless it has an operating system, network, RDP service and external IP address assigned to it.
   >
-  > You may need to disable boot diagnostics during an emergency recovery when the recovery speed is of highest importance. In most other cases, boot diagnostics provides a machine's screenshot that may become critical for accessing the restored machine. Please keep in mind that Azure launches a virtual machine silently, without any warnings, and you will be charged regardless of whether or not its operating system has been launched and of whether or not you are able to access the restored machine.
+  > Boot diagnostics provides a machine's screenshot that may become critical for accessing the restored machine. Please keep in mind that Azure launches a virtual machine silently, without any warnings, and you will be charged regardless of whether or not its operating system has been launched and of whether or not you are able to access the restored machine.
 
-  To workaround this issue, you may wish to install an Azure Virtual Machine Agent. See the following documents for more information:
+  > You need to use a regular storage account for storing boot diagnostics. The premium account is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
+
+  Azure Virtual Machine Agent is not automatically installed during VM import. You can manually install it if required. See the following documents for more information:
 
   * [Azure Virtual Machine Agent overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/agent-user-guide)
-  * [OMS virtual machine extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-oms)
-  * [Virtual machine extensions and features for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features)
-
-    > You need to use a _regular storage account \_for storing boot diagnostics. The_ premium account\_ is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
+    [OMS virtual machine extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-oms) [Virtual machine extensions and features for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features)
 
 * **Operating system**  
   Specifies the operating system of the target virtual machine.
 
-  > We do not recommend that you choose Linux as an operation system when restoring your image-based backups to an Azure virtual machine. Please use Windows instead to avoid any problems with accessing the created machine after it has been restored.
+  > If you are restoring a Windows virtual machine, we recommend that you do not select Linux.
 
 
 

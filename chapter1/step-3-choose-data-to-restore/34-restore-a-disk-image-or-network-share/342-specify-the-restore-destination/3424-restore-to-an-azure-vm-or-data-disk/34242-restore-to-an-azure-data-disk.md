@@ -6,7 +6,7 @@ This option enables you to restore a disk image to a [Microsoft Azure data disk]
 
 ![](/assets/restore-azure-data-disk-account.png)
 
-Before running this wizard, you need to create a new user and select a subscription, region, resource groups and storage account via the [Microsoft Azure Portal](https://portal.azure.com/).
+Before running this wizard, you need to create a new user and select a subscription, region, resource groups, as well as create a storage account and virtual network via the [Microsoft Azure Portal](https://portal.azure.com/).
 
 > To be able to restore a disk image, you should use a [general-purpose storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options) and not a blob storage, because blob storage accounts support only _block_ and _append blobs_, and not _page blobs_ on on which virtual machines are stored. Page blobs are only available in general-purpose accounts and they do not provide [zone-redundant storage \(ZRS\)](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage).
 >
