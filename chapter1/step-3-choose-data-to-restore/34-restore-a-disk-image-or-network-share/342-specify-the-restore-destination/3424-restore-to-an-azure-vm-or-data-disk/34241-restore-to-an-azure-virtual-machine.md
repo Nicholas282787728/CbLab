@@ -2,8 +2,6 @@
 
 **\[Do we need to add any notes about using temp.instances here?\]**
 
-
-
 This wizard page enables you to restore a disk image to a [Microsoft Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/).
 
 ![](/assets/restore-azure-vm.png)
@@ -11,6 +9,8 @@ This wizard page enables you to restore a disk image to a [Microsoft Azure virtu
 Before running this wizard, you need to create a new user and select a subscription, region, resource groups and storage account via the [Microsoft Azure Portal](https://portal.azure.com/).
 
 > To be able to restore a disk image, you should use a [general-purpose storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options) and not a blob storage, because blob storage accounts support only _block_ and _append blobs_, and not _page blobs_ on on which virtual machines are stored. Page blobs are only available in general-purpose accounts and they do not provide [zone-redundant storage \(ZRS\)](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage).
+>
+> See the following article to learn about managing Azure Active Directory accounts when using CloudBerry products: [Managing Azure Active Directory Accounts](/concepts/managing-azure-active-directory-accounts.md).
 
 Next, you need to select an existing Azure account or create and configure a new one on this wizard page.
 
@@ -67,7 +67,7 @@ After you selected an account, specify the following options:
   * [OMS virtual machine extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-oms)
   * [Virtual machine extensions and features for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features)
 
-    > You need to use a _regular storage account \_for storing boot diagnostics. The \_premium account_ is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
+    > You need to use a _regular storage account _for storing boot diagnostics. The_ premium account_ is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
 
 * **Operating system**  
   Specifies the operating system of the target virtual machine.
