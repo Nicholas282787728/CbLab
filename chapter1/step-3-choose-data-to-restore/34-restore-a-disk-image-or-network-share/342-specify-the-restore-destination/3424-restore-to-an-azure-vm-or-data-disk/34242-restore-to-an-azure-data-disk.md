@@ -1,18 +1,18 @@
 ## 3.4.2.4.2 - Restore to an Azure Data Disk
 
-page blob
-
-disk size - 4 TB max
-
-
-
 This option enables you to restore a disk image to a [Microsoft Azure data disk](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds).
+
+> The target disk size cannot exceed 4 TB.
 
 ![](/assets/restore-azure-data-disk-account.png)
 
-With this option selected, switching to the next wizard page enables you to specify the settings of a target data disk.
+Before running this wizard, you need to create a new user and select a subscription, region, resource groups and storage account via the [Microsoft Azure Portal](https://portal.azure.com/).
 
-First, you need to select an existing Azure account or create and configure a new one.
+> To be able to restore a disk image, you should use a [general-purpose storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options) and not a blob storage, because blob storage accounts support only _block_ and _append blobs_, and not _page blobs_ on on which virtual machines are stored. Page blobs are only available in general-purpose accounts and they do not provide [zone-redundant storage \(ZRS\)](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage).
+>
+> See the following article to learn about managing Azure Active Directory accounts when using CloudBerry Lab products: [Managing Azure Active Directory Accounts](/concepts/managing-azure-active-directory-accounts.md).
+
+Next, you need to select an existing Azure account or create and configure a new one on this wizard page.
 
 After you selected an account, specify the following options:
 
@@ -23,8 +23,11 @@ After you selected an account, specify the following options:
   Specifies the container that holds related _resources_ \(such as virtual machines, storage accounts, web apps, databases, and virtual networks\) for an Azure solution. See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#resource-groups) for more information.
 
 * **Storage**  
-  Specifies the storage on the target data disk.  
-  See the following document to learn about the available storage options: [About disks storage for Azure Windows VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds).
+  Specifies the [disk storage](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds) on the target virtual machine.
+
+  > The specified storage must belong to the same location and resource group as the specified _network _\(see above\). Otherwise, you will not be able to set up a virtual machine. See the following Knowledge Base article for more information: [Cannot specify all Azure Virtual Machine instance details in the restore wizard](https://kb.cloudberrylab.com/kb1063/).
+
+  **\[check this\]**
 
 * **Container**  
   Specifies the bucket to which the data disk will be placed.
