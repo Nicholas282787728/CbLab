@@ -17,7 +17,7 @@ Each Azure subscription is associated with one [Azure Active Directory \(AD\)](h
 
   * **An Azure AD**
 
-  It is important to keep in mind that external Azure AD users can be [invited to an Azure AD from outside](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b). You need to add such users to the Azure AD before they are able to access your Azure Virtual Machine account via CloudBerry products. Otherwise, an [error will occur on an attempt to authorize using such user's credentials](https://kb.cloudberry.online/microsoft-azure/sorry-but-were-having-trouble-signing-you-in.-we-received-a-bad-request.).
+  > It is important to keep in mind that external Azure AD users can be [invited to an Azure AD from outside](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b). Please be informed that invited users may not have access to your Azure Virtual Machine account via CloudBerry products. You need to manually add a new to the Azure AD instead. Otherwise, an [error will occur on an attempt to authorize using such user's credentials](https://kb.cloudberry.online/microsoft-azure/sorry-but-were-having-trouble-signing-you-in.-we-received-a-bad-request.).
 
 
 
