@@ -11,5 +11,7 @@ The following tutorials provide step-by-step instructions on how to set up you M
 
 > See the following article to learn about managing Azure Active Directory accounts when using CloudBerry products: [Managing Azure Active Directory Accounts](/concepts/managing-azure-active-directory-accounts.md).
 
+> Before restoring your backups to Microsoft Azure, please take time to learn about [Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits).
+
 
 
