@@ -2,7 +2,7 @@
 
 Please be informed that [Google Compute Engine](https://cloud.google.com/compute/docs/instances/windows/) currently supports only the following Windows Server versions:
 
-> * Windows Server 2008R2 x64 Service Pack 1, with the [KB2921916 hot fix](https://support.microsoft.com/en-us/help/2921916/the-untrusted-publisher-dialog-box-appears-when-you-install-a-driver-i) installed. Unless this issue is fixed, the network driver will not be properly installed and you will not be able to connect to the virtual machine even after it has been restored.
+> * Windows Server 2008R2 x64 Service Pack 1, with the [KB2921916 hot fix](https://support.microsoft.com/en-us/help/2921916/the-untrusted-publisher-dialog-box-appears-when-you-install-a-driver-i) installed. Without this hot fix, the network driver will not be properly installed and you will not be able to connect to the virtual machine even after it has been restored.
 > * Windows Server 2012R2 x64
 > * Windows Server 2016 x64
 >

@@ -60,7 +60,7 @@ After you selected an account, specify the following options:
   > We strongly recommend that you never disable boot diagnostics when restoring a disk image on an Azure machine. Otherwise, you will not be able to find out the reason of why the restore process has failed. This is because an Azure virtual machine can only be accessed via the Remote Desktop Protocol \(RDP\), and unlike a VMware workstation, you cannot access an Azure virtual machine unless it has an operating system, network, RDP service and external IP address assigned to it.
   >
   > Boot diagnostics provides a machine's screenshot that may become critical for accessing the restored machine. Please keep in mind that Azure launches a virtual machine silently, without any warnings, and you will be charged regardless of whether or not its operating system has been launched and of whether or not you are able to access the restored machine.
-
+  >
   > You need to use a regular storage account for storing boot diagnostics. The premium account is only used to store page blobs \(and virtual machine disks\) and comes at a much higher price as it uses SSD. See [Azure Managed Disks Overview](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview) for more information.
 
   Azure Virtual Machine Agent is not automatically installed during VM import. You can manually install it if required. See the following documents for more information:
