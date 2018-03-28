@@ -2,6 +2,8 @@
 
 This wizard page enables you to restore a disk image to a [Google disk](https://cloud.google.com/compute/docs/disks/).
 
+> The disk size cannot exceed **2** TB.
+
 ![](/assets/restore-image-google-data-disk.png)
 
 First, you need to select an existing, or specify a new Google Cloud account. See the following article to learn how to add a new Google Cloud account to CloudBerry Backup: [Signing up for Google](https://help.cloudberrylab.com/cloudberry-backup/signing-up-for-the-cloud/google-cloud/signing-up-for-google).
@@ -16,7 +18,7 @@ After selecting an account, specify the main settings of a target instance:
 * **Zone**  
   Specifies the zone in which the target disk is located.
 
-  > You can find out the information about quotas defined for the selected zone by clicking the "View quotas" link.  
+  > You can find out the information about quotas defined for the selected zone by clicking the "**View quotas**" link.  
   > ![](/assets/google-zone-quotas-popup.png)  
   > See the following document to learn about zones and their quotas: [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/).
 
@@ -27,8 +29,6 @@ After selecting an account, specify the main settings of a target instance:
   * **pd-standard Standard Persistent Disk**
 
   > See the following document to learn about the difference between these disk types: [Storage Options](https://cloud.google.com/compute/docs/disks/).
-
-
 
 
 

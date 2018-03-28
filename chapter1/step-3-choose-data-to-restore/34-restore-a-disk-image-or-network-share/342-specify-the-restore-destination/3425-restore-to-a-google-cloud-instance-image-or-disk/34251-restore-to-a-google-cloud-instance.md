@@ -21,7 +21,7 @@ After selecting an account, specify the main settings of a target instance:
 * **Zone**  
   Specifies the zone in which the target instance is located.
 
-  > You can find out the information about quotas defined for the selected zone by clicking the "View quotas" link.  
+  > You can find out the information about quotas defined for the selected zone by clicking the "**View quotas**" link.  
   > ![](/assets/google-zone-quotas-popup.png)  
   > See the following document to learn about zones and their quotas: [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones/).
 

@@ -2,7 +2,7 @@
 
 This option enables you to restore a disk image to a [Microsoft Azure data disk](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds).
 
-> The target disk size cannot exceed 4 TB.
+> The target disk size cannot exceed **4** TB.
 
 ![](/assets/restore-azure-data-disk-account.png)
 
