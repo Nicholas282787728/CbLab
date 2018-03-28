@@ -1,10 +1,10 @@
 ## 3.4.4 - Select Partitions to Restore
 
+On this wizard page, you can select which partitions to restore.
+
 \[\*\*If you don't restore to EBS, never exclude recovery partitions from the list.\]
 
 * OS disk must be here\*\*
-
-
 
 images - !!!  \(GPT\) -&gt; try MBR screenshot
 
