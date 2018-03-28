@@ -45,7 +45,7 @@ After selecting an account, specify the main settings of a target instance:
 
   See the following document for more information: [Virtual Private Cloud \(VPC\) Network Overview](https://cloud.google.com/vpc/docs/vpc).
 
-* **IP address**  
+* **IP address** \(optional\)  
   Enables you to assign a custom IP address to the virtual machine within a specific subnet.
 
   > Please ensure that the assigned IP is available in your virtual private cloud network.
