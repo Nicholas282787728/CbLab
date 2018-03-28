@@ -1,49 +1,26 @@
 ## **3.4.5 - Specify the Destination Disk Capacity**
 
-After switching to the next wizard page, you can specify the capacity of the destination disk.
+On this wizard page, you can specify the capacity of the destination disk.
 
 ![](/assets/ami-destination-capacity.png)
 
-The wizard indicates the minimum and maximum capacity value, where the minimum size is the total target size for all selected partitions on the previous step.
+The wizard indicates the minimum and maximum allowed capacity.
 
-* Volume / disk capacity:
-* previous step we calculate the volume size
+The minimum size is the total of the **Target Size** values specified on the [previous wizard page](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md) for all selected partitions, plus approximately **1** GB reserved by CloudBerry Backup for storing temporary information.
 
-volumes are on disks and their sum is limited by the disk size
+For example, the following image illustrates a volume with two selected partitions having the target size set to **1** GB and **148** GB.
 
+![](/assets/restore-image-select-partitions-target-size.png)
 
+As a result, the minimum allowed capacity equals **150** GB \(**1** + **148** + **1**\).
 
-MBR: disk cannot be more than 2 TB
+![](/assets/restore-image-disk-capacity-example.png)
 
-\[cloud services limit this: 2 TB for instance and 4 TB for data disk\]
+When specifying the maximum capacity, please consider the following limitations:
 
-
-
-upper limit on the disk size \(dynamically changes in "Resizing NTFS" doc\)
-
-ask Slava Bukhtiyarov
-
-
-
-Be aware \(when restoring virtual disks and we don't impose upper limits\):
-
-Windows MBR section cannot be more than 2 TB
-
-If you resize your MBR partition on a data disc,  Learn about MBR volume limitations \(and clusters\) in MS docs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* A Master Boot Record \(MBR\) disk size cannot exceed **2** TB.
+* A Windows MBR partition cannot exceed **2** TB.
+* With most cloud services, the maximum disk size is limited by **2 **TB for virtual machine instances and by **4 **TB for data disks.
 
 
 

@@ -2,7 +2,7 @@
 
 This wizard page enables you to restore a disk image to a [Google disk](https://cloud.google.com/compute/docs/disks/).
 
-> The disk size cannot exceed **2** TB.
+> The disk size \(the total of all [partitions](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md)\) cannot exceed **2** TB.
 
 ![](/assets/restore-image-google-data-disk.png)
 
