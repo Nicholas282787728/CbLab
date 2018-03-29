@@ -34,7 +34,7 @@ When choosing to restore data from Amazon Glacier, you can select among the foll
 
   * a cost of $**0.03 **per GB and $**0.01 **per request.
 
-    You can use any of the following expedited data retrieval modes:
+    You can use any of the following Expedited data retrieval modes:
 
     * **On-Demand**
       On-Demand requests are similar to [EC2 On-Demand instances](https://aws.amazon.com/ec2/pricing/) and are available most of the time.

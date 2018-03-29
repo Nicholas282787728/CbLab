@@ -21,7 +21,5 @@ You can also route the email notifications to a custom SMTP server. After specif
 
 ![](/assets/smtp-settings-dialog-window.png)
 
-In addition, you can register the activity related to the restore routine in the [System Event Log](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385780%28v=vs.85%29.aspx).
-
-You can choose whether to log all activity, or add new entries to the log only when a restore routine fails.
+In addition, you can register the activity related to the restore routine in the [System Event Log](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385780%28v=vs.85%29.aspx). You can choose whether to log all activity, or add new entries to the log only when a restore routine fails.
 
