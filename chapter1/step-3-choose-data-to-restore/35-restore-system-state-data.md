@@ -2,11 +2,11 @@
 
 
 
+**This feature is only available for Windows Server.**
+
+
+
 ![](/assets/restore-system-state-choice.png)
-
-
-
-
 
 A system state backup includes essential data related to an operating system. A typical Windows system state backup contains the following data:
 
