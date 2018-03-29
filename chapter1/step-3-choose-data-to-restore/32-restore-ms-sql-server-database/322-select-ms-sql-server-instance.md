@@ -14,9 +14,9 @@ You need to specify the following main settings on this wizard page:
 * **Authentication**  
   Specifies the authentication mode to use for connecting to SQL Server. The following modes are available:
 
-  * Windows Authentication  
+  * **Windows Authentication**
     Uses the Microsoft account credentials of the current user to connect to SQL Server.
-  * SQL Server Authentication  
+  * **SQL Server Authentication**  
     Connects to SQL Server using the specified credentials.  
     **You can save this password in the CloudBerry Backup configuration file by enabling the corresponding option.**
 
