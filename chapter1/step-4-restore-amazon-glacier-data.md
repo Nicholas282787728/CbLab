@@ -1,4 +1,4 @@
-## Step 4 - Restore Amazon Glacier Data
+## Step 4 \(Optional\) - Restore Amazon Glacier Data
 
 When using an Amazon cloud storage, you can choose whether to restore any files located in [Amazon Glacier](https://aws.amazon.com/glacier/) using the corresponding option on this wizard page.
 

@@ -4,7 +4,7 @@ When you need to restore any image-based backups from your storage, such as a di
 
 To restore an entire disk image, specific volumes in it, or a network share, select the image-based backup restore option in the wizard.
 
-![](/assets/restore-disk-image.png)
+![](/assets/restore-image-choice.png)
 
 Then, proceed with the following wizard steps to configure your restore task:
 

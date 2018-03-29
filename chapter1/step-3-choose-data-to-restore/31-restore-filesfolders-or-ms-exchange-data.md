@@ -4,7 +4,7 @@ When restoring your files and/or folders with CloudBerry Backup, you have comple
 
 To restore files and/or folders, select the corresponding option in the wizard.
 
-![](/assets/restore-files-and-folders.png)
+![](/assets/restore-files-choice.png)
 
 Then, proceed with the following wizard steps to configure your restore task:
 

@@ -39,9 +39,9 @@
       * [3.4.4 - Select Partitions to Restore](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md)
       * [3.4.5 - Specify the Destination Disk Capacity](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/36-specify-the-disk-capacity.md)
     * [3.5 - Bare Metal Restore](chapter1/step-3-choose-data-to-restore/bare-metal-restore.md)
-      * 3.5.1 - Select File Versions to Restore
+      * [3.5.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/bare-metal-restore/351-select-file-versions-to-restore.md)
     * [3.6 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
-  * [Step 4 - Restore Amazon Glacier Data](chapter1/step-4-restore-amazon-glacier-data.md)
+  * [Step 4 \(Optional\) - Restore Amazon Glacier Data](chapter1/step-4-restore-amazon-glacier-data.md)
   * [Step 5  - Specify the Encryption Password](chapter1/step-4-specify-the-encryption-password.md)
   * [Step 6 - Schedule Your Restore Plan](chapter1/step-5-schedule-your-restore-plan.md)
   * [Step 7 - Customize Email Notifications and System Log Settings](chapter1/step-6-customize-email-notifications-and-system-log-settings.md)
