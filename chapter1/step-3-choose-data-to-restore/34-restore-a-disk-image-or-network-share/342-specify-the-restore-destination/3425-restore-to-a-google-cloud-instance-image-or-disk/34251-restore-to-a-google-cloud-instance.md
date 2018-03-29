@@ -39,9 +39,9 @@ After selecting an account, specify the main settings of a target instance:
   > See the following document to learn about the difference between these disk types: [Storage Options](https://cloud.google.com/compute/docs/disks/).
 
 * **Subnet**  
-  Enables you to select a default IP address to assign to the virtual machine within a specific subnet.
+  Enables you to select a range of default IP addresses that can be assigned to the virtual machine within a specific subnet.
 
-  > Please ensure that the assigned IP is available in your virtual private cloud network. You can enter a custom IP manually to the "**IP address**" field \(see below\).
+  > Please ensure that the assigned IP range is available in your virtual private cloud network. You can enter a custom IP manually to the "**IP address**" field \(see below\).
 
   See the following document for more information: [Virtual Private Cloud \(VPC\) Network Overview](https://cloud.google.com/vpc/docs/vpc).
 

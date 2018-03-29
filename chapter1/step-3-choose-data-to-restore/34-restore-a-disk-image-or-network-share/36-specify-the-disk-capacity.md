@@ -8,6 +8,8 @@ The wizard indicates the minimum and maximum allowed capacity.
 
 The minimum size is the total of the **Target Size** values specified on the [previous wizard page](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md) for all selected partitions, plus approximately **1** GB reserved by CloudBerry Backup for storing temporary information.
 
+> CloudBerry Backup reserves **1** GB to allocate the GUID Partition Table \(GPT\) / Master Boot Record \(MBR\) partition tables and align the partitions' and disk's boundaries in multiplies of the sector size.
+
 For example, the following image illustrates a volume with two selected partitions having the target size set to **1** GB and **148** GB.
 
 ![](/assets/restore-image-select-partitions-target-size.png)
