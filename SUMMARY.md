@@ -10,6 +10,8 @@
       * [3.1.2 - Select Files to Restore](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/312-select-files-to-restore.md)
       * [3.1.3 - Specify the Restore Destination](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/313-specify-the-restore-destination.md)
     * [3.2 - Restore MS SQL Server Database](chapter1/step-3-choose-data-to-restore/32-restore-ms-sql-server-database.md)
+      * [3.2.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/32-restore-ms-sql-server-database/322-select-file-versions-to-restore.md)
+      * [3.2.2 - Select MS SQL Server Instance](chapter1/step-3-choose-data-to-restore/32-restore-ms-sql-server-database/322-select-ms-sql-server-instance.md)
     * [3.3 - Restore MS SQL Server Backup Files](chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files.md)
     * [3.4 - Restore a Disk Image or Network Share](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
       * [3.4.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
@@ -31,6 +33,7 @@
       * [3.4.4 - Select Partitions to Restore](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md)
       * [3.4.5 - Specify the Destination Disk Capacity](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/36-specify-the-disk-capacity.md)
     * [3.5 - Bare Metal Restore](chapter1/step-3-choose-data-to-restore/bare-metal-restore.md)
+      * 3.5.1 - Select File Versions to Restore
     * [3.6 - Restore System State Data](chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md)
   * [Step 4 - Restore Amazon Glacier Data](chapter1/step-4-restore-amazon-glacier-data.md)
   * [Step 5  - Specify the Encryption Password](chapter1/step-4-specify-the-encryption-password.md)
