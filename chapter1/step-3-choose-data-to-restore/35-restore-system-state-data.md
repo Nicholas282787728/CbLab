@@ -1,10 +1,6 @@
 ## 3.6 - Restore System State Data
 
-
-
 **This feature is only available for Windows Server.**
-
-
 
 ![](/assets/restore-system-state-choice.png)
 
@@ -20,7 +16,7 @@ A system state backup includes essential data related to an operating system. A 
 
 * Configuration of system-dependent Microsoft applications, such as Certificate Services, Active Directory, and Internet Information Services \(IIS\)
 
-A system state backup can protect you from configuration-dependent system faults \(such as BSOD errors\) and file or system registry corruption. Such backups are small in size and are quick to process.
+A system state backup can protect you from configuration-dependent system faults and file or system registry corruption.
 
 > When restoring a system state, you cannot restore only some part of it because system state is always stored as a single object.
 
