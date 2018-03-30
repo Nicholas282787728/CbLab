@@ -61,4 +61,5 @@
   * [Making the File Tree Display Missing Backup Files](concepts/synchronizing-your-repository.md)
   * [Changing the Backup Prefix](concepts/changing-the-backup-prefix.md)
   * [Syncing Your Repository](concepts/syncing-your-repository.md)
+  * [Understanding Repository](concepts/understanding-repository.md)
 
