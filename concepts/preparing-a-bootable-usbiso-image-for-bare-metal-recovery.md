@@ -48,6 +48,16 @@ To specify valid credentials so that the recovery disc is able to access the net
 
 ![](/assets/app-ribbon-tools-network-credentials.png)
 
+### 
+
+### Configuring BIOS Settings
+
+When booting from a recovery disk, you might need to customize some of the BIOS settings to make the recovery disk match the configuration of the current PC.
+
+For example, you might not be able to restore a disk image unless the SATA configuration of the current PC matches that of a computer on which the recovery disk was created.
+
+### 
+
 ### CloudBerry Boot Menu
 
 Booting from a recovery USB device or ISO disk image file opens the **CloudBerry Boot Menu**.
@@ -92,7 +102,11 @@ This invokes the **Options **dialog window where you can switch to the **Reposit
 
 If it exceeds **512 **MB, you can shrink and/or relocate the repository.
 
-**\[see "Moving repository file \(CBBackup.db\) to alternative location" at https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\]**
+**\[see "Moving repository file \(CBBackup.db\) to alternative location" at **[https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\)**\]**
+
+
+
+
 
 
 
@@ -106,6 +120,20 @@ Make sure that the network cable is connected.
 
 ---
 
+Problem:
+
+When restoring a disk image from Amazon S3, the following error occurs: "The clock is not synchronized."
+
+Solution:
+
+On the **CloudBerry Boot Menu**, switch to **Tools** and press **T** to synchronize the local and network clocks.
+
+
+
+---
+
+
+
 Problem:  
 The backup is not found.
 
@@ -114,7 +142,7 @@ Try changing the [backup prefix](/concepts/changing-the-backup-prefix.md).
 
 ---
 
-min ADK 3 GB
+**min ADK 3 GB \(in memory???\)**
 
 minimum setup \(2 options\)
 
