@@ -13,10 +13,11 @@ To create a recovery disk, switch to the **Home** tab of the CloudBerry Backup m
 In addition, you can specify the following options:
 
 * **Add CloudBerry Remote Assistant to the recovery disk**  
-  This installs [CloudBerry Remote Assistant](https://www.cloudberrylab.com/remote-assistant.aspx)** **that will simplify the recovery process and provide you with additional features, such as ...
+  This installs [CloudBerry Remote Assistant](https://www.cloudberrylab.com/remote-assistant.aspx) to enable remote desktop access on the restored machine.
 
 * **Protect the recovery disk with a master password**  
-  We strongly recommend that you specify a password to protect the recovery drive against unauthorized access to any sensitive information that may be stored on it, such as ...
+  We strongly recommend that you specify a password to protect the recovery drive against unauthorized access to any sensitive information that may be stored on it.  
+  **\[Such as network share credentials? Anything else?\]**
 
 ### Installing Additional Drivers
 
@@ -32,9 +33,7 @@ Most importantly, you need to add network drivers compatible with the target mac
 
 ---
 
-**min ADK 3 GB \(in memory???\)**
-
-minimum setup \(2 options\)
+**\[ADK ~ 3 GB min - 4.4 GB max  \(Is this allocated in memory? Should we make a note about the minimum memory requirements?\)\]**
 
 ---
 
@@ -106,12 +105,13 @@ This invokes the **Options **dialog window where you can switch to the **Reposit
 
 If it exceeds **512 **MB, you can shrink and/or relocate the repository.
 
-**\[see "Moving repository file \(CBBackup.db\) to alternative location" at **[https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\)**\]**
+**\[Or this can be done post factum, after the boot using CLI?  
+As in "Moving repository file \(CBBackup.db\) to alternative location" at **[https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\)**\]**
 
 ### Troubleshooting
 
 **Problem:**  
-The boot disk cannot discover the network
+The boot disk cannot discover the network.
 
 **Possible solution \(our favorite one\):**  
 Make sure that the network cable is connected.
@@ -119,7 +119,7 @@ Make sure that the network cable is connected.
 ---
 
 **Problem:**  
-When restoring a disk image from Amazon S3, the following error occurs: "The clock is not synchronized."
+When restoring a disk image from Amazon S3, the following error occurs: _"The clock is not synchronized."_
 
 **Solution:**  
 On the **CloudBerry Boot Menu**, switch to **Tools** and press **T** to synchronize the local and network clocks.
@@ -133,6 +133,20 @@ The disk image is not found.
 Try changing the [backup prefix](/concepts/changing-the-backup-prefix.md) to make it match the name of a computer on which the disk image was created.
 
 ---
+
+**Problem:**  
+When trying to log in to the CloudBerry agent, the following error occurs: _"The remote name could not be resolved: '_[_mspbackups.com_](http://mspbackups.com/)_'"._
+
+**Possible solution:**  
+This error may occur if the IP address configuration is missing, for example when the machine is located in a network without a DHCP server. See the following Knowledge Base article for more information: [KB 1082](https://kb.cloudberrylab.com/kb1082/).
+
+---
+
+**Problem: **  
+On an attempt to restore a disk image using a recovery USB device, the following error occurs: _"A connection to the deployment share could not be made. The following networking device did not have a driver installed."_
+
+**Possible solution:**  
+The reason for this error may be a missing network device driver or some failure during the import of drivers. See the following Knowledge Base article for more information: [KB: 1081](https://kb.cloudberrylab.com/kb1081/).
 
 
 
