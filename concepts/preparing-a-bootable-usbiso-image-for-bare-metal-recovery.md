@@ -62,15 +62,37 @@ The boot disk cannot discover the network
 Possible solution \(our favorite one\):  
 Make sure that the network cable is connected.
 
+---
+
 Problem:  
 The backup is not found.
 
 Possible solution:  
 Try changing the [backup prefix](/concepts/changing-the-backup-prefix.md).
 
+---
 
 
 
+
+
+min ADK 3 GB
+
+minimum setup \(2 options\)
+
+ 
+
+---
+
+
+
+Share account / Local account
+
+
+
+share account:
+
+You need to configure a network share account beforehand, with specifying the appropriate user credentials.
 
 
 
