@@ -8,11 +8,9 @@ Do one of the following to make the Restore Wizard display all files from a back
 
 First, make sure that the prefix specified for the target computer to which you are restoring your files matches that of the source computer storing a backup. This prefix is set to the computer name by default. You can change this prefix in you cloud storage settings. To access these settings, open the CloudBerry Backup application menu and select your storage account.
 
+On the first tab of the invoked dialog window, click the **Advanced Settings **link and specify the necessary prefix.
 
 
-
-
-Click the**Advanced Settings**link on the first tab of the invoked dialog window and specify the necessary prefix.
 
 **\[Contact your system administrator if you are not sure about which prefix to specify.\]**
 
