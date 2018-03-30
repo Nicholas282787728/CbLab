@@ -32,6 +32,12 @@ Upon booting from a recovery disk, you can check the network access by running t
 
 ![](/assets/boot-menu-command-prompt.png)
 
+The recovery disk will include information about all accounts that are currently available in CloudBerry Backup and you will be able to restore a disk image from any of these accounts after booting from the recovery disk. The available accounts are listed in the application's main menu.
+
+
+
+
+
 
 
 ### Configuring a Network Share
@@ -40,19 +46,11 @@ To be able to restore a disk image from a network share you need to configure a 
 
 We do not recommend that you use a Local file system account
 
-
-
-Share account / 
+Share account /
 
 share account:
 
 You need to configure a network share account beforehand, with specifying the appropriate user credentials.
-
-
-
-
-
-
 
 ### CloudBerry Boot Menu
 
@@ -101,12 +99,6 @@ min ADK 3 GB
 minimum setup \(2 options\)
 
 ---
-
-
-
-
-
-
 
 
 
