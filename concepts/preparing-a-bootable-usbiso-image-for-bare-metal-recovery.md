@@ -22,28 +22,32 @@ Next, you can install additional drivers to the recovery disk by specifying a fo
 
 The specified folder must contain the required drivers in the INF file format \(EXE and other file types will be ignored\).
 
-Most importantly, you need to add network drivers compatible with the target machine. Without such drivers, the boot disk will be unable to discover the network environment. A live network connection is required for recovery of a disk image from a network share, as well as for WinPE installation.
+Most importantly, you need to add network drivers compatible with the target machine. Without such drivers, the boot disk will be unable to discover the network environment. A live network connection is required for recovering a disk image from a network share, as well as for WinPE installation.
 
 > Normally, the operation system automatically installs [Windows Preinstallation Environment \(WinPE\)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) in a dedicated [recovery partition](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). If the recovery disk is unable to locate a WinPE image in this partition, it prompts you to download and install an appropriate version of [Windows Assessment and Deployment Kit \(Windows ADK\)](https://www.microsoft.com/en-us/download/details.aspx?id=39982) or [Windows Automated Installation Kit \(AIK\)](https://www.microsoft.com/en-us/download/details.aspx?id=5753) which in turn, will install WinPE as well.
+
+Upon booting from a recovery disk, you can check the network access by running the "**ipconfig**" command in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the next section of this document\).
+
+![](/assets/boot-menu-command-prompt.png)
 
 
 
 ### CloudBerry Boot Menu
 
-Booting from a recovery USB device or ISO disk image file opens the CloudBerry Boot Menu.
+Booting from a recovery USB device or ISO disk image file opens the **CloudBerry Boot Menu**.
 
 ![](/assets/cloudberry-boot-menu.png)
 
-The following options are available in this menu:
+This menu provides the following options:
 
-* **Bare Metal Recovery** 
+* **Bare Metal Recovery**   
   Runs CloudBerry Backup where you can start the recovery process.
 
-* **CloudBerry Remote Assistant**
+* **CloudBerry Remote Assistant**  
   This option is available when [CloudBerry Remote Assistant](https://www.cloudberrylab.com/remote-assistant.aspx) is installed on the recovery disk.  
   It enables you to allow remote control over the current PC or take control over another computer remotely.
 
-* **Tools**
+* **Tools**  
   Provides various tools for configuring the restored machine. These tools include:
 
   * Microsoft Windows Command Prompt
@@ -53,6 +57,12 @@ The following options are available in this menu:
   * Save CloudBerry Backup application logs
 
 ### Troubleshooting
+
+
+
+
+
+
 
 
 
