@@ -66,9 +66,11 @@ This menu provides the following options:
 * **Tools**  
   Provides various tools for configuring the restored machine. These tools include:
 
-  * Microsoft Windows Command Prompt
+  * [Microsoft Windows Command Prompt](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 
-  * Registry Editor
+    > See the [Command Line Interface](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface) for an overview of the native CloudBerry commands.
+
+  * [Registry Editor](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-6.0/aa243964%28v=vs.60%29)
 
   * Save CloudBerry Backup application logs
 
@@ -84,7 +86,13 @@ When you are required to store an increased amount of image-related information,
 
 ![](/assets/app-ribbon-tools-options.png)
 
-This invokes the Options dialog window where you can switch to the Repository tab indicating the current database size.
+This invokes the **Options **dialog window where you can switch to the **Repository **tab indicating the current database size.
+
+![](/assets/backup-options-repository.png)
+
+If it exceeds **512 **MB, you can shrink and/or relocate the repository.
+
+**\[see "Moving repository file \(CBBackup.db\) to alternative location" at https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\]**
 
 
 
