@@ -2,6 +2,8 @@
 
 With CloudBerry Backup, you can create a bootable USB drive or create ISO image file for an emergency "bare metal" recovery in case of a system or hardware crash.
 
+> CloudBerry Backup runs under the Local System account by default. When running it under a user account, this user must be granted local administrator permissions to be able to make a recovery disk.
+
 To create a recovery disk, switch to the **Home** tab of the CloudBerry Backup main menu and click the **Make Bootable USB** button.![](/assets/bare-metal-make-bootable-usb-menu.png)This invokes the **Create Recovery Disk** dialog window where you need to select a USB device or specify the ISO image file name for storing the recovery data.
 
 ![](/assets/bare-metal-make-bootable-usb-dialog.png)
@@ -34,23 +36,19 @@ Upon booting from a recovery disk, you can check the network access by running t
 
 The recovery disk will include information about all accounts that are currently available in CloudBerry Backup and you will be able to restore a disk image from any of these accounts after booting from the recovery disk. The available accounts are listed in the application's main menu.
 
-
-
-
-
-
+![](/assets/backup-app-main-menu-accounts.png)
 
 ### Configuring a Network Share
 
-To be able to restore a disk image from a network share you need to configure a network share account before starting the recovery disk creation process.
+To be able to restore a disk image from a network share, you need to configure a corresponding account before starting the recovery disk creation process.
 
-We do not recommend that you use a Local file system account
+> We do not recommend that you use a Local File system account because the recovery disk might change the drive letter in the path string.
 
-Share account /
+To specify valid credentials so that the recovery disc is able to access the network share, switch to the Tools tab on the application's menu and click **Network Credentials**.
 
-share account:
+![](/assets/app-ribbon-tools-network-credentials.png)
 
-You need to configure a network share account beforehand, with specifying the appropriate user credentials.
+
 
 ### CloudBerry Boot Menu
 
@@ -75,6 +73,12 @@ This menu provides the following options:
   * Registry Editor
 
   * Save CloudBerry Backup application logs
+
+### Changing the Virtual Disk Size
+
+### 
+
+### 
 
 ### Troubleshooting
 
