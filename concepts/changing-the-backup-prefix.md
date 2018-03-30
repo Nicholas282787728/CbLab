@@ -10,15 +10,9 @@ In this case, you need to change the backup prefix as follows.
 
 
 
-
-
 This prefix is set to the computer name by default. You can change this prefix in you cloud storage settings. To access these settings, open the CloudBerry Backup application menu and select your storage account.
 
 On the first tab of the invoked dialog window, click the **Advanced Settings **link and specify the necessary prefix.
-
-
-
-
 
 When changing the backup prefix to a corresponding computer name does not help, this may be because these backups use a custom prefix and you need to ask your system administrator which backup prefix to use.
 
