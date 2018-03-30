@@ -1,6 +1,6 @@
 ## Preparing a Bootable USB/ISO Image for Bare Metal Recovery
 
-With CloudBerry Backup, you can create a bootable flash drive or create ISO image file for an emergency "bare metal" recovery in case of a system or hardware crash.
+With CloudBerry Backup, you can create a bootable USB drive or create ISO image file for an emergency "bare metal" recovery in case of a system or hardware crash.
 
 To create a recovery disk, switch to the **Home** tab of the CloudBerry Backup main menu and click the **Make Bootable USB** button.![](/assets/bare-metal-make-bootable-usb-menu.png)This invokes the **Create Recovery Disk** dialog window where you need to select a USB device or specify the ISO image file name for storing the recovery data.
 
@@ -16,6 +16,8 @@ In addition, you can specify the following options:
 * **Protect the recovery disk with a master password**  
   We strongly recommend that you specify a password to protect the recovery drive against unauthorized access to any sensitive information that may be stored on it, such as ...
 
+### Installing Additional Drivers
+
 Next, you can install additional drivers to the recovery disk by specifying a folder where they are located.
 
 > Use this option to be able to use this disk on a hardware configuration that is different from the current machine.
@@ -26,9 +28,31 @@ Most importantly, you need to add network drivers compatible with the target mac
 
 > Normally, the operation system automatically installs [Windows Preinstallation Environment \(WinPE\)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) in a dedicated [recovery partition](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). If the recovery disk is unable to locate a WinPE image in this partition, it prompts you to download and install an appropriate version of [Windows Assessment and Deployment Kit \(Windows ADK\)](https://www.microsoft.com/en-us/download/details.aspx?id=39982) or [Windows Automated Installation Kit \(AIK\)](https://www.microsoft.com/en-us/download/details.aspx?id=5753) which in turn, will install WinPE as well.
 
-Upon booting from a recovery disk, you can check the network access by running the "**ipconfig**" command in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the next section of this document\).
+Upon booting from a recovery disk, you can check the network access by running the "**ipconfig**" command in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the **CloudBerry Boot Menu** section of this document for more information\).
 
 ![](/assets/boot-menu-command-prompt.png)
+
+
+
+### Configuring a Network Share
+
+To be able to restore a disk image from a network share you need to configure a network share account before starting the recovery disk creation process.
+
+We do not recommend that you use a Local file system account
+
+
+
+Share account / 
+
+share account:
+
+You need to configure a network share account beforehand, with specifying the appropriate user credentials.
+
+
+
+
+
+
 
 ### CloudBerry Boot Menu
 
@@ -72,29 +96,11 @@ Try changing the [backup prefix](/concepts/changing-the-backup-prefix.md).
 
 ---
 
-
-
-
-
 min ADK 3 GB
 
 minimum setup \(2 options\)
 
- 
-
 ---
-
-
-
-Share account / Local account
-
-
-
-share account:
-
-You need to configure a network share account beforehand, with specifying the appropriate user credentials.
-
-
 
 
 
