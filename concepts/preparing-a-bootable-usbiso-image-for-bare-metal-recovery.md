@@ -48,8 +48,6 @@ To specify valid credentials so that the recovery disc is able to access the net
 
 ![](/assets/app-ribbon-tools-network-credentials.png)
 
-
-
 ### CloudBerry Boot Menu
 
 Booting from a recovery USB device or ISO disk image file opens the **CloudBerry Boot Menu**.
@@ -76,9 +74,19 @@ This menu provides the following options:
 
 ### Changing the Virtual Disk Size
 
-### 
+Upon loading, the recovery disk creates a virtual drive in the PC memory \(this drive is assigned the letter **X**\).
 
-### 
+The virtual disk size varies depending on the operating system family and generally, it does not exceed **512 **MB.
+
+This virtual disk is used to contain a repository storing the image-related data. Every time you boot from the restore disk, this repository is created from scratch. 
+
+When you are required to store an increased amount of image-related information, the repository might exceed the virtual disk size, which results in an error and the failure of the recovery process. To avoid this, you can check the required repository size before starting the recovery disk creation process by switching to the **Tools** tab of the application menu and clicking the **Options** button.
+
+
+
+
+
+
 
 ### Troubleshooting
 
