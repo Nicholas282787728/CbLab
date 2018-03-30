@@ -30,6 +30,14 @@ Most importantly, you need to add network drivers compatible with the target mac
 
 > Normally, the operation system automatically installs [Windows Preinstallation Environment \(WinPE\)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) in a dedicated [recovery partition](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). If the recovery disk is unable to locate a WinPE image in this partition, it prompts you to download and install an appropriate version of [Windows Assessment and Deployment Kit \(Windows ADK\)](https://www.microsoft.com/en-us/download/details.aspx?id=39982) or [Windows Automated Installation Kit \(AIK\)](https://www.microsoft.com/en-us/download/details.aspx?id=5753) which in turn, will install WinPE as well.
 
+---
+
+**min ADK 3 GB \(in memory???\)**
+
+minimum setup \(2 options\)
+
+---
+
 Upon booting from a recovery disk, you can check the network access by running the "**ipconfig**" command in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the **CloudBerry Boot Menu** section of this document for more information\).
 
 ![](/assets/boot-menu-command-prompt.png)
@@ -48,15 +56,11 @@ To specify valid credentials so that the recovery disc is able to access the net
 
 ![](/assets/app-ribbon-tools-network-credentials.png)
 
-### 
-
 ### Configuring BIOS Settings
 
 When booting from a recovery disk, you might need to customize some of the BIOS settings to make the recovery disk match the configuration of the current PC.
 
 For example, you might not be able to restore a disk image unless the SATA configuration of the current PC matches that of a computer on which the recovery disk was created.
-
-### 
 
 ### CloudBerry Boot Menu
 
@@ -106,33 +110,27 @@ If it exceeds **512 **MB, you can shrink and/or relocate the repository.
 
 ### Troubleshooting
 
-Problem:  
+**Problem:**  
 The boot disk cannot discover the network
 
-Possible solution \(our favorite one\):  
+**Possible solution \(our favorite one\):**  
 Make sure that the network cable is connected.
 
 ---
 
-Problem:  
+**Problem:**  
 When restoring a disk image from Amazon S3, the following error occurs: "The clock is not synchronized."
 
-Solution:  
+**Solution:**  
 On the **CloudBerry Boot Menu**, switch to **Tools** and press **T** to synchronize the local and network clocks.
 
 ---
 
-Problem:  
-The backup is not found.
+**Problem:**  
+The disk image is not found.
 
-Possible solution:  
-Try changing the [backup prefix](/concepts/changing-the-backup-prefix.md).
-
----
-
-**min ADK 3 GB \(in memory???\)**
-
-minimum setup \(2 options\)
+**Possible solution:**  
+Try changing the [backup prefix](/concepts/changing-the-backup-prefix.md) to make it match the name of a computer on which the disk image was created.
 
 ---
 
