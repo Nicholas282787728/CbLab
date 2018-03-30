@@ -30,8 +30,6 @@ Upon booting from a recovery disk, you can check the network access by running t
 
 ![](/assets/boot-menu-command-prompt.png)
 
-
-
 ### CloudBerry Boot Menu
 
 Booting from a recovery USB device or ISO disk image file opens the **CloudBerry Boot Menu**.
@@ -58,7 +56,23 @@ This menu provides the following options:
 
 ### Troubleshooting
 
-No network access
+Problem:  
+The boot disk cannot discover the network
+
+Possible solution \(our favorite one\):  
+Make sure that the network cable is connected.
+
+Problem:  
+The backup is not found.
+
+Possible solution:  
+Try changing the [backup prefix](/concepts/changing-the-backup-prefix.md).
+
+
+
+
+
+
 
 
 
