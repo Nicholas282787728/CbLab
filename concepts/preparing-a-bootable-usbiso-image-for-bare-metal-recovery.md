@@ -104,12 +104,6 @@ If it exceeds **512 **MB, you can shrink and/or relocate the repository.
 
 **\[see "Moving repository file \(CBBackup.db\) to alternative location" at **[https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\)**\]**
 
-
-
-
-
-
-
 ### Troubleshooting
 
 Problem:  
@@ -120,19 +114,13 @@ Make sure that the network cable is connected.
 
 ---
 
-Problem:
-
+Problem:  
 When restoring a disk image from Amazon S3, the following error occurs: "The clock is not synchronized."
 
-Solution:
-
+Solution:  
 On the **CloudBerry Boot Menu**, switch to **Tools** and press **T** to synchronize the local and network clocks.
 
-
-
 ---
-
-
 
 Problem:  
 The backup is not found.
