@@ -40,7 +40,7 @@ Booting from a recovery USB device or ISO disk image file opens the **CloudBerry
 
 This menu provides the following options:
 
-* **Bare Metal Recovery**   
+* **Bare Metal Recovery**  
   Runs CloudBerry Backup where you can start the recovery process.
 
 * **CloudBerry Remote Assistant**  
@@ -58,9 +58,7 @@ This menu provides the following options:
 
 ### Troubleshooting
 
-
-
-
+No network access
 
 
 
