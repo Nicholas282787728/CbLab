@@ -7,7 +7,10 @@ On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft
 * Specify the plan name
 
 * Restore files and folders
+
 * Select file versions to restore
+
+\(item-level restore\)
 
 **Specify the restore source \(select files to restore\)**
 
@@ -16,8 +19,6 @@ On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft
 Specify the restore source
 
 You can't restore to original location within the wizard, you will need to dismount your current database \(if any\) and replace Exchange files with restored files.
-
-
 
 Encryption
 
@@ -41,7 +42,15 @@ Open the **folder with the files **you have restored and copy these files to the
 
 **Mount **the Exchange database.![](/assets/restore-exchange-mount.png)
 
-
-
 And that's it.
+
+### Troubleshooting
+
+MS Exchange Server 2007: Connection to the remote server failed
+
+https://kb.cloudberrylab.com/kb1050/
+
+
+
+
 
