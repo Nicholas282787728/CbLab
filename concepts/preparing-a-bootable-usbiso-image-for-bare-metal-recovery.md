@@ -10,6 +10,8 @@ To create a recovery disk, switch to the **Home** tab of the CloudBerry Backup m
 
 > When selecting a USB device, please be informed that all information on it will be permanently lost after starting the disk creation process. Please backup all necessary information from the target USB device beforehand.
 
+When you cannot find your USB drive in the CloudBerry Backup wizard, use [Windows Disk Management](https://docs.microsoft.com/en-us/windows-server/storage/disk-management/overview-of-disk-management) or any similar tool to make sure that the target USB device is properly partitioned. For example, if a USB drive was previously used as a Mac or Linux boot device, you need to clean this disk and create any partition on it \(FAT32 by default\). 
+
 In addition, you can specify the following options:
 
 * **Add CloudBerry Remote Assistant to the recovery disk**  
@@ -18,7 +20,7 @@ In addition, you can specify the following options:
 * **Protect the recovery disk with a master password**  
   We strongly recommend that you specify a password to protect the recovery drive against unauthorized access to any sensitive information that may be stored on it, such as password hashes stored for accessing your cloud accounts from the recovery disk.
 
-## Installing Additional Drivers
+### Installing Additional Drivers
 
 Next, you can install additional drivers to the recovery disk by specifying a folder where they are located.
 
@@ -103,7 +105,7 @@ The recovery process fails.
 
 Upon loading, the recovery disk creates a virtual drive in the PC memory \(this drive is assigned the letter **X**\). This virtual disk is used to contain a repository storing the image-related data. Every time you boot from the restore disk, this repository is created from scratch.
 
-The virtual disk size varies depending on the operating system family. When you are required to store an increased amount of image-related information, the repository might exceed the virtual disk size, which results in an error and the failure of the recovery process. 
+The virtual disk size varies depending on the operating system family. When you are required to store an increased amount of image-related information, the repository might exceed the virtual disk size, which results in an error and the failure of the recovery process.
 
 **Possible solution:**
 
@@ -140,6 +142,4 @@ On an attempt to restore a disk image using a recovery USB device, the following
 
 **Possible solution:**  
 The reason for this error may be a missing network device driver or some failure during the import of drivers. See the following Knowledge Base article for more information: [KB: 1081](https://kb.cloudberrylab.com/kb1081/).
-
-
 
