@@ -1,6 +1,6 @@
 ## Restoring MS Exchange Data
 
-\[supported MS Exchange verions? only 2010?\]
+\[supported MS Exchange verions? 2010, 13, 16\]
 
 On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft.com/en-us/exchange/) data from a backup.
 
@@ -12,9 +12,17 @@ On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft
 
 * Select file versions to restore
 
-\(item-level restore\)
+\(item-level restore\): you can recover separate emails, contact data, and other stuff \(2010 only\)
 
-you can recover separate emails, contact data, and other stuff.
+You don't need to restore the full database to access your mailboxes, emails,![](/assets/restore-exchange-item-level-storage.png)
+
+![](/assets/restore-exchange-item-level-storage.png)
+
+To enable the feature, you must make the **new full backup **of the Exchange database.
+
+
+
+
 
 **Specify the restore source \(select files to restore\)**
 
