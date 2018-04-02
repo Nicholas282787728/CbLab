@@ -13,13 +13,12 @@ To create a recovery disk, switch to the **Home** tab of the CloudBerry Backup m
 In addition, you can specify the following options:
 
 * **Add CloudBerry Remote Assistant to the recovery disk**  
-  This installs [CloudBerry Remote Assistant](https://www.cloudberrylab.com/remote-assistant.aspx) to enable remote desktop access on the restored machine.
+  This installs [CloudBerry Remote Assistant](https://www.cloudberrylab.com/remote-assistant.aspx) to enable remote access to the restored machine.
 
 * **Protect the recovery disk with a master password**  
-  We strongly recommend that you specify a password to protect the recovery drive against unauthorized access to any sensitive information that may be stored on it.  
-  **\[Such as network share credentials? Anything else?\]**
+  We strongly recommend that you specify a password to protect the recovery drive against unauthorized access to any sensitive information that may be stored on it, such as password hashes stored for accessing your cloud accounts from the recovery disk.
 
-### Installing Additional Drivers
+## Installing Additional Drivers
 
 Next, you can install additional drivers to the recovery disk by specifying a folder where they are located.
 
@@ -27,37 +26,33 @@ Next, you can install additional drivers to the recovery disk by specifying a fo
 
 The specified folder must contain the required drivers in the INF file format \(EXE and other file types will be ignored\).
 
-Most importantly, you need to add network drivers compatible with the target machine. Without such drivers, the boot disk will be unable to discover the network environment. A live network connection is required for recovering a disk image from a network share, as well as for WinPE installation.
+Most importantly, you need to add network drivers compatible with the target machine. Without such drivers, the boot disk will be unable to discover the network environment. A live network connection is required for recovering a disk image from a cloud or network share.
 
-> Normally, the operation system automatically installs [Windows Preinstallation Environment \(WinPE\)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) in a dedicated [recovery partition](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). If the recovery disk is unable to locate a WinPE image in this partition, it prompts you to download and install an appropriate version of [Windows Assessment and Deployment Kit \(Windows ADK\)](https://www.microsoft.com/en-us/download/details.aspx?id=39982) or [Windows Automated Installation Kit \(AIK\)](https://www.microsoft.com/en-us/download/details.aspx?id=5753) which in turn, will install WinPE as well.
+> Normally, the operation system automatically installs [Windows Preinstallation Environment \(WinPE\)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) in a dedicated [recovery partition](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). If CloudBerry Backup is unable to locate a WinPE image in this partition by the moment of creating a recovery disk, it prompts you to download and install an appropriate version of [Windows Assessment and Deployment Kit \(Windows ADK\)](https://www.microsoft.com/en-us/download/details.aspx?id=39982) or [Windows Automated Installation Kit \(AIK\)](https://www.microsoft.com/en-us/download/details.aspx?id=5753) which in turn, will install WinPE as well.
 
----
 
-**\[ADK ~ 3 GB min - 4.4 GB max  \(Is this allocated in memory? Should we make a note about the minimum memory requirements?\)\]**
 
----
-
-Upon booting from a recovery disk, you can check the network access by running the "**ipconfig**" command in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the **CloudBerry Boot Menu** section of this document for more information\).
-
-![](/assets/boot-menu-command-prompt.png)
+### Configuring a Network Share and Local Accounts
 
 The recovery disk will include information about all accounts that are currently available in CloudBerry Backup and you will be able to restore a disk image from any of these accounts after booting from the recovery disk. The available accounts are listed in the application's main menu.
 
 ![](/assets/backup-app-main-menu-accounts.png)
 
-### Configuring a Network Share
-
-To be able to restore a disk image from a network share, you need to configure a corresponding account before starting the recovery disk creation process.
-
-> We do not recommend that you use a Local File system account because the recovery disk might change the drive letter in the path string.
+To make it easier to restore a disk image from a network share, we recommend that you configure a corresponding network account before starting the recovery disk creation process.
 
 To specify valid credentials so that the recovery disc is able to access the network share, switch to the Tools tab on the application's menu and click **Network Credentials**.
 
 ![](/assets/app-ribbon-tools-network-credentials.png)
 
+When using a Local File system account, please keep in mind that the recovery disk might change the drive letter in the path string. For this reason, we recommend that you configure the local account after booting from the recovery disk.
+
+
+
+
+
 ### Configuring BIOS Settings
 
-When booting from a recovery disk, you might need to customize some of the BIOS settings to make the recovery disk match the configuration of the current PC.
+When booting from a recovery disk, you might need to customize some of the BIOS settings to make sure that the recovery disk configuration matches that of both the current PC and source PC on which the recovery disk was created, so that the recovery disk is able to load its operating system.
 
 For example, you might not be able to restore a disk image unless the SATA configuration of the current PC matches that of a computer on which the recovery disk was created.
 
@@ -115,6 +110,10 @@ The boot disk cannot discover the network.
 
 **Possible solution \(our favorite one\):**  
 Ensure that the network cable connecting the computer to the network is working.
+
+Upon booting from a recovery disk, you can check the network access by running the "**ipconfig**" command in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the **CloudBerry Boot Menu** section of this document for more information\).
+
+![](/assets/boot-menu-command-prompt.png)
 
 ---
 
