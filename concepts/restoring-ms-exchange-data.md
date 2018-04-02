@@ -2,7 +2,7 @@
 
 \[supported MS Exchange verions? 2010, 13, 16\]
 
-show the main toolbar button
+![](/assets/cb-backup-ribbon-home-ms-exchange.png)
 
 On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft.com/en-us/exchange/) data from a backup.
 
@@ -16,9 +16,9 @@ On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft
 
 \(item-level restore\): you can recover separate emails, contact data, and other stuff \(2010 only\)
 
-You don't need to restore the full database to access your mailboxes, emails,![](/assets/restore-exchange-item-level-storage.png)
+You don't need to restore the full database to access your mailboxes, emails,![](/assets/restore-exchange-item-level-storage-2.png)
 
-![](/assets/restore-exchange-item-level-storage.png)
+
 
 To enable the feature, you must make the **new full backup **of the Exchange database.
 
