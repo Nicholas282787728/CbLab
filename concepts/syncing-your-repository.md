@@ -1,44 +1,26 @@
 ## Syncing Your Repository
 
-If some of the databases are missing in the file explorer, this may be because your repository has not yet been synchronized to make the file tree reflect the latest modification made to your storage. In this case, you might need to manually launch the synchronization process by clicking the corresponding link on this wizard page.
+**\[What is the difference between syncing Amazon Glacier and other vendors' repositories?\]**
+
+If some of the files are missing in the file tree displaying the contents of your backup, this may be because your repository has not yet been synchronized to make the file tree reflect the latest modification made to your storage.
+
+> CloudBerry Backup's repository is SQLite database containing information about the backed up data, including the operations that have been performed with the data and additional service information. CloudBerry Backup uses this repository to keep track of the backed up data and ensure that the backup services will not repeatedly upload files that already reside in the cloud. This reduces the number of requests sent to the cloud and lowers your storage bills.
+
+You can manually launch the synchronization process by clicking the corresponding link on this wizard page.
 
 ![](/assets/synchronize-repository-dialog-window.png)
 
 > Please be informed that such synchronization may take up to several hours. This is why we do not recommend you to force synchronization unless this is absolutely necessary.
 >
-> See the following topic to learn how to synchronize data from Amazon Glacier and other cloud storage providers: [Synchronizing Your Repository](/concepts/synchronizing-your-repository.md).
+> Syncing the repository will neither affect the data in the cloud, nor the backup/restore plans.
+
+To sync a repository without using the wizard, click **Options **in your CloudBerry Backup application's menu.
+
+![](/assets/cb-backup-ribbon-tools-options.png)
+
+In the **Options** dialog that is invoked, switch to the **Repository **tab and click **Synchronize Repository**.
+
+![](/assets/cb-backup-options-repository-sync.png)
 
 
-
-[https://www.cloudberrylab.com/blog/why-you-sometimes-cannot-see-your-files-when-restoring/](https://www.cloudberrylab.com/blog/why-you-sometimes-cannot-see-your-files-when-restoring/)
-
-+
-
-[https://www.cloudberrylab.com/blog/how-to-continue-backup-on-another-computer/](https://www.cloudberrylab.com/blog/how-to-continue-backup-on-another-computer/)
-
-+
-
-[https://www.reddit.com/r/cloudberrylab/comments/7p7q8x/synchronize\_repository/](https://www.reddit.com/r/cloudberrylab/comments/7p7q8x/synchronize_repository/)
-
-Please be informed that you cannot instantly retrieve data from long-term storages used to backup infrequently accessed data, such as_Amazon Glacier_. This is why you may need to sync your repository if**Restore Wizard**does not display some of the files in your backup.
-
-Please be informed that the synchronization process is time-consuming, and it may take up to several hours to obtain a list of your files from such a long-term storage.
-
-Do one of the following to sync a repository depending on the storage provider you use.
-
-### Amazon Glacier
-
-**If you connect Restore Only mode then it syncs instantly. You don't need to wait for all files to download and sync try that.**
-
-**Select the same bucket, vault or container**
-
-**When restoring data from an Amazon Glacier account, you need to run the repository sync process manually. To do this, switch to the by going to Tools \| Options \| Repository: click “Synchronize Repository”. It will take about 4-5 hours.**
-
-### Other Storage Providers
-
-To sync with repositories of cloud storages other than Amazon Glacier, select**Options**in your\_CloudBerry Backup\_application's menu and click**Synchronize Repository**.
-
-{image}
-
-Next, select a storage account that you want to sync and click**Synchronize Now**.
 

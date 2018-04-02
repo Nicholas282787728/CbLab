@@ -54,10 +54,9 @@
   * [Granting EC2 Permissions to an Amazon IAM Role](concepts/permissions.md)
   * [Managing Azure Active Directory Accounts](concepts/managing-azure-active-directory-accounts.md)
   * [Enabling Azure Active Directory Users to Access Amazon S3 Data](concepts/enabling-azure-active-directory-users-to-access-amazon-s3-data.md)
-  * [Virtual Machine Operation System Licensing](concepts/virtual-machine-operation-system-licensing.md)
   * [Preparing a Bootable USB/ISO Image for Bare Metal Recovery](concepts/preparing-a-bootable-usbiso-image-for-bare-metal-recovery.md)
   * [Making the File Tree Display Missing Backup Files](concepts/synchronizing-your-repository.md)
   * [Changing the Backup Prefix](concepts/changing-the-backup-prefix.md)
   * [Syncing Your Repository](concepts/syncing-your-repository.md)
-  * [Understanding Repository](concepts/understanding-repository.md)
+  * [Virtual Machine Operation System Licensing](concepts/virtual-machine-operation-system-licensing.md)
 
