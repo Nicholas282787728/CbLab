@@ -14,8 +14,6 @@ The following topics describe the available options:
 
 * [Image Based Backup](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
 
-* [Bare Metal Restore](/chapter1/step-3-choose-data-to-restore/bare-metal-restore.md) _\(a disaster computer recovery from scratch\)_
-
 * [System State](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data.md) _\(including registry information, as well as boot, system and various application configuration files\)_
 
   > This option is only available in Windows Server editions of CloudBerry Backup. Please visit the following page to learn more: [Pricing and Licensing Information](https://www.cloudberrylab.com/managed-backup/pricing.aspx).
