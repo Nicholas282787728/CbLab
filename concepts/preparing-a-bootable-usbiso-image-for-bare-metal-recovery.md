@@ -90,7 +90,7 @@ This menu provides the following options:
 The boot disk cannot discover the network.
 
 **Possible solution \(our favorite one\):**  
-Ensure that the network cable connecting the computer to the network is working.
+Ensure that the network cable connecting the computer to the network is functioning.
 
 Upon booting from a recovery disk, you can check the network access by running the IPConfig tool in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the **CloudBerry Boot Menu** section of this document for more information\).
 
