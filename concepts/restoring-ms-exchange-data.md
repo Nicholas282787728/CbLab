@@ -2,6 +2,8 @@
 
 \[supported MS Exchange verions? 2010, 13, 16\]
 
+show the main toolbar button
+
 On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft.com/en-us/exchange/) data from a backup.
 
 * Select backup storage
@@ -19,10 +21,6 @@ You don't need to restore the full database to access your mailboxes, emails,![]
 ![](/assets/restore-exchange-item-level-storage.png)
 
 To enable the feature, you must make the **new full backup **of the Exchange database.
-
-
-
-
 
 **Specify the restore source \(select files to restore\)**
 
