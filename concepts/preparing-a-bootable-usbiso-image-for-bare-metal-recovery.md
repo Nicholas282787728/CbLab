@@ -30,8 +30,6 @@ Most importantly, you need to add network drivers compatible with the target mac
 
 > Normally, the operation system automatically installs [Windows Preinstallation Environment \(WinPE\)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) in a dedicated [recovery partition](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). If CloudBerry Backup is unable to locate a WinPE image in this partition by the moment of creating a recovery disk, it prompts you to download and install an appropriate version of [Windows Assessment and Deployment Kit \(Windows ADK\)](https://www.microsoft.com/en-us/download/details.aspx?id=39982) or [Windows Automated Installation Kit \(AIK\)](https://www.microsoft.com/en-us/download/details.aspx?id=5753) which in turn, will install WinPE as well.
 
-
-
 ### Configuring a Network Share and Local Accounts
 
 The recovery disk will include information about all accounts that are currently available in CloudBerry Backup and you will be able to restore a disk image from any of these accounts after booting from the recovery disk. The available accounts are listed in the application's main menu.
@@ -44,9 +42,11 @@ To specify valid credentials so that the recovery disc is able to access the net
 
 ![](/assets/app-ribbon-tools-network-credentials.png)
 
-When using a Local File system account, please keep in mind that the recovery disk might change the drive letter in the path string. For this reason, we recommend that you configure the local account after booting from the recovery disk.
+When using a Local File system account, please keep in mind that the recovery disk might change the drive letter in the path string. To configure the local account after booting from the recovery disk, run CloudBerry Backup from the boot disk and click **File \| Edit Accounts**. In the **Registered Accounts** dialog, select your disk storage account and click **Edit**.
 
+![](/assets/boot-disk-backup-edit-accounts.png)
 
+test
 
 
 
