@@ -1,9 +1,9 @@
-## 3.4.4 - Select Partitions to Restore
+## Select Partitions to Restore
 
 On this wizard page, you can select which partitions to restore.
 
 > The restored partitions must include system volumes as they store information required for loading the operating system.
-
+>
 > Do not exclude recovery partitions unless you are restoring an image to an [Elastic Block Store \(EBS\) Volume](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3423-restore-as-an-amazon-ec2-instance-elastic-block-store-volume-or-machine-image/31233-restore-to-elastic-block-store-ebs-volume.md).
 
 ![](/assets/image-based-virtual-select-partitions-2.png)

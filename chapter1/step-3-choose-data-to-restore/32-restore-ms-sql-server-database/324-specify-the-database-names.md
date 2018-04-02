@@ -1,4 +1,4 @@
-## 3.2.4 - Specify the Database Names
+## Specify the Database Names
 
 On this wizard page, you can choose whether to overwrite the existing databases with their restored versions and specify the names for the restored databases.
 

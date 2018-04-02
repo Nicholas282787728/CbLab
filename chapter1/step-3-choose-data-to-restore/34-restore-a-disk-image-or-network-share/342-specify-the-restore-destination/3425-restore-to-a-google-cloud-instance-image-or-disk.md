@@ -1,4 +1,4 @@
-## 3.4.2.5 - Restore to Google Cloud Instance, Image, or Disk
+## Restore to Google Cloud Instance, Image, or Disk
 
 Please be informed that [Google Compute Engine](https://cloud.google.com/compute/docs/instances/windows/) currently supports only the following Windows Server versions:
 

@@ -1,4 +1,4 @@
-## 3.4.2.4.1 - Restore to an Azure Virtual Machine
+## Restore to Azure Virtual Machine
 
 This wizard page enables you to restore a disk image to a [Microsoft Azure virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/).
 

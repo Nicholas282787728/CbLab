@@ -1,4 +1,4 @@
-## 3.4.3 - Specify a Temporary Instance
+## Specify the Temporary Instance
 
 On this wizard page, you can select whether you need to use a temporary instance when restoring an [image-based backup](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md).
 
@@ -59,20 +59,20 @@ After selecting an account, specify the main settings of a target temporary inst
 
     The wizard will automatically create a VM import role when it detects that none of the above configurations are available.
 
-* **AMI                                                
+* **AMI                                                    
   **Enables you to select a target [Amazon Machine Image](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html).
 
 * **EBS volume type**
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)                                        
+  * **General Purpose SSD \(gp2\)                                            
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)                                        
+  * **Provisioned IOPS SSD \(io1\)                                            
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)                                        
+  * **Magnetic \(standard, a previous-generation type\)                                            
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
   > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.

@@ -1,4 +1,4 @@
-## 3.4.2 - Specify the Restore Destination
+## Specify the Restore Destination
 
 On this wizard page, you need to choose to where to restore your data.
 

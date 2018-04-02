@@ -1,4 +1,4 @@
-## 3.4.2.5.3 - Restore to a Google Data Disk
+## Restore to Google Data Disk
 
 This wizard page enables you to restore a disk image to a [Google disk](https://cloud.google.com/compute/docs/disks/).
 

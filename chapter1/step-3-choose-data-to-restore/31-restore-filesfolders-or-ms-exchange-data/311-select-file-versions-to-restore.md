@@ -1,4 +1,4 @@
-## 3.1.1 - Select File Versions to Restore
+## Select a Restore Point
 
 First, you need to select whether to restore specific file versions, restore to a specific point in time, or only restore versions that were modified/backed up during a specific time interval.
 
@@ -48,13 +48,7 @@ Enables you to select which versions of each file to restore. You specify which 
 
 ![](/assets/restore-specific-versions.png)
 
-If some of the files are missing in the file explorer, this may be because your repository has not yet been synchronized to make the file tree reflect the latest modification made to your storage. In this case, you might need to manually launch the synchronization process by clicking the corresponding link on this wizard page.
-
-![](/assets/synchronize-repository-dialog-window.png)
-
-> Please be informed that such synchronization may take up to several hours. This is why we do not recommend you to force synchronization unless this is absolutely necessary.
->
-> See the following topic to learn how to synchronize data from Amazon Glacier and other cloud storage providers: [Synchronizing Your Repository](/concepts/synchronizing-your-repository.md).
+> When restoring a backup that was made on another computer, you may need to [synchronize the repository](/concepts/syncing-your-repository.md) to refresh the file tree.
 
 
 

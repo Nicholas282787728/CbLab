@@ -1,4 +1,4 @@
-## 3.4.2.3 - Restore to an Amazon EC2 Instance, Elastic Block Store Volume, or Machine Image
+## Restore to Amazon EC2 Instance, EBS Volume or AMI
 
 You can restore your disk image to any of the following destinations:
 

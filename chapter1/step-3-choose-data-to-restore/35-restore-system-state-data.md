@@ -1,4 +1,4 @@
-## 3.6 - Restore System State Data
+## Restore System State Data
 
 > This feature is only available for Windows Server editions of CloudBerry Backup.
 

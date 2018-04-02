@@ -1,4 +1,4 @@
-## 3.2.5 - Specify the Database Options
+## Specify the Database Options
 
 On this wizard page, you can specify additional options for the restored database.
 

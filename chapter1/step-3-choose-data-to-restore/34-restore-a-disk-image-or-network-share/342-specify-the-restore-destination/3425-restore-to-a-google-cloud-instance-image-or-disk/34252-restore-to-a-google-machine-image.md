@@ -1,4 +1,4 @@
-## 3.4.2.5.2 - Restore to a Google Machine Image
+## Restore to Google Machine Image
 
 This wizard page enables you to restore a disk image to a [Google operating system image](https://cloud.google.com/compute/docs/images).
 
@@ -17,7 +17,7 @@ After selecting an account, specify the main settings of a target instance:
   Specifies the image family that is used to group images based on their operating systems.
 
   > The specified name should comply with the [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt) naming convention.
-
+  >
   > See the following document for more information: [Image families](https://cloud.google.com/compute/docs/images#image_families).
 
 * **Description** \(optional\)  

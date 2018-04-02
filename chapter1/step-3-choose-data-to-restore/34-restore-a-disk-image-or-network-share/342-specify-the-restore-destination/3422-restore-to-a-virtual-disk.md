@@ -1,4 +1,4 @@
-## 3.4.2.2 - Restore to a Virtual Disk
+## Restore to Virtual Disk
 
 Select this option to restore your backup to a virtual disk.
 
@@ -41,8 +41,4 @@ You can also reorganize the restored partitions by selecting the corresponding o
 After switching to the next wizard page, you can specify the destination folder for your virtual machine file.
 
 ![](/assets/image-based-virtual-select-destination.png)
-
-
-
-
 

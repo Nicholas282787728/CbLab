@@ -1,4 +1,4 @@
-## 3.1.2.3.2 - Restore to Amazon Machine Image \(AMI\)
+## Restore to Amazon Machine Image \(AMI\)
 
 This option enables you to restore your disk image to an [Amazon Machine Image \(AMI\)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) of your choice.
 
@@ -42,13 +42,13 @@ After selecting an account, specify the main settings of a target machine image:
 
   Amazon EBS \(Elastic Block Store\) provides the following volume types, which differ in their performance characteristics and price, so that you can tailor your storage performance and costs to the requirements of your applications. CloudBerry Backup supports the following volume types:
 
-  * **General Purpose SSD \(gp2\)        
+  * **General Purpose SSD \(gp2\)          
     **A general purpose SSD volume that balances price and performance for a wide variety of workloads.
 
-  * **Provisioned IOPS SSD \(io1\)        
+  * **Provisioned IOPS SSD \(io1\)          
     **The highest-performance SSD volume for mission-critical low-latency or high-throughput workloads.
 
-  * **Magnetic \(standard, a previous-generation type\)        
+  * **Magnetic \(standard, a previous-generation type\)          
     **A previous generation HDD. If you need higher performance or performance consistency than previous-generation volumes can provide, we recommend that you consider using _General Purpose SSD \(gp2\)_ or other current volume types.
 
 > See [Amazon EBS Volume Types](https://www.gitbook.com/book/yuriyshutov/restore-wizard-draft/edit#) to learn more.

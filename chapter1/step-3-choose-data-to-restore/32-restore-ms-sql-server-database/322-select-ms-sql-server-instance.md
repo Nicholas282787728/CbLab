@@ -1,4 +1,4 @@
-## 3.2.2 - Select MS SQL Server Instance
+## Select a SQL Server Instance
 
 On this wizard page, you can select a SQL Server instance to which to restore the database.
 

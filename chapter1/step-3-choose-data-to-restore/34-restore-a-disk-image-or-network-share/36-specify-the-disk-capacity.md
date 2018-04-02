@@ -1,4 +1,4 @@
-## **3.4.5 - Specify the Destination Disk Capacity**
+## **Specify the Destination Disk Capacity**
 
 On this wizard page, you can specify the capacity of the destination disk.
 
