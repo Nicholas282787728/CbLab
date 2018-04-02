@@ -13,7 +13,7 @@ To create a recovery disk, switch to the **Home** tab of the CloudBerry Backup m
 In addition, you can specify the following options:
 
 * **Add CloudBerry Remote Assistant to the recovery disk**  
-  This installs [CloudBerry Remote Assistant](https://www.cloudberrylab.com/remote-assistant.aspx) to enable remote access to the restored machine.
+  This installs [CloudBerry Remote Assistant](https://www.cloudberrylab.com/remote-assistant.aspx) to enable remote access to the restore disk.
 
 * **Protect the recovery disk with a master password**  
   We strongly recommend that you specify a password to protect the recovery drive against unauthorized access to any sensitive information that may be stored on it, such as password hashes stored for accessing your cloud accounts from the recovery disk.
@@ -46,9 +46,9 @@ When using a Local File system account, please keep in mind that the recovery di
 
 ![](/assets/boot-disk-backup-edit-accounts.png)
 
-test
+In the **File System Account **dialog, you can check whether the application can access the storage location by clicking the ellipsis button for the **Path **input field.
 
-
+![](/assets/boot-disk-backup-file-system-account-settings.png)
 
 ### Configuring BIOS Settings
 
@@ -74,34 +74,13 @@ This menu provides the following options:
 * **Tools**  
   Provides various tools for configuring the restored machine. These tools include:
 
-  * [Microsoft Windows Command Prompt](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
-
-    > See the [Command Line Interface](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface) for an overview of the native CloudBerry commands.
+  * [Microsoft Windows Command Prompt](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) \(enables you to use [IPConfig](https://msdn.microsoft.com/ES-ES/library/cc940124.aspx), [DiskPart](https://msdn.microsoft.com/en-us/ff794606%28v=winembedded.1001%29) and other tools to configure the target machine using the command-line interface\)
 
   * [Registry Editor](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-6.0/aa243964%28v=vs.60%29)
 
   * Save CloudBerry Backup application logs
 
-### Changing the Virtual Disk Size
-
-Upon loading, the recovery disk creates a virtual drive in the PC memory \(this drive is assigned the letter **X**\).
-
-The virtual disk size varies depending on the operating system family and generally, it does not exceed **512 **MB.
-
-This virtual disk is used to contain a repository storing the image-related data. Every time you boot from the restore disk, this repository is created from scratch.
-
-When you are required to store an increased amount of image-related information, the repository might exceed the virtual disk size, which results in an error and the failure of the recovery process. To avoid this, you can check the required repository size before starting the recovery disk creation process by switching to the **Tools** tab of the application menu and clicking the **Options** button.
-
-![](/assets/app-ribbon-tools-options.png)
-
-This invokes the **Options **dialog window where you can switch to the **Repository **tab indicating the current database size.
-
-![](/assets/backup-options-repository.png)
-
-If it exceeds **512 **MB, you can shrink and/or relocate the repository.
-
-**\[Or this can be done post factum, after the boot using CLI?  
-As in "Moving repository file \(CBBackup.db\) to alternative location" at **[https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface\)**\]**
+### 
 
 ### Troubleshooting
 
@@ -111,9 +90,24 @@ The boot disk cannot discover the network.
 **Possible solution \(our favorite one\):**  
 Ensure that the network cable connecting the computer to the network is working.
 
-Upon booting from a recovery disk, you can check the network access by running the "**ipconfig**" command in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the **CloudBerry Boot Menu** section of this document for more information\).
+Upon booting from a recovery disk, you can check the network access by running the IPConfig tool in the **Command Prompt** that is available in the **Tools** category of the **CloudBerry Boot Menu** \(see the **CloudBerry Boot Menu** section of this document for more information\).
 
 ![](/assets/boot-menu-command-prompt.png)
+
+---
+
+**Problem:**  
+The recovery process fails.
+
+**Description:**
+
+Upon loading, the recovery disk creates a virtual drive in the PC memory \(this drive is assigned the letter **X**\). This virtual disk is used to contain a repository storing the image-related data. Every time you boot from the restore disk, this repository is created from scratch.
+
+The virtual disk size varies depending on the operating system family. When you are required to store an increased amount of image-related information, the repository might exceed the virtual disk size, which results in an error and the failure of the recovery process. 
+
+**Possible solution:**
+
+To avoid this issue, create a new recovery disk using the command-line interface \(CLI\) and increase the repository size by running the "**createrecovery**" command with the "**ss**" parameter. The parameter name stands for "scratch-space" and you can use this parameter to increase the repository size to **256** or **512** MB.![](/assets/cli-cbb-createrecovery-ss.png)See the [Make bootable drive \(createrecovery\)](https://help.cloudberrylab.com/cloudberry-backup/miscellaneous/command-line-interface#make-bootable-drive-%28createrecovery%29)** **to learn more about using the CLI for recovery disk creation.
 
 ---
 
@@ -146,4 +140,6 @@ On an attempt to restore a disk image using a recovery USB device, the following
 
 **Possible solution:**  
 The reason for this error may be a missing network device driver or some failure during the import of drivers. See the following Knowledge Base article for more information: [KB: 1081](https://kb.cloudberrylab.com/kb1081/).
+
+
 
