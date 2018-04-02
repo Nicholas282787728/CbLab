@@ -12,7 +12,7 @@ The following topics describe the available options:
 
 * [MS SQL Server Backup Files](/chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files.md)
 
-* [Disk Image or Network Share](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md) _\(an image-based backup\)_
+* [Image Based Backup](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
 
 * [Bare Metal Restore](/chapter1/step-3-choose-data-to-restore/bare-metal-restore.md) _\(a disaster computer recovery from scratch\)_
 
