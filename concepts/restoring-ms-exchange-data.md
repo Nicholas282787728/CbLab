@@ -1,5 +1,7 @@
 ## Restoring MS Exchange Data
 
+\[supported MS Exchange verions? only 2010?\]
+
 On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft.com/en-us/exchange/) data from a backup.
 
 * Select backup storage
@@ -11,6 +13,8 @@ On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft
 * Select file versions to restore
 
 \(item-level restore\)
+
+you can recover separate emails, contact data, and other stuff.
 
 **Specify the restore source \(select files to restore\)**
 
@@ -48,9 +52,5 @@ And that's it.
 
 MS Exchange Server 2007: Connection to the remote server failed
 
-https://kb.cloudberrylab.com/kb1050/
-
-
-
-
+[https://kb.cloudberrylab.com/kb1050/](https://kb.cloudberrylab.com/kb1050/)
 
