@@ -4,7 +4,7 @@ CloudBerry Backup enables you to restore backup files** **backup for Microsoft S
 
 To restore a Microsoft SQL Server database's backup files, select the corresponding option in the wizard.
 
-![](/assets/restore-sql-db-backup-choice.png)
+![](/assets/restore-select-data-type-03-sql-backups.png)
 
 Then, proceed with the following wizard steps to configure your restore task:
 

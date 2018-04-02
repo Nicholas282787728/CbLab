@@ -4,7 +4,7 @@ CloudBerry Backup enables you to restore Microsoft SQL Server 2000, 2003, 2005, 
 
 To restore a Microsoft SQL Server database, select the corresponding option in the wizard.
 
-![](/assets/restore-sql-db-choice.png)
+![](/assets/restore-select-data-type-03-sql-db.png)
 
 Then, proceed with the following wizard steps to configure your restore task:
 

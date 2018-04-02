@@ -4,15 +4,15 @@ When you need to restore any image-based backups from your storage, such as a di
 
 To restore an entire disk image, specific volumes in it, or a network share, select the image-based backup restore option in the wizard.
 
-![](/assets/restore-image-choice.png)
+![](/assets/restore-select-data-type-03-image.png)
 
 Then, proceed with the following wizard steps to configure your restore task:
 
-* [3.4.1 - Select File Versions to Restore](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
-* [3.4.2 - Specify the Restore Destination](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination.md)
-* [3.4.3 - Specify a Temporary Instance](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/343-specify-a-temporary-instance.md)
-* [3.4.4 - Select Partitions to Restore](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md)
-* [3.4.5 - Specify the Destination Disk Capacity](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/36-specify-the-disk-capacity.md)
+* [Select a Restore Point](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
+* [Specify the Restore Destination](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination.md)
+* [Specify the Temporary Instance](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/343-specify-a-temporary-instance.md)
+* [Select Partitions to Restore](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/344-select-partitions.md)
+* [Specify the Destination Disk Capacity](/chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/36-specify-the-disk-capacity.md)
 
 
 

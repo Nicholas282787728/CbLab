@@ -20,13 +20,13 @@ A system state backup can protect you from configuration-dependent system faults
 
 To restore a system state information, select the corresponding option in the Restore Wizard.
 
-![](/assets/restore-system-state-choice.png)
+![](/assets/restore-select-data-type-03-system-state.png)
 
 Then, proceed with the following wizard steps to configure your restore task:
 
-* [3.6.1 - Select File Versions to Restore](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data/361-select-the-backup-type.md)
-* [3.6.2 - Specify the Restore Source](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data/362-select-an-intermediate-storage.md)
-* [3.6.3 - Specify the Restore Desination](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data/363-check-network-shares.md)
+* [Select a Restore Point](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data/361-select-the-backup-type.md)
+* [Select Files to Restore](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data/362-select-an-intermediate-storage.md)
+* [Specify the Restore Destination](/chapter1/step-3-choose-data-to-restore/35-restore-system-state-data/363-check-network-shares.md)
 
 
 
