@@ -19,7 +19,7 @@
       * [3.3.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files/331-select-file-versions-to-restore.md)
       * [3.3.2 - Specify the Restore Source](chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files/332-specify-the-restore-source.md)
       * [3.3.3 - Specify the Restore Options](chapter1/step-3-choose-data-to-restore/33-restore-ms-sql-server-backup-files/333-specify-the-restore-options.md)
-    * [3.4 - Restore a Disk Image or Network Share](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
+    * [3.4 - Restore Image Based Backup](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share.md)
       * [3.4.1 - Select File Versions to Restore](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/341-select-file-versions-to-restore.md)
       * [3.4.2 - Specify the Restore Destination](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination.md)
         * [3.4.2.1 - Restore to Physical Disk](chapter1/step-3-choose-data-to-restore/34-restore-a-disk-image-or-network-share/342-specify-the-restore-destination/3421-restore-to-a-physical-disk.md)
