@@ -2,8 +2,6 @@
 
 On this wizard page, you can select a SQL Server instance to which to restore the database.
 
-> **The selected instance will be replaced with the restored ?**
-
 ![](/assets/restore-sql-server-instance-2.png)
 
 You need to specify the following main settings on this wizard page:
