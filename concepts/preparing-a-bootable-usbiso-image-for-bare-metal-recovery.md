@@ -114,7 +114,7 @@ As in "Moving repository file \(CBBackup.db\) to alternative location" at **[htt
 The boot disk cannot discover the network.
 
 **Possible solution \(our favorite one\):**  
-Make sure that the network cable is connected.
+Ensure that the network cable connecting the computer to the network is working.
 
 ---
 
@@ -147,6 +147,4 @@ On an attempt to restore a disk image using a recovery USB device, the following
 
 **Possible solution:**  
 The reason for this error may be a missing network device driver or some failure during the import of drivers. See the following Knowledge Base article for more information: [KB: 1081](https://kb.cloudberrylab.com/kb1081/).
-
-
 
