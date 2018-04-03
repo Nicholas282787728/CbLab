@@ -1,4 +1,4 @@
-## Preparing a Bootable USB/ISO Image for Bare Metal Recovery
+## Bare Metal Recovery - Preparing a Bootable USB/ISO Image
 
 With CloudBerry Backup, you can create a bootable USB drive or create ISO image file for an emergency "bare metal" recovery in case of a system or hardware crash.
 

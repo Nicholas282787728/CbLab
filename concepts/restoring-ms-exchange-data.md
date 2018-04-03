@@ -1,4 +1,4 @@
-## Restoring MS Exchange Data
+## Restoring Microsoft Exchange Data
 
 CloudBerry Backup enables you to back up and restore [Microsoft Exchange](http://office.microsoft.com/en-us/exchange/) data.
 
