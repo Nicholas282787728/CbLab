@@ -60,7 +60,8 @@
   * [Virtual Machine Operation System Licensing](concepts/virtual-machine-operation-system-licensing.md)
   * [Microsoft Exchange - Restoring Databases](concepts/restoring-ms-exchange-data.md)
     * [Select a Restore Point](concepts/restoring-ms-exchange-data/select-a-restore-point.md)
-    * [Select Files to Restore](concepts/restoring-ms-exchange-data/select-files-to-restore.md)
+    * [Select Databases to Restore](concepts/restoring-ms-exchange-data/select-files-to-restore.md)
     * [Specify the Restore Destination](concepts/restoring-ms-exchange-data/specify-the-restore-destination.md)
-  * [Microsoft Exchange - Item-Level Restore](concepts/microsoft-exchange-item-level-restore.md)
+  * [Microsoft Exchange - Item Level Restore](concepts/microsoft-exchange-item-level-restore.md)
+  * [Performing a Consistency Check](concepts/performing-a-consistency-check.md)
 

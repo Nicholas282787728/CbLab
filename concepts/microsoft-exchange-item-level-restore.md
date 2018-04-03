@@ -1,22 +1,34 @@
-## Microsoft Exchange - Item-Level Restore
+## Microsoft Exchange - Item Level Restore
 
-Item-level restore is only available for Microsoft Exchange databases that are stored in [full backups](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/).
+When restoring Microsoft Exchange 2010 data, you can restore individual files instead of restoring the complete server database.
+
+> Item-level restore is only available for Microsoft Exchange databases that are stored in [full backups](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/).
+
+To restore individual items from a Microsoft Exchange Server database, switch to the **Backup Storage** tab in your CloudBerry Backup application, select the required database and right-click a corresponding full backup. Select **Item Level Restore** in the context menu that is invoked.
+
+![](/assets/restore-exchange-item-level-storage-2.png)
+
+**\[Describe what's next: https://mspbackups.com/Admin/Help.aspx?c=Contents\help\_exchange\_restore.html\]**
 
 
 
-After restoring the files, ...
+**\[User permissions \(management roles\)...\]**
 
-The next step is going to be outside CloudBerry Backup. Launch the **Exchange Management Console**.
+CloudBerry Backup cannot restore Microsoft Exchange data directly to the database. After restoring the files, you will need to dismount a corresponding Exchange database, manually replace the required files with their restored versions and mount the database back on the server.
 
-Using Exchange Management Console **dismount the database **\(-s\) you would like to restore.
+Launch the **Exchange Management Console** to put the restored items to the Microsoft Exchange database.
+
+First, you need to dismount the corresponding database.
 
 ![](/assets/restore-exchange-console-dismount.png)
 
-**Locate the log files **\(see Log Folder Path\) and the .edb database file \(see Database File Path\).![](/assets/restore-exchange-console-locate-logs.png)**Move them **to another location \(or delete if you no longer need them\).![](/assets/restore-exchange-console-move-logs.png)
+Next, locate the EDB database files and logs that you need to update \(in the "**Database File Path**" and "**Log Folder Path**" columns, respectively\)![](/assets/restore-exchange-console-locate-logs.png)
 
-Open the **folder with the files **you have restored and copy these files to the original folders \("Database File Path" for .edb file and "Log Folder Path" for the logs\).![](/assets/restore-exchange-open-folder.png)
+Move these files to another location or delete them if they are no longer required.![](/assets/restore-exchange-console-move-logs.png)
 
-**Mount **the Exchange database.![](/assets/restore-exchange-mount.png)
+Open the folder containing the restored files and manually copy them to the destination folders \(corresponding to the "**Database File Path**" and "**Log Folder Path**" settings of the Microsoft Exchange Server\).![](/assets/restore-exchange-open-folder.png)
 
-And that's it.
+Finally, mount the database back on the Microsoft Exchange server to apply the changes.![](/assets/restore-exchange-mount.png)
+
+
 
