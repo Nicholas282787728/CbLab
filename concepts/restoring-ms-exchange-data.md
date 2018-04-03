@@ -1,6 +1,8 @@
 ## Restoring MS Exchange Data
 
-CloudBerry Backup enables you to back up and restore Microsoft Exchange data. It supports Microsoft Exchange 2010, 2013 and 2016.
+CloudBerry Backup enables you to back up and restore [Microsoft Exchange](http://office.microsoft.com/en-us/exchange/) data.
+
+> Microsoft Exchange 2010, 2013 and 2016 are supported.
 
 To restore Microsoft Exchange data from a backup, switch to the **Home** tab of the CloudBerry Backup main menu and click **Restore**.
 
@@ -10,23 +12,13 @@ Because Microsoft Exchange databases are composed of files \(such as EDB files a
 
 ![](/assets/restore-select-data-type-03-files-folders.png)
 
+Item-level restore is available for Microsoft Exchange 2010, and instead of restoring an entire Exchange database you can restore individual files, such as specific emails and contact data.
 
+> Item-level restore is only available for Microsoft Exchange databases that are stored in [full backups](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/).
 
-On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft.com/en-us/exchange/) data from a backup.
+To restore individual files from an Exchange Server database, switch to the **Backup Storage** tab in your CloudBerry Backup application and locate the Microsoft Exchange database storage. Right-click the required backup and select **Item Level Restore**.![](/assets/restore-exchange-item-level-storage-2.png)
 
-* Select backup storage
-
-* Specify the plan name
-
-* Restore files and folders
-
-* Select file versions to restore
-
-\(item-level restore\): you can recover separate emails, contact data, and other stuff \(2010 only\)
-
-You don't need to restore the full database to access your mailboxes, emails,![](/assets/restore-exchange-item-level-storage-2.png)
-
-To enable the feature, you must make the **new full backup **of the Exchange database.
+You can select the files to restore on the [next wizard page](/concepts/restoring-ms-exchange-data/select-a-restore-point.md).
 
 **Specify the restore source \(select files to restore\)**
 
