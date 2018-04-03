@@ -1,6 +1,6 @@
 ## Restore System State Data
 
-> This feature is only available for Windows Server editions of CloudBerry Backup.
+> This feature is only available for [Windows Server](https://www.cloudberrylab.com/backup/editions.aspx) editions of CloudBerry Backup.
 
 A system state backup includes essential data related to an operating system. A typical Windows system state backup contains the following data:
 
