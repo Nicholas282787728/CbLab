@@ -2,7 +2,7 @@
 
 CloudBerry Backup enables you to back up and restore [Microsoft Exchange](http://office.microsoft.com/en-us/exchange/) data.
 
-> Microsoft Exchange 2010, 2013 and 2016 are supported.
+> Microsoft Exchange versions 2010, 2013 and 2016 are supported.
 
 To restore Microsoft Exchange data from a backup, switch to the **Home** tab of the CloudBerry Backup main menu and click **Restore**.
 
@@ -15,8 +15,6 @@ Because Microsoft Exchange databases are composed of files \(such as EDB files a
 Item-level restore is available for Microsoft Exchange 2010, and instead of restoring an entire Exchange database you can restore individual files, such as specific emails and contact data.
 
 > Item-level restore is only available for Microsoft Exchange databases that are stored in [full backups](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/).
-
-
 
 Encryption
 
