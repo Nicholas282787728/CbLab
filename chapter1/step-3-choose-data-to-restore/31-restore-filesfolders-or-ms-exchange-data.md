@@ -1,6 +1,8 @@
 ## Restore Files/Folders
 
-When restoring your files and/or folders with CloudBerry Backup, you have complete control over which file versions to restore. This tutorial describes how to use the Restore Wizard to set up a restore configuration for files/folders, as well as Microsoft Exchange Server data.
+When restoring your files and/or folders with CloudBerry Backup, you have complete control over which file versions to restore. This tutorial describes how to use the Restore Wizard to set up a restore configuration for files/folders.
+
+> See [Restoring MS Exchange Data](/concepts/restoring-ms-exchange-data.md) to learn how to restore Microsoft Exchange Server data.
 
 To restore files and/or folders, select the corresponding option in the wizard.
 

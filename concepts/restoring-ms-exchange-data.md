@@ -1,8 +1,16 @@
 ## Restoring MS Exchange Data
 
-\[supported MS Exchange verions? 2010, 13, 16\]
+CloudBerry Backup enables you to back up and restore Microsoft Exchange data. It supports Microsoft Exchange 2010, 2013 and 2016.
 
-![](/assets/cb-backup-ribbon-home-ms-exchange.png)
+To restore Microsoft Exchange data from a backup, switch to the **Home** tab of the CloudBerry Backup main menu and click **Restore**.
+
+![](/assets/restore-button.png)
+
+Because Microsoft Exchange databases are composed of files \(such as EDB files and transaction logs\), you need to select "**Restore files and folders**" on the corresponding Restore Wizard page.
+
+![](/assets/restore-select-data-type-03-files-folders.png)
+
+
 
 On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft.com/en-us/exchange/) data from a backup.
 
@@ -17,8 +25,6 @@ On this wizard page, you can restore your [Microsoft Exchange](/office.microsoft
 \(item-level restore\): you can recover separate emails, contact data, and other stuff \(2010 only\)
 
 You don't need to restore the full database to access your mailboxes, emails,![](/assets/restore-exchange-item-level-storage-2.png)
-
-
 
 To enable the feature, you must make the **new full backup **of the Exchange database.
 
