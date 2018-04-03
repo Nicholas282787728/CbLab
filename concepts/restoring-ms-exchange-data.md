@@ -8,7 +8,7 @@ To restore Microsoft Exchange data from a backup, switch to the **Home** tab of 
 
 ![](/assets/restore-button.png)
 
-Because Microsoft Exchange databases are composed of files \(such as EDB files and transaction logs\), you need to select "**Restore files and folders**" on the corresponding Restore Wizard page.
+Because Microsoft Exchange databases are composed of files \(such as EDB files and transaction logs\), you need to select the "**Restore files and folders**" option on the corresponding Restore Wizard page.
 
 ![](/assets/restore-select-data-type-03-files-folders.png)
 
@@ -16,23 +16,13 @@ Item-level restore is available for Microsoft Exchange 2010, and instead of rest
 
 > Item-level restore is only available for Microsoft Exchange databases that are stored in [full backups](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/).
 
-To restore individual files from an Exchange Server database, switch to the **Backup Storage** tab in your CloudBerry Backup application and locate the Microsoft Exchange database storage. Right-click the required backup and select **Item Level Restore**.![](/assets/restore-exchange-item-level-storage-2.png)
 
-You can select the files to restore on the [next wizard page](/concepts/restoring-ms-exchange-data/select-a-restore-point.md).
-
-**Specify the restore source \(select files to restore\)**
-
-![](/assets/ms-exchange-restore-source.png)
-
-Specify the restore source
-
-You can't restore to original location within the wizard, you will need to dismount your current database \(if any\) and replace Exchange files with restored files.
 
 Encryption
 
 Notification
 
-**Check Network Shares**
+\(Check Network Shares\)
 
 ---
 

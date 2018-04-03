@@ -52,8 +52,8 @@
   * [Resizing NTFS Partitions](concepts/restoring-ntfs-partitions.md)
   * [Restoring MS Exchange Data](concepts/restoring-ms-exchange-data.md)
     * [Select a Restore Point](concepts/restoring-ms-exchange-data/select-a-restore-point.md)
-    * Select Files to Restore
-    * Specify the Restore Destination
+    * [Select Files to Restore](concepts/restoring-ms-exchange-data/select-files-to-restore.md)
+    * [Specify the Restore Destination](concepts/restoring-ms-exchange-data/specify-the-restore-destination.md)
   * [Granting EC2 Permissions to an Amazon IAM Role](concepts/permissions.md)
   * [Managing Azure Active Directory Accounts](concepts/managing-azure-active-directory-accounts.md)
   * [Enabling Azure Active Directory Users to Access Amazon S3 Data](concepts/enabling-azure-active-directory-users-to-access-amazon-s3-data.md)
