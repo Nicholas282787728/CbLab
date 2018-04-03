@@ -8,5 +8,5 @@ On this wizard page, you need to select where to restore the selected files.
 
 **\[Add a template.\]**
 
-**\[Add a link to item-level restore?\]**
+**\[Add a link to item-level restore - how to mount/dismount\]**
 
