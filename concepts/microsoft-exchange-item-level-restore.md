@@ -6,15 +6,11 @@ To restore individual items from a Microsoft Exchange Server database, switch to
 
 ![](/assets/restore-exchange-item-level-storage-2.png)
 
-This invokes a dialog prompting you whether to apply logs to the opened Exchange database. 
-
-
+This invokes a dialog prompting you whether to apply logs to the opened Exchange database.
 
 ![](/assets/restore-exchange-item-level-logs-dialog.png)
 
 After CloudBerry Backup has processed the backup data, the **Echange Item Level Restore** window is invoked where you can explore the Microsoft Exchange database and locate the required items.
-
-
 
 
 
