@@ -7,7 +7,7 @@ On this wizard page, you can specify additional options for the restored databas
 The following options are available on this wizard page:
 
 * **Data file folder**  
-  Specifies the location for MDF files containing database schema and data information.
+  Specifies the location for MDF files.
 
 * **Log file folder**  
   Specifies the location for LDF files containing logs.
