@@ -14,13 +14,9 @@ Because Microsoft Exchange databases are composed of files \(such as EDB files a
 
 > Item-level restore is available for Microsoft Exchange 2010, and instead of restoring an entire Exchange database you can restore individual files, such as specific emails and contact data. See [Item-Level Restore](/concepts/microsoft-exchange-item-level-restore.md) for more information.
 
-
-
-Encryption
-
-Notification
-
-\(Check Network Shares\)
+* Encryption
+* Notification
+* \(Check Network Shares\)
 
 ---
 
