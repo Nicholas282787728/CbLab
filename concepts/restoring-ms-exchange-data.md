@@ -1,4 +1,4 @@
-## Microsoft Exchange - Restoring Databases
+## Microsoft Exchange - Restoring Files/Databases
 
 CloudBerry Backup enables you to back up and restore [Microsoft Exchange](http://office.microsoft.com/en-us/exchange/) data.
 
@@ -12,9 +12,7 @@ Because Microsoft Exchange databases are composed of files \(such as EDB files a
 
 ![](/assets/restore-select-data-type-03-files-folders.png)
 
-> With Microsoft Exchange 2010, CloudBerry Backup enables you to access individual items in an Exchange Server database so that you can locate and view specific emails, contact data and other information in your backups. See [Item-Level Restore](/concepts/microsoft-exchange-item-level-restore.md) for more information.
-
-
+> With Microsoft Exchange 2010, CloudBerry Backup enables you to access individual items in an Exchange Server database so that you can view and restore specific emails, contact data and other information in your backups. See [Item-Level Restore](/concepts/microsoft-exchange-item-level-restore.md) for more information.
 
 
 

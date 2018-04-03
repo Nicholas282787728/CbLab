@@ -1,6 +1,4 @@
-## Microsoft Exchange - Item Level Restore
-
-With Microsoft Exchange 2010, CloudBerry Backup enables you to access individual items in an Exchange Server database so that you can view and restore specific emails, contact data and other information in your backups.
+## Access and Restore Individual Items
 
 To restore individual items from a Microsoft Exchange Server database, switch to the **Backup Storage** tab in your CloudBerry Backup application, select the required database and right-click a corresponding full backup. Select **Item Level Restore** in the context menu that is invoked.
 
@@ -19,4 +17,6 @@ After CloudBerry Backup has processed the backup data, the **Exchange Item Level
 Next, you need to specify the Exchange server, user email and credentials, as well as choose a folder to which to restore the selected item.
 
 ![](/assets/restore-exchange-item-level-email-restore-dialog.png)
+
+
 
