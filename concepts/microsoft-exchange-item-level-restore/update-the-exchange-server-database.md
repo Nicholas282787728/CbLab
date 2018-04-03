@@ -1,6 +1,6 @@
 ## Update the Exchange Server Database
 
-CloudBerry Backup cannot restore Microsoft Exchange files directly to the Exchange Server database. After restoring the files, you will need to dismount a corresponding Exchange database, manually replace the required files with their restored versions and mount the database back on the server.
+CloudBerry Backup cannot restore Microsoft Exchange files directly to the Exchange Server database. After restoring the database files, you need to dismount a corresponding Exchange database, manually replace the required files with their restored versions and mount the database back on the server.
 
 > A user must be granted appropriate permissions to be able to access and modify a Microsoft Exchange database.
 
