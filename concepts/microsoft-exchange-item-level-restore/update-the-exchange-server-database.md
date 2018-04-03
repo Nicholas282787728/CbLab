@@ -8,13 +8,15 @@ Launch the [Exchange Management Console](https://msdn.microsoft.com/en-us/librar
 
 First, you need to dismount the required database.![](/assets/restore-exchange-dismount.png)Right-click the database once again and select **Move Database Path** in the context menu that is invoked.
 
-Specify new locations for the EDB database files and logs and click **Move**.
+Copy the locations for the database file and its logs.
 
-that you need to update \(under the "**Database File Path**" and "**Log Folder Path**" columns, respectively\)![](/assets/restore-exchange-console-locate-logs.png)
+![](/assets/restore-exchange-database-path.png)
 
-Move these files to another location or delete them if they are no longer required.![](/assets/restore-exchange-console-move-logs.png)
+Locate this files on the computer and relocate them, or delete if they are no longer required.
 
-Open the folder containing the restored files and manually copy them to the destination folders \(corresponding to the "**Database File Path**" and "**Log Folder Path**" settings of the Microsoft Exchange Server\).![](/assets/restore-exchange-open-folder.png)
+Open the folder containing the restored files and manually copy them to the destination folders \(corresponding to the "**Database File Path**" and "**Log Folder Path**" settings of the Microsoft Exchange Server\).
 
-Finally, mount the database back on the Microsoft Exchange server to apply the changes.![](/assets/restore-exchange-mount.png)
+Mount the database back on the Microsoft Exchange server to apply the changes.
+
+![](/assets/restore-exchange-mount-2.png)
 
