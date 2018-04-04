@@ -2,6 +2,8 @@
 
 This article describes how to make CloudBerry Backup execute custom scripts before and/or after running a backup task and chain multiple backup tasks for their sequential execution.
 
+![](/assets/backup-wizard-pre-post-actions-chain.png)
+
 ### Executing Custom Scripts
 
 You can execute custom scripts before or after running the current backup task by enabling the following options in the Backup Wizard:
