@@ -1,4 +1,4 @@
-### Chaining Your Backups and Using Pre- And Post Actions
+## Chaining Your Backups and Using Pre- And Post Actions
 
 This article describes how to make CloudBerry Backup execute custom scripts before and/or after running a backup task and chain multiple backup tasks for their sequential execution.
 
@@ -18,11 +18,11 @@ You can execute custom scripts before or after running the current backup task b
 
 Your script can be stored in an EXE, COM, BAT, CMD, or PIF file.
 
-Unless you specified an absolute path to the script file, it is searched for in the "C:\Windows\System32" directory.
+Unless you specified an absolute path to the script file, it is searched for in the "**C:\Windows\System32**" directory.
 
-When you need to launch an EXE file, please make sure that it can be properly executed in the CloudBerry Backup application's context. In particular, CloudBerry Backup will only be able to execute EXE files that do not provide graphical user interface and are closed after their execution.
+When you need to launch an EXE file, please make sure that it can be properly executed in the CloudBerry Backup application's context. In particular, CloudBerry Backup will only be able to execute EXE files that do not provide graphical user interface and are closed upon their execution.
 
-For example, CloudBerry Backup will not be able to execute following script...
+For example, CloudBerry Backup will not be able to execute the following script...
 
 ```
 cmd.exe /F:ON
@@ -34,17 +34,13 @@ cmd.exe /F:ON
 cmd.exe /F:ON /C
 ```
 
+The same applies to applications executed by PowerShell scripts:
 
-
-You can specify powershell scripts
-
-
+```
+PowerShell.exe Start-Process cmd.exe exit
+```
 
 We recommend that you perform a test run for the created backup plan to ensure that CloudBerry Backup can properly execute the specified scripts.
-
-
-
-
 
 ### Chaining Your Backups
 
@@ -58,8 +54,4 @@ After enabling the "**Backup chain**" option, you can select a plan to execute a
 ---
 
 
-
-For instance, you can run a script that turns off the computer when the backup plan completes executing.
-
-Alternatively, you can run a script that disables all incoming connections during the plan execution.
 
