@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Backup Wizard](concepts/backup-wizard.md)
   * [Back Up Files/Folders](concepts/backup-wizard/backup-filesfolders.md)
+    * [Welcome](concepts/backup-wizard/backup-filesfolders/welcome.md)
   * [Image Based Backup](concepts/backup-wizard/image-based-backup.md)
   * Back Up System State
   * Back Up MS SQL Server Data
