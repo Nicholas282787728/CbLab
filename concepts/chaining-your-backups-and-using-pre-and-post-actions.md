@@ -51,7 +51,5 @@ After enabling the "**Backup chain**" option, you can select a plan to execute a
 * Execute the specified plan only after successfully completing the current task
 * Execute the specified plan regardless of the current task's execution result
 
----
-
 
 
