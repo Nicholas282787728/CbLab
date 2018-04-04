@@ -1,6 +1,8 @@
 ### Chaining Your Backups and Using Pre- And Post Actions
 
-You can make the Backup Wizard automatically execute another backup or restore plan after finishing the current backup task.
+You can make the Backup Wizard automatically trigger the execution of another backup or restore plan after finishing the current backup task.
+
+After enabling the "Backup chain" option, you can select a plan to execute and choose among the following two options:
 
 
 
