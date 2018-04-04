@@ -1,6 +1,12 @@
 # Summary
 
 * [Introduction](README.md)
+* [Backup Wizard](concepts/backup-wizard.md)
+  * [Back Up Files/Folders](concepts/backup-wizard/backup-filesfolders.md)
+  * [Image Based Backup](concepts/backup-wizard/image-based-backup.md)
+  * Back Up System State
+  * Back Up MS SQL Server Data
+  * Back Up MS Exchange Server Data
 * [Restore Wizard](chapter1.md)
   * [Restore Files/Folders](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data.md)
     * [Select a Restore Point](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/311-select-file-versions-to-restore.md)
@@ -64,6 +70,6 @@
     * [Specify the Restore Destination](concepts/restoring-ms-exchange-data/specify-the-restore-destination.md)
     * [Update the Exchange Server Database](concepts/microsoft-exchange-item-level-restore/update-the-exchange-server-database.md)
   * [Microsoft Exchange - Item Level Restore](concepts/microsoft-exchange-item-level-restore.md)
-  * [Performing a Consistency Check](concepts/performing-a-consistency-check.md)
   * [Chaining Your Backups and Using Pre- And Post Actions](concepts/chaining-your-backups-and-using-pre-and-post-actions.md)
+  * [Performing a Consistency Check](concepts/performing-a-consistency-check.md)
 
