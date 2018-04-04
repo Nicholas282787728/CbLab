@@ -57,7 +57,7 @@
   * [Making the File Tree Display Missing Backup Files](concepts/synchronizing-your-repository.md)
   * [Changing the Backup Prefix](concepts/changing-the-backup-prefix.md)
   * [Syncing Your Repository](concepts/syncing-your-repository.md)
-  * [Operation System Licensing for Virtual Machines](concepts/virtual-machine-operation-system-licensing.md)
+  * [Operation System Licensing for Restored Virtual Machines](concepts/virtual-machine-operation-system-licensing.md)
   * [Microsoft Exchange - Restoring Files/Databases](concepts/restoring-ms-exchange-data.md)
     * [Select a Restore Point](concepts/restoring-ms-exchange-data/select-a-restore-point.md)
     * [Select Files to Restore](concepts/restoring-ms-exchange-data/select-files-to-restore.md)
