@@ -1,7 +1,5 @@
 ## Operation System Licensing for Virtual Machines
 
-
-
 When restoring a virtual machine image to Microsoft Azure, Amazon EC2 or Google Compute Engine, CloudBerry Backup passes the information about an operating system over to these service providers.
 
 > Please be informed that the hourly rates for using imported machines include the fees that these cloud service providers impose for using Windows and Linux machines.
@@ -11,8 +9,6 @@ See the following documents for more information:
 * [Google Compute Engine Pricing](https://cloud.google.com/compute/pricing#premiumimages)
 * [Google Cloud - Importing Virtual Disks](https://cloud.google.com/compute/docs/images/importing-virtual-disks#support_for_bring_your_own_license_byol)
 * [Microsoft Azure - Virtual Machines licensing FAQ](https://azure.microsoft.com/en-us/pricing/licensing-faq/)
-
-
 
 ### Enabling BYOL for AWS Import
 
