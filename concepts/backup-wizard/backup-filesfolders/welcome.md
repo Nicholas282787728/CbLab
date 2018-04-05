@@ -38,27 +38,73 @@ For this reason, when you only need to compress and/or encrypt your backup in a 
 
 ### Enabling Ransomware Protection
 
-The new feature is designed to protect a customer's existing, good backups, from being overwritten by encrypted ones because of a ransomware attack.
+Use this feature to enable additional protection against ransomware attacks by making CloudBerry Backup detect suspicious encryption activity over files in your backup.
 
-CloudBerry Backup now detects encryption changes in files and prevents existing backups from being overwritten until an administrator confirms if there is an issue.
+With this feature enabled, CloudBerry Backup performs a [full initial backup](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/) and uses heuristics to find out whether the byte structure of each file has changed in subsequent backups because of encryption.
 
-1.CloudBerry performs the initial backup and efficiently analyzes the bit structure of each file to determine if the file is encrypted.
+If your files were already encrypted during the first processing of your backup, CloudBerry Backup will still be able to detect any changes in the encryption applied by subsequent backups.
 
-1. During subsequent backups, we compare the original byte structure to the current byte structure. This allows us to identify any newly encrypted files. The backup plan completes normally, however, we prevent existing backups from being deleted regardless of retention policies. This way, existing good backups are protected and are available for restore. 
+> Ransomware protection only applies to locally stored backups and CloudBerry Backup will not analyze files that are already stored in the cloud.
 
-> Ransomware protection is currently supported only for File-Level Backup.
+**\[is the above correct?\]**
 
-Once the plan is saved, you'll see a "lock" icon for any plan with ransomware protection enabled.
+On detecting suspicious encryption applied to your files, CloudBerry Backup prevents deletion of existing backups regardless of the current retention policy settings to ensure that at least one undamaged version of your backup is still available, and prompts you about which action to take next.
+
+Please be informed that enabling ransomware protection will increase your backup size because of the need to keep additional file versions until the backup administrator confirms their deletion.
+
+
+
+
+
+Notes:
+
+Ransomware protection is currently supported only for file backups. 
+
+
+
+This feature is most effective for preventing you from ransomware attacks when used as part of a broader protection strategy that includes appropriate lifecycle and retention policies. Please refer to the following blog post online to learn how to protect your backups: [4 Ways to Protect Against Ransomware with Backups](https://www.cloudberrylab.com/blog/how-ransomware-works/).
+
+
+
+With the ransomware detection enabled, you can only choose the [Advanced backup mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md) further in this wizard.
+
+**\[why?\]**
+
+
+
+After saving your backup plan, it displays a "lock" icon on its title, indicating that ransomware protection is enabled for this backup plan.
+
+
+
+
 
 If the lock symbol is red then click on in and choose "Show result"
 
+
+
+
+
+The backup plan completes normally
+
+
+
+and notify 
+
+
+
+
+
+
+
+
+
 notifications:
 
-If encryption changes are detected, any deletes from backup storage will be disabled for flagged files. Admins can quickly see a list all of all affected files and approve any false-positive detections.
+Admins can quickly see a list all of all affected files and approve any false-positive detections.
 
-The feature is about protecting your files, not the backup data. If your files get encrypted they will still be stored on backup store, but CB will keep the last unencrypted version, regardless of purge settings, until you confirm that it was not a reasonware attack, so you will always have at least one version unencrypted on your backup.
 
-> The software is looking at the first state of the files. In other words - if the files are non-encrypted and after some 10th backup become encrypted \(not by the software\), we suspect those files. If files are encrypted on the first run - it's ok. If their encryption is changed - then it's not ok.
+
+> test
 
 You manually inspect those files in_Windows / File Explorer\_using the\_Show in Folder\_option. If you want to remove the most recent backup of an affected file from backup storage, select the file and click\_Delete_.
 
@@ -74,20 +120,7 @@ Approve - means that files are not ransomware affected and they would not be del
 
 Limitation: no black/whitelist directories for the Ransomeare Protection
 
-Only Advanced backup mode is supported with this feature on
 
-* So, this will increase the size of the cloud backup? I wouldnt know how many versions of each file I have?  
-  * Yes, that's correct. Until you click delete or approve buttons, the files will remain on the cloud storage
-
-Hi! It will analyze current files on your backup source and on the next start the software will begin to check the encryption.
-
-We, however, cannot analyze files, that are already on the cloud storage \(in some cases it's not possible and in some - it would be quite expensive\)
-
-
-
-Note:
-
-Should use other measures: https://www.cloudberrylab.com/blog/protect-against-ransomware-with-backups/
 
 
 
