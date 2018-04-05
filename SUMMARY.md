@@ -3,10 +3,11 @@
 * [Introduction](README.md)
 * [Backup Wizard](concepts/backup-wizard.md)
   * [Back Up Files/Folders](concepts/backup-wizard/backup-filesfolders.md)
-    * [Welcome](concepts/backup-wizard/backup-filesfolders/welcome.md)
-    * \(Shared\) Select a Backup Storage
-    * \(Shared\) Specify the Plan Name
-    * \(Shared\) Select the Backup Mode
+    * [Select the Backup Route and Enable Ransomware Protection](concepts/backup-wizard/backup-filesfolders/welcome.md)
+    * [\(Shared\) Select a Backup Storage](concepts/backup-wizard/backup-filesfolders/shared-select-a-backup-storage.md)
+    * [\(Optional\) Select a Backup Storage](concepts/backup-wizard/backup-filesfolders/optional-select-a-backup-storage.md)
+    * [\(Shared\) Specify the Plan Name](concepts/backup-wizard/backup-filesfolders/shared-specify-the-plan-name.md)
+    * [\(Shared\) Select the Backup Mode](concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md)
     * [\(Shared\) Specify the Advanced Options](concepts/backup-wizard/backup-filesfolders/shared-specify-the-advanced-options.md)
   * [Image Based Backup](concepts/backup-wizard/image-based-backup.md)
   * Back Up System State
@@ -77,4 +78,5 @@
   * [Microsoft Exchange - Item Level Restore](concepts/microsoft-exchange-item-level-restore.md)
   * [Chaining Your Backups and Using Pre- And Post Actions](concepts/chaining-your-backups-and-using-pre-and-post-actions.md)
   * [Performing a Consistency Check](concepts/performing-a-consistency-check.md)
+  * [Increasing Backup Processing Speed](concepts/increasing-backup-processing-speed.md)
 
