@@ -1,4 +1,4 @@
-Chunks / Memory \(multi-part upload\)
+### Chunks / Memory \(multi-part upload\)
 
 test
 
@@ -15,4 +15,16 @@ By default the amount of allocated memory is 300 MB and is not available in the 
 `<MemoryManagerMaxMemoryUsage>314572800</MemoryManagerMaxMemoryUsage>`
 
 [https://kb.cloudberrylab.com/kb1046/](https://kb.cloudberrylab.com/kb1046/)
+
+
+
+### Other Options
+
+consider using the hybrid mode
+
+block-level backup
+
+use fast NTFS scan 
+
+
 
