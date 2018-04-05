@@ -34,10 +34,8 @@ For this reason, when you only need to compress and/or encrypt your backup in a 
 ---
 
 > **\[?? Other Limitations:\]**
->
-> * ?? no "delete files if they were deleted locally" support \(hybrid backups will not delete files that have been deleted locally - from the cloud/backup destination. Or will be purged according to your retention policy.\)
->
-> * ??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?
+
+> ??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?
 
 ### Enabling Ransomware Protection
 
