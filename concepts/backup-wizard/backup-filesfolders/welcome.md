@@ -28,18 +28,16 @@ For this reason, when you only need to compress and/or encrypt your backup in a 
 > At present, it is not possible to switch your existing backup plans to a Hybrid mode and you need to manually create a hybrid backup plan from scratch.
 >
 > You can only apply a single set of retention policies to both the local and cloud storage at the time.
-
+>
 > The [Archive mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md) is not supported for Hybrid backups \(only the Advanced mode's settings are available further in this wizard\).
 
 ---
 
 > **\[?? Other Limitations:\]**
-
+>
 > * ?? no "delete files if they were deleted locally" support \(hybrid backups will not delete files that have been deleted locally - from the cloud/backup destination. Or will be purged according to your retention policy.\)
 >
 > * ??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?
-
-
 
 ### Enabling Ransomware Protection
 
