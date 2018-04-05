@@ -30,6 +30,13 @@ Limitations:
 
 * existing backup plan cannot be converted to hybrid, you need to create a hybrid backup plan from scratch.
 
+* ??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?
+
+* ?? Is there any way to have different retention policies for local and cloud? \(I typically keep 6+ months of retention on-site and only a month of retention off-site to reduce costs.\)
+
+* 
+
+
 ### Enabling Ransomware Protection
 
 ---
