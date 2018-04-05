@@ -88,5 +88,5 @@
   * [Chaining Your Backups and Using Pre-/Post Actions](concepts/chaining-your-backups-and-using-pre-and-post-actions.md)
   * [Performing a Consistency Check](concepts/performing-a-consistency-check.md)
   * [Increasing Backup Processing Speed](concepts/increasing-backup-processing-speed.md)
-  * Lifecycle and Retention Policies
+  * [Lifecycle and Retention Policies](concepts/lifecycle-and-retention-policies.md)
 

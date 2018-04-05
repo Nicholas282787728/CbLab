@@ -22,10 +22,6 @@ In the **Options** dialog that is invoked, switch to the **Repository **tab and 
 
 ![](/assets/cb-backup-options-repository-sync.png)
 
-
-
-
-
 ### Syncing Repository when using a Custom Backup Mode
 
 Please be informed that it may be difficult to restore such files after deleting the CloudBerry Backup repository.
@@ -37,6 +33,8 @@ When using a [custom mode](/concepts/backup-wizard/backup-filesfolders/shared-se
 you need to run the sync via CLI with a special parameter
 
 
+
+see https://kb.cloudberrylab.com/kb1070/
 
 
 
