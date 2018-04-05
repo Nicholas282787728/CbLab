@@ -14,7 +14,9 @@ On this page, you can select how your backup routine should be executed by choos
   However, you will be able to access individual files in such a backup using any file manager.
 
 * **Custom Mode**  
-  **\[TO DO\]**
+  With this mode, the backup service copies your files to a specified folder in the target storage as is, without storing any meta data, such as information about file versions and their modification dates. This is similar to copying files using a file explorer.
+
+  > Please be informed that after deleting the CloudBerry Backup repository, restoring such files can be a non-trivial task, requiring you to manually sync your repository via the command line interface. See [Syncing Your Repository](/concepts/syncing-your-repository.md) for more information.
 
 * **Archive Mode**  
   With this mode selected, the backup service combines all these files into a single archive. This enables you to reduce the number of requests sent to the cloud storage when your backup contains a lot of small files.

@@ -24,3 +24,19 @@ In the **Options** dialog that is invoked, switch to the **Repository **tab and 
 
 
 
+
+
+### Syncing Repository when using a Custom Backup Mode
+
+Please be informed that it may be difficult to restore such files after deleting the CloudBerry Backup repository.
+
+**\[to do\]**
+
+When using a [custom mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md), ...
+
+you need to run the sync via CLI with a special parameter
+
+
+
+
+
