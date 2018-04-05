@@ -1,8 +1,4 @@
-
-
-
-
-Chunks / Memory
+Chunks / Memory \(multi-part upload\)
 
 test
 

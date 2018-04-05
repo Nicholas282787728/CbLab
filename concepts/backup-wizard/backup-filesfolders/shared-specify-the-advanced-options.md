@@ -1,20 +1,23 @@
 ## Specify the Advanced Options
 
-The set of options available on this wizard page differs depending on the selected backup mode.
+This wizard page provides different customization options depending on which [backup mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md) and [backup route](/concepts/backup-wizard/backup-filesfolders/welcome.md) you selected, as well as on whether or not you enabled [ransomware protection](/concepts/backup-wizard/backup-filesfolders/welcome.md) for this backup plan.
 
 ### Advanced Mode
 
-\(the only supported mode when using Ransomware Protection\)
+> This is the default mode and the only mode available when enabling Ransomware Protection and/or choosing the hybrid backup type on the [first wizard page](/concepts/backup-wizard/backup-filesfolders/welcome.md).
 
-test
+This mode provides a complete set of customization options for configuring your backup plan. However, you will not be able to access individual files in your backup using conventional file management tools, because a backup will be stored as a single solid object.
+
+The available options are explained below.
 
 * **Use block-level backup**
+
 * **Backup NTFS permissions**
 * **Save deleted data**
 * **Use Backup Operator**  
   [https://www.cloudberrylab.com/blog/support-for-backup-operators-api-in-cloudberry-backup-5-7/](https://www.cloudberrylab.com/blog/support-for-backup-operators-api-in-cloudberry-backup-5-7/)
 
-* **Use fast NTFS scan        
+* **Use fast NTFS scan              
   **In CloudBerry Backup 5.7 we've added an option to use our own proprietary file scanning & search mechanism. In essence, our method — as opposed to Windows's NTFS file scanning method — generates a file tree. Navigating through the said file tree is considerably faster, resulting in overall faster backups. Needless to say, performance varies depending on the type of storage device you're using and the number of files targeted for backup.
 
 We've run a series of tests to examine the performance of the new feature and collected the data in a separate post that also explains how you can enable our file scanning mechanism in the Restore Wizard.
