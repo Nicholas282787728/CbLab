@@ -1,6 +1,10 @@
 ### Chunks / Memory \(multi-part upload\)
 
-test
+Tools \| Options \| Advanced
+
+Tools \| Options \| Memory Options
+
+
 
 Our software uploads file in chunks. Chunk is a part of a file. You can set the size of the chunk going to Tools \| Options \| Advanced
 
@@ -18,13 +22,25 @@ By default the amount of allocated memory is 300 MB and is not available in the 
 
 
 
+
+
 ### Other Options
 
 consider using the hybrid mode
 
-block-level backup
+block-level backup / incremental \(synthetic\) backup
 
-use fast NTFS scan 
+use fast NTFS scan
+
+
+
+### Tools
+
+Options \| Connection - use MD5 checksum
+
+Options \| Bandwidth
+
+Options \| Proxy
 
 
 
