@@ -25,10 +25,10 @@ For this reason, when you only need to compress and/or encrypt your backup in a 
 
 Limitations:
 
-* no Archive Mode support 
+* no Archive Mode support
 * **no "delete files if they were deleted locally" support \(hybrid backups will not delete files that have been deleted locally - from the cloud/backup destination. Or will be purged according to your retention policy.\)**
 
-* test
+* existing backup plan cannot be converted to hybrid, you need to create a hybrid backup plan from scratch.
 
 ### Enabling Ransomware Protection
 

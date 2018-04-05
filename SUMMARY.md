@@ -4,9 +4,13 @@
 * [Backup Wizard](concepts/backup-wizard.md)
   * [Back Up Files/Folders](concepts/backup-wizard/backup-filesfolders.md)
     * [Welcome](concepts/backup-wizard/backup-filesfolders/welcome.md)
+    * \(Shared\) Select a Backup Storage
+    * \(Shared\) Specify the Plan Name
+    * \(Shared\) Select the Backup Mode
+    * [\(Shared\) Specify the Advanced Options](concepts/backup-wizard/backup-filesfolders/shared-specify-the-advanced-options.md)
   * [Image Based Backup](concepts/backup-wizard/image-based-backup.md)
   * Back Up System State
-  * Back Up MS SQL Server Data
+  * [Back Up MS SQL Server Data](concepts/backup-wizard/back-up-ms-sql-server-data.md)
   * Back Up MS Exchange Server Data
 * [Restore Wizard](chapter1.md)
   * [Restore Files/Folders](chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data.md)
