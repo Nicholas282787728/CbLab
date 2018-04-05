@@ -10,7 +10,7 @@ This mode provides a complete set of customization options for configuring your 
 
 The available options are explained below.
 
-* **Use block-level backup              
+* **Use block-level backup                
   **As opposed to a full backup which uploads a complete copy of each file to a storage, a block-level backup uploads the full copy of your data only during the first execution of the backup plan. On each subsequent running, the backup service uploads only blocks that were modified since the last backup date, which can dramatically decrease the processing time required for completing your backup routine, as well as reduce the required storage space.
 
   > See the following articles online to learn more about the difference between each backup type:
@@ -18,20 +18,28 @@ The available options are explained below.
   > * [Best Practices: Block-Level Backup](https://www.cloudberrylab.com/blog/best-practices-block-level-backup/)
   > * [Block Level Backup and Full Backup Explained](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/)
 
-* **Backup NTFS permissions              
+* **Backup NTFS permissions                
   **Enable this option to retain all [NTFS permissions](http://www.ntfs.com/ntfs-permissions.htm) assigned to your files, folders and network shares.
 
   The [Restore Wizard](/chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/313-specify-the-restore-destination.md) will then enable you to choose whether or not to restore these permissions along with the files.
 
-* **Save deleted data        
+* **Save deleted data          
   **This option specifies whether or not the storage should keep locally deleted files.
 
   When this feature is enabled for a backup, the [Restore Wizard](/chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/313-specify-the-restore-destination.md) enables you to choose whether to restore copies of locally deleted files along with the rest of the data.​
 
-* **Use Backup Operator**  
-  [https://www.cloudberrylab.com/blog/support-for-backup-operators-api-in-cloudberry-backup-5-7/](https://www.cloudberrylab.com/blog/support-for-backup-operators-api-in-cloudberry-backup-5-7/)
+* **Use Backup Operator  
+  **CloudBerry Backup is running under the Local System account by default, which does not allow the backup service to access NTFS and other important permissions.  
+  Use this option to enable users with Backup Operator permissions to back up files regardless of any security permissions assigned to these files.   
+  
+  If you are a member of the Administrators or Backup Operators group on the local computer, you can back up any file and folder on the local computer to which the local group applies. Likewise, if you are a member of the Administrators or Backup Operators group on a domain controller, you can back up any file and folder locally on any computer in the domain with which you have a two-way trust relationship. See the following document for more information: [Back up files and directories - security policy setting](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/back-up-files-and-directories).  
+  
+  The service account under which CloudBerry Backup is running must be a member of the Backup Operators group. You can change the account by right-clicking the backup service status icon on the application's status bar.  
+  
+  [  
+  https://www.cloudberrylab.com/blog/support-for-backup-operators-api-in-cloudberry-backup-5-7/](https://www.cloudberrylab.com/blog/support-for-backup-operators-api-in-cloudberry-backup-5-7/)
 
-* **Use fast NTFS scan                            
+* **Use fast NTFS scan                              
   **In CloudBerry Backup 5.7 we've added an option to use our own proprietary file scanning & search mechanism. In essence, our method — as opposed to Windows's NTFS file scanning method — generates a file tree. Navigating through the said file tree is considerably faster, resulting in overall faster backups. Needless to say, performance varies depending on the type of storage device you're using and the number of files targeted for backup.
 
 We've run a series of tests to examine the performance of the new feature and collected the data in a separate post that also explains how you can enable our file scanning mechanism in the Restore Wizard.
