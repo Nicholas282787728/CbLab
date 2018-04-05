@@ -25,16 +25,21 @@ This allows you to avoid repeated processing of your data when you need to compr
 
 For this reason, when you only need to compress and/or encrypt your backup in a cloud, and not in a local storage, you should create two separate one-way backup tasks instead of selecting the hybrid backup option.
 
-> Limitations:
+> At present, it is not possible to switch your existing backup plans to a Hybrid mode and you need to manually create a hybrid backup plan from scratch.
 >
-> * no Archive Mode support
-> * **no "delete files if they were deleted locally" support \(hybrid backups will not delete files that have been deleted locally - from the cloud/backup destination. Or will be purged according to your retention policy.\)**
->
-> * existing backup plan cannot be converted to hybrid, you need to create a hybrid backup plan from scratch.
+> You can only apply a single set of retention policies to both the local and cloud storage at the time.
+
+> The [Archive mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md) is not supported for Hybrid backups \(only the Advanced mode's settings are available further in this wizard\).
+
+---
+
+> **\[?? Other Limitations:\]**
+
+> * ?? no "delete files if they were deleted locally" support \(hybrid backups will not delete files that have been deleted locally - from the cloud/backup destination. Or will be purged according to your retention policy.\)
 >
 > * ??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?
->
-> * ?? Is there any way to have different retention policies for local and cloud? \(I typically keep 6+ months of retention on-site and only a month of retention off-site to reduce costs.\)
+
+
 
 ### Enabling Ransomware Protection
 
@@ -53,7 +58,7 @@ On detecting suspicious encryption applied to your files, CloudBerry Backup prev
 Please be informed that enabling ransomware protection may increase the size of your backup because of the need to keep additional file versions until the backup administrator confirms their deletion.
 
 > Ransomware protection is currently supported only for file backups.
-
+>
 > With the ransomware detection enabled, you can only choose the [Advanced backup mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md) further in this wizard.
 
 **\[why the above?\]**
@@ -67,8 +72,6 @@ You can click Cancel to postpone the investigation and keep the affected files i
 At the moment, it is not possible to add any files to a white list and make our backup service stop analyzing them. Occasionally, you might encounter false positives on the side of CloudBerry Backup. Please contact our [Support Team](https://www.cloudberrylab.com/support.aspx) if such false alarms become frequent to help us further improve our ransomware detection algorithm.
 
 > This feature is most effective for preventing you from ransomware attacks when used as part of a broader protection strategy that includes appropriate lifecycle and retention policies. Please refer to the following blog post online to learn how to protect your backups: [4 Ways to Protect Against Ransomware with Backups](https://www.cloudberrylab.com/blog/how-ransomware-works/).
-
-
 
 
 
