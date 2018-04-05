@@ -83,6 +83,14 @@ Hi! It will analyze current files on your backup source and on the next start th
 
 We, however, cannot analyze files, that are already on the cloud storage \(in some cases it's not possible and in some - it would be quite expensive\)
 
+
+
+Note:
+
+Should use other measures: https://www.cloudberrylab.com/blog/protect-against-ransomware-with-backups/
+
+
+
 ---
 
 See also: [Increasing Backup Processing Speed](/concepts/increasing-backup-processing-speed.md)
