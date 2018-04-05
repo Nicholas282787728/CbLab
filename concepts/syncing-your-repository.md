@@ -2,6 +2,8 @@
 
 **\[What is the difference between syncing Amazon Glacier and other vendors' repositories?\]**
 
+**\[Add info and links on consistency check as well.\]**
+
 If some of the files are missing in the file tree displaying the contents of your backup, this may be because your repository has not yet been synchronized to make the file tree reflect the latest modification made to your storage.
 
 > CloudBerry Backup's repository is SQLite database containing information about the backed up data, including the operations that have been performed with the data and additional service information. CloudBerry Backup uses this repository to keep track of the backed up data and ensure that the backup services will not repeatedly upload files that already reside in the cloud. This reduces the number of requests sent to the cloud and lowers your storage bills.
@@ -22,19 +24,23 @@ In the **Options** dialog that is invoked, switch to the **Repository **tab and 
 
 ![](/assets/cb-backup-options-repository-sync.png)
 
-### Syncing Repository when using a Custom Backup Mode
+### Syncing Repository when using a Custom Mode for File Backups
 
-Please be informed that it may be difficult to restore such files after deleting the CloudBerry Backup repository.
+When you backing up files using a [custom mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md), the backup service copies these files to a specified folder in the target storage as is, without storing any meta data, such as information about file versions and their modification dates.
 
-**\[to do\]**
+To restore such files after you have deleted the CloudBerry Backup repository, you need to synchronize your repository via the command line interface, as follows.
 
-When using a [custom mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md), ...
+* Run the Command Prompt with appropriate privileges.
+* Navigate to the Cloudberry Backup installation folder.
+* Execute the following command:
 
-you need to run the sync via CLI with a special parameter
+```
+cbb.exe account -s "your_account_name" -custom "folder_name"
+```
 
+In this example, "**your\_account\_name**" stands for your cloud storage account name and "**folder\_name**" stands for the name of the folder that is missing in the file tree under your bucket/container.
 
-
-see https://kb.cloudberrylab.com/kb1070/
+**\[Installation folder?\]**
 
 
 
