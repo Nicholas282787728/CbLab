@@ -18,5 +18,7 @@ When restoring an NTFS partition, you can customize additional options:
 
   ![](/assets/ntfs-specify-partition-size-dialog.png)
 
+> See the following blog post online to learn how you can resize partitions on Windows, Mac and Linux: [How to Resize Partition: Cross-Platform Guide](https://www.cloudberrylab.com/blog/how-to-resize-partition/).
+
 
 
