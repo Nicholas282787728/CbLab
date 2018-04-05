@@ -4,11 +4,20 @@
 * [Backup Wizard](concepts/backup-wizard.md)
   * [Back Up Files/Folders](concepts/backup-wizard/backup-filesfolders.md)
     * [Select the Backup Route and Enable Ransomware Protection](concepts/backup-wizard/backup-filesfolders/welcome.md)
-    * [Select a Backup Storage \(for a One-Way Backup\)](concepts/backup-wizard/backup-filesfolders/shared-select-a-backup-storage.md)
-    * [Select Backup Storages \(for a Hybrid Backup\)](concepts/backup-wizard/backup-filesfolders/optional-select-a-backup-storage.md)
+    * [Select a Backup Destination \(for One-Way Backup\)](concepts/backup-wizard/backup-filesfolders/shared-select-a-backup-storage.md)
+    * [Select Backup Destinations \(for Hybrid Backup\)](concepts/backup-wizard/backup-filesfolders/optional-select-a-backup-storage.md)
     * [Specify the Plan Name](concepts/backup-wizard/backup-filesfolders/shared-specify-the-plan-name.md)
     * [Select the Backup Mode](concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md)
     * [Specify the Advanced Options](concepts/backup-wizard/backup-filesfolders/shared-specify-the-advanced-options.md)
+    * Select Files to Back Up
+    * Check Network Shares
+    * Apply Filter Criteria to Selected Files
+    * Specify the Compression and Encryption Settings
+    * Specify the Retention Policy
+    * Schedule Your Backup Plan
+    * Chain Your Backups and Assign Pre-/Post Actions
+    * Customize Email Notifications and System Log Settings
+    * Review and Run Your Backup Plan
   * [Image Based Backup](concepts/backup-wizard/image-based-backup.md)
   * Back Up System State
   * [Back Up MS SQL Server Data](concepts/backup-wizard/back-up-ms-sql-server-data.md)
@@ -76,7 +85,7 @@
     * [Specify the Restore Destination](concepts/restoring-ms-exchange-data/specify-the-restore-destination.md)
     * [Update the Exchange Server Database](concepts/microsoft-exchange-item-level-restore/update-the-exchange-server-database.md)
   * [Microsoft Exchange - Item Level Restore](concepts/microsoft-exchange-item-level-restore.md)
-  * [Chaining Your Backups and Using Pre- And Post Actions](concepts/chaining-your-backups-and-using-pre-and-post-actions.md)
+  * [Chaining Your Backups and Using Pre-/Post Actions](concepts/chaining-your-backups-and-using-pre-and-post-actions.md)
   * [Performing a Consistency Check](concepts/performing-a-consistency-check.md)
   * [Increasing Backup Processing Speed](concepts/increasing-backup-processing-speed.md)
   * Lifecycle and Retention Policies

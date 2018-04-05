@@ -1,4 +1,4 @@
-## Chaining Your Backups and Using Pre- And Post Actions
+## Chaining Your Backups and Using Pre-/Post Actions
 
 This article describes how to make CloudBerry Backup execute custom scripts before and/or after running a backup task and chain multiple backup tasks for their sequential execution.
 

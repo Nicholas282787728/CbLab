@@ -1,6 +1,6 @@
-## Select Backup Storages for a Hybrid Backup
+## Select Backup Destinations \(for Hybrid Backup\)
 
-First, you need to select a local storage to which to save your backup before moving it to a cloud. 
+First, you need to select a local storage to which to save your backup before moving it to a cloud.
 
 ![](/assets/backup-wizard-hybrid-select-local-storage.png)
 
