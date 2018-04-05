@@ -35,8 +35,8 @@ For this reason, when you only need to compress and/or encrypt your backup in a 
 > * ??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?
 >
 > * ?? Is there any way to have different retention policies for local and cloud? \(I typically keep 6+ months of retention on-site and only a month of retention off-site to reduce costs.\)
->
-> * ### Enabling Ransomware Protection
+
+### Enabling Ransomware Protection
 
 The new feature is designed to protect a customer's existing, good backups, from being overwritten by encrypted ones because of a ransomware attack.
 
@@ -72,22 +72,16 @@ Delete - deletes the potentially ransomware affected files
 
 Approve - means that files are not ransomware affected and they would not be deleted.
 
-
-
 Limitation: no black/whitelist directories for the Ransomeare Protection
 
 Only Advanced backup mode is supported with this feature on
 
-
-
 * So, this will increase the size of the cloud backup? I wouldnt know how many versions of each file I have?  
-  - Yes, that's correct. Until you click delete or approve buttons, the files will remain on the cloud storage
+  * Yes, that's correct. Until you click delete or approve buttons, the files will remain on the cloud storage
 
 Hi! It will analyze current files on your backup source and on the next start the software will begin to check the encryption.
 
 We, however, cannot analyze files, that are already on the cloud storage \(in some cases it's not possible and in some - it would be quite expensive\)
-
-
 
 ---
 
