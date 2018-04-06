@@ -72,6 +72,7 @@
   * [Step 9 - Save and Run Your Restore Plan](chapter1/step-7-save-and-run-your-restore-plan.md)
 * [Concepts](concepts.md)
   * [Resizing NTFS Partitions](concepts/restoring-ntfs-partitions.md)
+  * [Chaining Your Backups and Using Pre-/Post Actions](concepts/chaining-your-backups-and-using-pre-and-post-actions.md)
   * [Granting EC2 Permissions to an Amazon IAM Role](concepts/permissions.md)
   * [Managing Azure Active Directory Accounts](concepts/managing-azure-active-directory-accounts.md)
   * [Enabling Azure Active Directory Users to Access Amazon S3 Data](concepts/enabling-azure-active-directory-users-to-access-amazon-s3-data.md)
@@ -86,6 +87,7 @@
     * [Select Files to Restore](concepts/restoring-ms-exchange-data/select-files-to-restore.md)
     * [Specify the Restore Destination](concepts/restoring-ms-exchange-data/specify-the-restore-destination.md)
     * [Update the Exchange Server Database](concepts/microsoft-exchange-item-level-restore/update-the-exchange-server-database.md)
+  * [Microsoft Exchange - Item-Level Restore](concepts/microsoft-exchange-item-level-restore.md)
   * [Increasing Backup Processing Speed](concepts/increasing-backup-processing-speed.md)
   * [Lifecycle and Retention Policies](concepts/lifecycle-and-retention-policies.md)
 
