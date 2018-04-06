@@ -12,7 +12,7 @@ If some of the files are missing in the file tree displaying the contents of you
 
 > CloudBerry Backup's repository is SQLite database containing information about the backed up data, including the operations that have been performed with the data and additional service information. CloudBerry Backup uses this repository to keep track of the backed up data and ensure that the backup services will not repeatedly upload files that already reside in the cloud. This reduces the number of requests sent to the cloud and lowers your storage bills.
 
-You can do one of the following to ensure that your local repository is up to date:
+You can do one of the following to ensure that your local repository is up to date:
 
 * Perform a [consistency check](/concepts/performing-a-consistency-check.md) to detect any discrepancies between the repository and the backup storage and take appropriate action on finding any mismatch.
 * Synchronize your repository to delete the current repository and update it according to the current backup storage contents from scratch.
@@ -20,7 +20,7 @@ You can do one of the following to ensure that your local repository is up to d
 > Please be informed that such synchronization may take up to several hours. This is why we do not recommend you to perform synchronization unless this is absolutely necessary.
 >
 > You cannot schedule a synchronization routine to make it run automatically, and you need to launch the synchronization manually.
-
+>
 > Syncing the repository only updates the local CloudBerry Backup database. It neither affects the data in the cloud, nor your backup/restore plans.
 
 You can launch the synchronization process by clicking the corresponding link on this wizard page.
