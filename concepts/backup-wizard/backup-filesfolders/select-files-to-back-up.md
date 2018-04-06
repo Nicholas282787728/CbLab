@@ -22,8 +22,11 @@ The following options are available on this menu:
 * **Open in dialog**  
   Invokes a new dialog window displaying the file tree.
 
-* Show legend
-  Invokes a dialog window explaining the 
+* **Show legend**  
+  Invokes a dialog window explaining how to interpret the different states of check boxes in the file tree, as follows.  
+
+  
+
 
 
 
