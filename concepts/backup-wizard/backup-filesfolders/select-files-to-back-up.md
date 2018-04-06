@@ -10,9 +10,11 @@ Clicking the burger icon on this wizard page invokes a menu where you can choose
 
 The following options are available on this menu:
 
-* **Add user profile        
+* **Add user profile          
   **Use this option to include user folders in your backup.  
   ![](/assets/backup-wizard-select-files-add-user.png)  
+  
+  **\[Check the following case.\]**  
   Please be informed that a backup will not be completed on encountering a user folder to which it has no access \(when the privileges under which the backup service is running do not allow accessing this folder\).  
   ![](/assets/backup-wizard-user-folder-access-denied.png)  
   Consider running the backup service under different account to avoid such errors.  
