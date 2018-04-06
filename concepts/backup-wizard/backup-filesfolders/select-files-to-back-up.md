@@ -10,10 +10,10 @@ Clicking the burger icon on this wizard page invokes a menu where you can choose
 
 The following options are available on this menu:
 
-* **Add user profile          
+* **Add user profile            
   **Use this option to include user folders in your backup.  
-  ![](/assets/backup-wizard-select-files-add-user.png)  
-  
+  ![](/assets/backup-wizard-select-files-add-user.png)
+
   **\[Check the following case.\]**  
   Please be informed that a backup will not be completed on encountering a user folder to which it has no access \(when the privileges under which the backup service is running do not allow accessing this folder\).  
   ![](/assets/backup-wizard-user-folder-access-denied.png)  
@@ -38,10 +38,10 @@ The following options are available on this menu:
 
   | Icon | Description |
   | :--- | :--- |
-  | ![](/assets/icon-checkbox-01.png) | Neither the folder, nor any of its contents are selected. |
+  | ![](/assets/icon-checkbox-01.png) | Neither the folder, nor any of its contents is selected. |
   | ![](/assets/icon-checkbox-02.png) | The folder is selected along with all of its contents \(the backup will include all newly created subitems in this folder as well\). |
   | ![](/assets/icon-checkbox-03.png) | The folder is selected along with some of its contents \(the backup will include all newly created subitems in this folder as well\). |
-  | ![](/assets/icon-checkbox-04.png) | Some of the folder's contents are selected, but not the folder itself \(the backup will only include explicitly selected subitems, and not newly created ones\). |
+  | ![](/assets/icon-checkbox-04.png) | Some of the folder's contents is selected, but not the folder itself \(the backup will only include explicitly selected subitems, and not newly created ones\). |
 
 
 
