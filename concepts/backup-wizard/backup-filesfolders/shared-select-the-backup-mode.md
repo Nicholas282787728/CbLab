@@ -27,3 +27,10 @@ On this page, you can select how your backup routine should be executed by choos
 
 After you selected the required mode, proceed to the [next wizard page](/concepts/backup-wizard/backup-filesfolders/shared-specify-the-advanced-options.md) to specify additional settings for your backup plan.
 
+
+
+**\[custom mode/simple mode:  
+if a file has changed - do we overwrite this file?\]**
+
+
+

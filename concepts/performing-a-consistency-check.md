@@ -1,3 +1,7 @@
+## Performing a Consistency Check
+
+
+
 [https://cloudberry.gitbook.io/test/cloudberry-backup/miscellaneous/repository-sync](https://cloudberry.gitbook.io/test/cloudberry-backup/miscellaneous/repository-sync)
 
 \[add cross-links to the Sync topic, and maybe "File tree troubleshooting"\]
@@ -8,8 +12,6 @@ cons.check is two-way, history will list not found \(warning\) and added files \
 
 this list -&gt; history filter by files
 
-
-
 ..
 
 sync kills and creates \(re init\)
@@ -18,7 +20,7 @@ sync kills and creates \(re init\)
 
 if \(file name encr\){
 
-specify password before cons.check 
+specify password before cons.check
 
 }
 
@@ -41,8 +43,4 @@ c.c. cannot be executed during backup to this account occurs \(warning will be s
 c.c. performed one by one \(not simultaneously\)
 
 ..
-
-
-
-
 

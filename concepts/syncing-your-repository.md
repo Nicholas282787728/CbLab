@@ -2,7 +2,9 @@
 
 **\[What is the difference between syncing Amazon Glacier and other vendors' repositories?\]**
 
+**expedited \(fast\)/standard/bulk**
 
+**image OR files**
 
 **\[Add info and links on consistency check as well.\]**
 
@@ -42,8 +44,4 @@ cbb.exe account -s "your_account_name" -custom "folder_name"
 
 In this example, "**your\_account\_name**" stands for your cloud storage account name  
  and "**folder\_name**" stands for the name of the folder that is missing in the file tree under your bucket/container.
-
-**\[Installation folder?\] / e.g. when custom inst**
-
-**Windows environment variables - program files \(standalone\) -&gt; cbb.exe**
 
