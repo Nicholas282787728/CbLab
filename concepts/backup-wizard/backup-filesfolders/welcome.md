@@ -34,30 +34,28 @@ For this reason, when you only need to compress and/or encrypt your backup in a 
 ---
 
 > **\[?? Other Limitations:\]**
-
-> ??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?
+>
+> \[**??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?\]**
 
 ### Enabling Ransomware Protection
 
-Use this feature to enable additional protection against ransomware attacks by making CloudBerry Backup detect suspicious encryption activity over files in your backup.
-
-> Ransomware protection is currently supported only for file backups.
-
-With this feature enabled, CloudBerry Backup performs a [full initial backup](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/) and uses heuristics to find out whether the byte structure of files in the backup has changed in subsequent backups because of encryption.
-
-If your files were already encrypted during the first processing of your backup, CloudBerry Backup will still be able to detect any changes in the encryption applied by subsequent backups.
+Use this feature to enable additional protection against ransomware attacks by making CloudBerry Backup detect suspicious encryption activity over locally stored files in your backup.
 
 > Ransomware protection only applies to locally stored backups and CloudBerry Backup will not analyze files that are already stored in the cloud.
 
-**\[is the above correct?\]**
+With this feature enabled, CloudBerry Backup performs a [full initial backup](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/) and uses heuristics to find out whether the byte structure of files in the backup has changed in subsequent backups because of encryption.
+
+> Ransomware protection is currently supported only for file backups.
+
+If your files were already encrypted during the first processing of your backup, CloudBerry Backup will still be able to detect any changes in the encryption applied by subsequent backups.
 
 On detecting suspicious encryption applied to your files, CloudBerry Backup prevents deletion of existing backups regardless of the current retention policy settings to ensure that at least one undamaged version of your backup is still available, and prompts you about which action to take next.
 
-Please be informed that enabling ransomware protection may increase the size of your backup because of the need to keep additional file versions until the backup administrator confirms their deletion.
-
 > With the ransomware detection enabled, you can only choose the [Advanced backup mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md) further in this wizard.
+>
+> This is because the backup service analyzes source files on the fly, while a backup is being processed. It is able to detect a possibly corrupted file only after it has already been uploaded to the destination storage. For this reason, using the Simple backup mode would result in a corrupted file overwriting its previous, uncorrupted version before the backup service is able to detect and prevent this. This is not the case with the Advanced mode, in which a corrupted file becomes uploaded as a new version, with keeping the previous file version intact.
 
-**\[why the above?\]**
+Please be informed that enabling ransomware protection may increase the size of your backup because of the need to keep additional versions of suspicious files until the backup administrator confirms their deletion.
 
 After saving your backup plan, it displays a "lock" icon on its title, indicating that ransomware protection is enabled for this backup plan.![](/assets/backup-plans-ransomware-protection-lock-icon.png)When the backup service suspects that your files may be affected by ransomware, it completes the current backup task and sends you an email containing the list of supposedly affected files and prompting you to take action.
 
