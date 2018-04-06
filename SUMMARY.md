@@ -9,7 +9,7 @@
     * [Specify the Plan Name](concepts/backup-wizard/backup-filesfolders/shared-specify-the-plan-name.md)
     * [Select the Backup Mode](concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md)
     * [Specify the Advanced Options](concepts/backup-wizard/backup-filesfolders/shared-specify-the-advanced-options.md)
-    * Select Files to Back Up
+    * [Select Files to Back Up](concepts/backup-wizard/backup-filesfolders/select-files-to-back-up.md)
     * Check Network Shares
     * Apply Filter Criteria to Selected Files
     * [Specify the Compression and Encryption Settings](concepts/backup-wizard/backup-filesfolders/specify-the-compression-and-encryption-settings.md)
