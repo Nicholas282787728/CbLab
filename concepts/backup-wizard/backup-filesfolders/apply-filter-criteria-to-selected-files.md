@@ -2,8 +2,6 @@
 
 On this wizard page, you ...
 
-
-
 In this step you can indicate which files should be skipped based on the following parameters:
 
 1. **Format**. Indicate which file formats should be backed up or, conversely, skipped.
@@ -13,6 +11,25 @@ In this step you can indicate which files should be skipped based on the followi
 3. **Size**. You can indicate the threshold for the size of files.
 
    You can also choose not to back up system and hidden files.
+
+
+
+You can specify the following criteria on this page:
+
+* Select the file types to include in your backup.
+  \(+ system, locked\)
+
+* Select the folders to exclude from your backup.
+* Specify the time period within which the files should have been modified to be included in your backup.
+* Specify the maximum size for the files included in your backup.
+
+
+
+\[...\]
+
+
+
+
 
 
 
