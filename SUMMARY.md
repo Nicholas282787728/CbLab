@@ -11,7 +11,7 @@
     * [Specify the Advanced Options](concepts/backup-wizard/backup-filesfolders/shared-specify-the-advanced-options.md)
     * [Select Files to Back Up](concepts/backup-wizard/backup-filesfolders/select-files-to-back-up.md)
     * [ Check Network Shares](concepts/backup-wizard/backup-filesfolders/1-check-network-shares.md)
-    * Apply Filter Criteria to Selected Files
+    * [Apply Filter Criteria to Selected Files](concepts/backup-wizard/backup-filesfolders/apply-filter-criteria-to-selected-files.md)
     * [Specify the Compression and Encryption Settings](concepts/backup-wizard/backup-filesfolders/specify-the-compression-and-encryption-settings.md)
     * Specify the Retention Policy
     * [Schedule Your Backup Plan](concepts/backup-wizard/backup-filesfolders/schedule-your-backup-plan.md)
