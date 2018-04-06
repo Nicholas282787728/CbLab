@@ -23,7 +23,7 @@ You can do one of the following to ensure that your local repository is up to da
 >
 > Syncing the repository only updates the local CloudBerry Backup database. It neither affects the data in the cloud, nor your backup/restore plans.
 
-You can launch the synchronization process by clicking the corresponding link on this wizard page.
+You can launch the synchronization process by clicking the corresponding link in the wizard.
 
 ![](/assets/synchronize-repository-dialog-window.png)
 
@@ -34,6 +34,8 @@ To sync a repository without using the wizard, click **Options **in your CloudBe
 In the **Options** dialog that is invoked, switch to the **Repository **tab and click **Synchronize Repository**.
 
 ![](/assets/cb-backup-options-repository-sync.png)
+
+Synchronization is logged in the **console.log** file located in the application folder within the **ProgramData** directory.
 
 ### Syncing Repository when using a Custom Mode for File Backups
 
