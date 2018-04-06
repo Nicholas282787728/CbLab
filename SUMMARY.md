@@ -86,8 +86,6 @@
     * [Select Files to Restore](concepts/restoring-ms-exchange-data/select-files-to-restore.md)
     * [Specify the Restore Destination](concepts/restoring-ms-exchange-data/specify-the-restore-destination.md)
     * [Update the Exchange Server Database](concepts/microsoft-exchange-item-level-restore/update-the-exchange-server-database.md)
-  * [TO REMOVE - Performing a Consistency Check](concepts/performing-a-consistency-check.md)
   * [Increasing Backup Processing Speed](concepts/increasing-backup-processing-speed.md)
   * [Lifecycle and Retention Policies](concepts/lifecycle-and-retention-policies.md)
-  * [TO REMOVE - Performing a Consistency Check](concepts/performing-a-consistency-check.md)
 
