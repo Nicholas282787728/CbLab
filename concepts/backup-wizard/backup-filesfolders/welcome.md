@@ -31,12 +31,6 @@ For this reason, when you only need to compress and/or encrypt your backup in a 
 >
 > The [Archive mode](/concepts/backup-wizard/backup-filesfolders/shared-select-the-backup-mode.md) is not supported for Hybrid backups \(only the Advanced mode's settings are available further in this wizard\).
 
----
-
-> **\[?? Other Limitations:\]**
->
-> \[**??/ Is it mentioned in the text that there is encryption on the local target, does this include encrypting the name of the files?\]**
-
 ### Enabling Ransomware Protection
 
 Use this feature to enable additional protection against ransomware attacks by making CloudBerry Backup detect suspicious encryption activity over locally stored files in your backup.
@@ -63,7 +57,7 @@ The "lock" icon displayed on the backup plan's title becomes red. Clicking this 
 
 You can click **Cancel** to postpone the investigation and keep the affected files intact.
 
-**At the moment, it is not possible to add any files to a white list and make our backup service stop analyzing them. Occasionally, you might encounter false positives on the side of CloudBerry Backup. Please contact our **[**Support Team**](https://www.cloudberrylab.com/support.aspx)** if such false alarms become frequent to help us further improve our ransomware detection algorithm.**
+False positives may occur when the backup service mistakenly attributes legitimate changes to ransomware. Please pay attention to the flagged files reported by the backup service and ensure whether or not such files are actually corrupted before deleting them.
 
 > This feature is most effective for preventing you from ransomware attacks when used as part of a broader protection strategy that includes appropriate lifecycle and retention policies. Please refer to the following blog post online to learn how to protect your backups: [4 Ways to Protect Against Ransomware with Backups](https://www.cloudberrylab.com/blog/how-ransomware-works/).
 
