@@ -2,6 +2,8 @@
 
 **\[What is the difference between syncing Amazon Glacier and other vendors' repositories?\]**
 
+
+
 **\[Add info and links on consistency check as well.\]**
 
 If some of the files are missing in the file tree displaying the contents of your backup, this may be because your repository has not yet been synchronized to make the file tree reflect the latest modification made to your storage.
@@ -38,9 +40,10 @@ To restore such files after you have deleted the CloudBerry Backup repository, y
 cbb.exe account -s "your_account_name" -custom "folder_name"
 ```
 
-In this example, "**your\_account\_name**" stands for your cloud storage account name and "**folder\_name**" stands for the name of the folder that is missing in the file tree under your bucket/container.
+In this example, "**your\_account\_name**" stands for your cloud storage account name  
+ and "**folder\_name**" stands for the name of the folder that is missing in the file tree under your bucket/container.
 
-**\[Installation folder?\]**
+**\[Installation folder?\] / e.g. when custom inst**
 
-
+**Windows environment variables - program files \(standalone\) -&gt; cbb.exe**
 

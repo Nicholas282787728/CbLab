@@ -6,16 +6,16 @@ On this page, you can select how your backup routine should be executed by choos
 
 * **Advanced Mode**  
   This is the default mode that provides maximum flexibility in terms of the available settings.  
-  On the downside, you will not be able to access individual files in your backup when using any of the following features:
+  **On the downside, you will not be able to access individual files in your backup when using any of the following features:**
 
-  * encryption;  
-  * compression;  
-  * file-name encryption;  
-  * block-level backup.
+  * **encryption;  **
+  * **compression;  **
+  * **file-name encryption;**
+  * **block-level backup.**
 
 * **Simple Mode**  
   This mode does not support encryption, block-level backup and custom retention policy.  
-  On the other hand, you will be able to access individual files in such a backup.
+  **On the other hand, you will be able to access individual files in such a backup.**
 
 * **Custom Mode**  
   With this mode, the backup service copies your files to a specified folder in the target storage as is, without storing any meta data, such as information about file versions and their modification dates. This is similar to copying files using a file explorer.
