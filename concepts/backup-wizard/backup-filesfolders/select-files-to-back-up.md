@@ -14,9 +14,16 @@ The following options are available on this menu:
 
 * **Add user profile**
 
-* Add network share
-* Open in dialog
+* **Add network share**  
+  Opens a dialog window where you can specify the path to network share containing files that you wish to include in the backup.  
+  ![](/assets/backup-add-network-share.png)  
+  In this dialog, you can specify user credentials used to access the network share. Alternatively, you can specify these credentials on the [next wizard page](/concepts/backup-wizard/backup-filesfolders/1-check-network-shares.md).
+
+* **Open in dialog**  
+  Invokes a new dialog window displaying the file tree.
+
 * Show legend
+  Invokes a dialog window explaining the 
 
 
 
