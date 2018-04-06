@@ -21,7 +21,7 @@ Use this option to send your backup to two destinations at once and avoid repeat
 
 With this option selected, the backup service first processes your data and moves it to a Network-attached storage \(NAS\) or similar local storage, from where the already processed backup makes its way to a cloud storage.
 
-This allows you to avoid repeated processing of your data when you need to compress and/or encrypt it, because the backup service performs these operations only once, before the saving the backup to the local storage.
+This allows you to avoid repeated processing of your data when you need it to be compressed and/or encrypted in both target storages, because the backup service performs these operations only once, before the saving the backup to the local storage.
 
 For this reason, when you only need to compress and/or encrypt your backup in a cloud, and not in a local storage, you should create two separate one-way backup tasks instead of selecting the hybrid backup option.
 
