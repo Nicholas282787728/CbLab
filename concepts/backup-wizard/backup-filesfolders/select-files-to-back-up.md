@@ -10,8 +10,18 @@ Clicking the burger icon on this wizard page invokes a menu where you can choose
 
 The following options are available on this menu:
 
-* **Add user profile  
-  \[TO DO\]**
+* **Add user profile      
+  **Use this option to include user folders in your backup.  
+  ![](/assets/backup-wizard-select-files-add-user.png)  
+  Please be informed that a backup will not be completed on encountering a user folder to which it has no access \(when the privileges under which the backup service is running do not allow accessing this folder\).  
+  ![](/assets/backup-wizard-user-folder-access-denied.png)  
+  Consider running the backup service under different account to avoid such errors.  
+  You can change the account by right-clicking the backup service status in the application's status bar...
+
+  ![](blob:https://legacy.gitbook.com/47134d8a-4701-493e-9ba1-92b728bc9444)
+
+  ...or by switching to the **Tools **tab in the application toolbar and clicking **Change Service Account**.  
+  ![](/assets/ribbon-tools-change-service-account.png)
 
 * **Add network share**  
   Opens a dialog window where you can specify the path to network share containing files that you wish to include in the backup.  
