@@ -1,37 +1,35 @@
 ## Performing a Consistency Check
 
-The backup files may be corrupted as a result of direct access to your cloud storage.
+CloudBerry Backup uses a local database \(repository\) to keep track of backed up data. You can do one of the following to ensure that the repository is up to date:
 
-* The backup files may be corrupted due to the internal issue with the cloud storage provider.
-* In the local backup scenario, the user may replace the disk or NAS device where the actual backup files absent
+* [Synchronize your repository](/concepts/syncing-your-repository.md) to delete the current repository and update it according to the current backup storage contents from scratch. This is a time-consuming task and we do not recommend that you perform it unless absolutely necessary. This is why you cannot schedule a synchronization routine to make it run automatically.
+* Perform a consistency check to detect any discrepancies between the repository and the backup storage and take appropriate action on finding any mismatch.
 
-To ensure seamless recovery, implement regular proactive consistency checks.
+The consistency check enables you to avoid losing data \(for example, when some of the files in your backup storage get corrupted, or when you replace your local NAS device storing the backup files\). On finding any discrepancies, you will receive a notification informing you that some of the files are missing in the local repository or there is a mismatch between the file modification dates. Another common scenario is to check the repository consistency after uploading multiple backups from different computers to the same bucket/container using the same [backup prefix](/concepts/changing-the-backup-prefix.md).
 
-Check the consistency of your backups on a regular basis to make sure you stay prepared for a recovery.
+> We strongly recommend that you run a consistency check on a regular basis to ensure the integrity of data in your backups.
 
-If you had an inconsistent state of your CloudBerry Backup local repository, the check consistency will show a "warning status":
-
-You can click on the datetime label to get more details of the check result - for example, you could have missed files on your local repository or out of date files:
-
----
-
-Run OR Schedule
-
-UI: Welcome tab of the
+You can run a consistency check manually or on schedule by switching to the **Welcome** tab of your CloudBerry Backup application and navigating to the **Storage Accounts** section. Click the burger icon for the required storage and select the required option.
 
 ![](/assets/backup-welcome-storage-accounts-run-consistency-check.png)
 
-other \(schedule\)
+Clicking **Run Consistency Check** makes the backup service check whether any backup is currently being uploaded to this storage. If this is the case, it displays a warning notifying that you first need to wait until the current backup routine is finished.
+
+> Only a single consistency check can run at a time. When multiple consistency checks are scheduled to be executed by the same time, they run one after another.
+>
+> If file names in your backup are encrypted, you need to specify the encryption password before running a consistency check. Otherwise, the backup service will be unable to identify encrypted files and will skip them during the consistency check execution.
+
+Clicking **Schedule Consistency Check **invokes the **Storage Account** dialog window, where you can specify the schedule for automatic consistency check for this storage on a regular basis.
 
 ![](/assets/consistency-check.png)
 
----
 
-[https://cloudberry.gitbook.io/test/cloudberry-backup/miscellaneous/repository-sync](https://cloudberry.gitbook.io/test/cloudberry-backup/miscellaneous/repository-sync)
 
-\[add cross-links to the Sync topic, and maybe "File tree troubleshooting"\]
 
-sync is one-way
+
+
+
+...
 
 cons.check is two-way, history will list not found \(warning\) and added files \(green files\)
 
@@ -39,33 +37,9 @@ this list -&gt; history filter by files
 
 ..
 
-sync kills and creates \(re init\)
+If you had an inconsistent state of your CloudBerry Backup local repository, the check consistency will show a "warning status":
 
-..
+You can click on the datetime label to get more details of the check result - for example, you could have missed files on your local repository or out of date files:
 
-if \(file name encr\){
 
-specify password before cons.check
-
-}
-
-else {
-
-files wuill be skipped}
-
-..
-
-can be scheduled \(unlike the sync\)
-
-e.g. when push from different machines in a same prefix
-
-..
-
-c.c. cannot be executed during backup to this account occurs \(warning will be seen\)
-
-..
-
-c.c. performed one by one \(not simultaneously\)
-
-..
 
