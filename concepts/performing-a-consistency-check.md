@@ -1,19 +1,23 @@
 ## Performing a Consistency Check
 
-
-
 The backup files may be corrupted as a result of direct access to your cloud storage.
 
-* The backup files may be corrupted due to the internal issue with the cloud storage provider.
+* The backup files may be corrupted due to the internal issue with the cloud storage provider.
 * In the local backup scenario, the user may replace the disk or NAS device where the actual backup files absent
 
 To ensure seamless recovery, implement regular proactive consistency checks.
 
+Check the consistency of your backups on a regular basis to make sure you stay prepared for a recovery.
 
+If you had an inconsistent state of your CloudBerry Backup local repository, the check consistency will show a "warning status":
+
+You can click on the datetime label to get more details of the check result - for example, you could have missed files on your local repository or out of date files:
+
+---
 
 Run OR Schedule
 
-UI: Welcome tab of the 
+UI: Welcome tab of the
 
 ![](/assets/backup-welcome-storage-accounts-run-consistency-check.png)
 
