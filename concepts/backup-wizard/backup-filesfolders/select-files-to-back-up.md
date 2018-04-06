@@ -4,15 +4,14 @@ On this wizard page, you need to specify which files and/or folders to include i
 
 ![](/assets/backup-wizard-files-select-source.png)
 
-> When restoring a backup that was made on another computer, you may need to [synchronize the repository](/concepts/syncing-your-repository.md) to refresh the file tree.
-
 Clicking the burger icon on this wizard page invokes a menu where you can choose additional options.
 
 ![](/assets/backup-wizard-files-select-source-advanced-options.png)
 
 The following options are available on this menu:
 
-* **Add user profile**
+* **Add user profile  
+  \[TO DO\]**
 
 * **Add network share**  
   Opens a dialog window where you can specify the path to network share containing files that you wish to include in the backup.  
@@ -27,10 +26,10 @@ The following options are available on this menu:
 
   | Icon | Description |
   | :--- | :--- |
-  |  |  |
-  |  |  |
-  |  |  |
-  |  |  |
+  | ![](/assets/icon-checkbox-01.png) | Neither the folder, nor any of its contents are selected. |
+  | ![](/assets/icon-checkbox-02.png) | The folder is selected along with all of its contents \(the backup will include all newly created subitems in this folder as well\). |
+  | ![](/assets/icon-checkbox-03.png) | The folder is selected along with some of its contents \(the backup will include all newly created subitems in this folder as well\). |
+  | ![](/assets/icon-checkbox-04.png) | Some of the folder's contents are selected, but not the folder itself \(the backup will only include explicitly selected subitems, and not newly created ones\). |
 
 
 

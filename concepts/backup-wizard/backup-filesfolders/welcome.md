@@ -59,11 +59,11 @@ Please be informed that enabling ransomware protection may increase the size of 
 
 After saving your backup plan, it displays a "lock" icon on its title, indicating that ransomware protection is enabled for this backup plan.![](/assets/backup-plans-ransomware-protection-lock-icon.png)When the backup service suspects that your files may be affected by ransomware, it completes the current backup task and sends you an email containing the list of supposedly affected files and prompting you to take action.
 
-The lock icon displayed on the backup plan's title becomes red. Clicking this icon invokes a dialog window listing all suspicious files. You can open the folder containing these files by clicking the corresponding context link in this dialog. Next, you can either approve that such a file is not affected by ransomware or delete it by clicking the corresponding button.
+The "lock" icon displayed on the backup plan's title becomes red. Clicking this icon invokes a dialog window listing all suspicious files. You can open the folder containing these files by clicking the corresponding context link in this dialog. Next, you can either approve that such a file is not affected by ransomware or delete it by clicking the corresponding button.
 
-You can click Cancel to postpone the investigation and keep the affected files intact.
+You can click **Cancel** to postpone the investigation and keep the affected files intact.
 
-At the moment, it is not possible to add any files to a white list and make our backup service stop analyzing them. Occasionally, you might encounter false positives on the side of CloudBerry Backup. Please contact our [Support Team](https://www.cloudberrylab.com/support.aspx) if such false alarms become frequent to help us further improve our ransomware detection algorithm.
+**At the moment, it is not possible to add any files to a white list and make our backup service stop analyzing them. Occasionally, you might encounter false positives on the side of CloudBerry Backup. Please contact our **[**Support Team**](https://www.cloudberrylab.com/support.aspx)** if such false alarms become frequent to help us further improve our ransomware detection algorithm.**
 
 > This feature is most effective for preventing you from ransomware attacks when used as part of a broader protection strategy that includes appropriate lifecycle and retention policies. Please refer to the following blog post online to learn how to protect your backups: [4 Ways to Protect Against Ransomware with Backups](https://www.cloudberrylab.com/blog/how-ransomware-works/).
 
