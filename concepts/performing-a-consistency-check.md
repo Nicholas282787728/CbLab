@@ -19,27 +19,19 @@ Clicking **Run Consistency Check** makes the backup service check whether any ba
 >
 > If file names in your backup are encrypted, you need to specify the encryption password before running a consistency check. Otherwise, the backup service will be unable to identify encrypted files and will skip them during the consistency check execution.
 
-Clicking **Schedule Consistency Check **invokes the **Storage Account** dialog window, where you can specify the schedule for automatic consistency check for this storage on a regular basis.
+Clicking **Schedule Consistency Check **invokes the **Storage Account** dialog window, where you can specify the schedule for automatic check for this storage consistency on a regular basis.
 
-![](/assets/consistency-check.png)
+![](/assets/backup-account-s3-consistency-check.png)
 
+After finishing a consistency check, the storage account displays an icon indicating the consistency check result.
 
+![](/assets/consistency-check-results.png)
 
+A green icon indicates that the check has been performed successfully.
 
+A yellow icon indicates that warnings were found during the consistency check. Clicking the link indicating the date of the last consistency check navigates you to the **History** tab where you can find detailed information about discovered inconsistencies.
 
-
-
-...
-
-cons.check is two-way, history will list not found \(warning\) and added files \(green files\)
-
-this list -&gt; history filter by files
-
-..
-
-If you had an inconsistent state of your CloudBerry Backup local repository, the check consistency will show a "warning status":
-
-You can click on the datetime label to get more details of the check result - for example, you could have missed files on your local repository or out of date files:
+![](/assets/consistency-check-history-2.png)
 
 
 
