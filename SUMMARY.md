@@ -14,7 +14,8 @@
     * Apply Filter Criteria to Selected Files
     * [Specify the Compression and Encryption Settings](concepts/backup-wizard/backup-filesfolders/specify-the-compression-and-encryption-settings.md)
     * Specify the Retention Policy
-    * Schedule Your Backup Plan
+    * [Schedule Your Backup Plan](concepts/backup-wizard/backup-filesfolders/schedule-your-backup-plan.md)
+    * [Schedule a Full Backup](concepts/backup-wizard/backup-filesfolders/schedule-a-full-backup.md)
     * Chain Your Backups and Assign Pre-/Post Actions
     * Customize Email Notifications and System Log Settings
     * Review and Run Your Backup Plan

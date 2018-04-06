@@ -12,33 +12,34 @@ This mode provides a complete set of customization options for configuring your 
 
 The available options are explained below.
 
-* \*\*Use block-level backup
+* **Use block-level backup**
 
   **\["force full" -&gt; can be scheduled or manual \(not only for the first time\)\]**  
-  \*\*As opposed to a full backup which uploads a complete copy of each file to a storage, a block-level backup uploads the full copy of your data only during the first execution of the backup plan. On each subsequent running, the backup service uploads only blocks that were modified since the last backup date, which can dramatically decrease the processing time required for completing your backup routine, as well as reduce the required storage space.  
-  
+  As opposed to a full backup which uploads a complete copy of each file to a storage, a block-level backup uploads the full copy of your data only during the first execution of the backup plan. On each subsequent running, the backup service uploads only blocks that were modified since the last backup date, which can dramatically decrease the processing time required for completing your backup routine, as well as reduce the required storage space.
+
   **\[what part of a file should change to force block-level... - file/block\]**  
   **\[we look at the file's modified date - since the last backup\]  
   \[block  10 MB \(1 chunk\). Inserting one byte starts a new block\]  
-  \[file should be less than 10 MB \]  
-  **
+  \[file should be less than 10 MB \]    
+  ...  
+  \[\[\[ see Schedule a Full Backup \]\]\]**
 
   > See the following articles online to learn more about the difference between each backup type:
   >
   > * [Best Practices: Block-Level Backup](https://www.cloudberrylab.com/blog/best-practices-block-level-backup/)
   > * [Block Level Backup and Full Backup Explained](https://www.cloudberrylab.com/blog/block-level-backup-and-full-backup-explained/)
 
-* **Backup NTFS permissions                                          
+* **Backup NTFS permissions                                            
   **Enable this option to retain all [NTFS permissions](http://www.ntfs.com/ntfs-permissions.htm) assigned to your files, folders and network shares.
 
   The [Restore Wizard](/chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/313-specify-the-restore-destination.md) will then enable you to choose whether or not to restore these permissions along with the recovered files.
 
-* **Save deleted data                                    
+* **Save deleted data                                      
   **This option specifies whether or not the storage should keep locally deleted files.
 
   When this feature is enabled for a backup, the [Restore Wizard](/chapter1/step-3-choose-data-to-restore/31-restore-filesfolders-or-ms-exchange-data/313-specify-the-restore-destination.md) enables you to choose whether to restore copies of locally deleted files along with the rest of the recovered data.​
 
-* **Use Backup Operator                            
+* **Use Backup Operator                              
   **CloudBerry Backup is running under the Local System account by default, which does not allow the backup service to **access NTFS and other important permissions**. **\[access to files/folders\]**
 
   Use this option to enable users with Backup Operator permissions to back up files regardless of any security permissions assigned to these files.
@@ -52,7 +53,7 @@ The available options are explained below.
   See the following blog post online to learn how to add a user to the Backup Operators group: [Support for Backup Operators API in CloudBerry Backup 5.7](https://www.cloudberrylab.com/blog/support-for-backup-operators-api-in-cloudberry-backup-5-7/).  
   **\[when backup operator is not local admin - may be a problem \(not for file\) - for other backup types - \]**
 
-* **Use fast NTFS scan                                                        
+* **Use fast NTFS scan                                                          
   **Use this option to speed up backup processing by using a custom file scanning algorithm when you need to back up a considerably large number of files that are stored on an NTFS-formatted device.
 
   The resulting performance gain may vary depending on which storage device you are using and the number of files contained in your backup. While this gain may not be evident when running your backup plan for the first time, you should notice the difference when running subsequent differential backup.
@@ -61,7 +62,7 @@ The available options are explained below.
 
   See the following blog post online to learn more about using this feature: [Fast NTFS scan in CloudBerry Backup 5.7](https://www.cloudberrylab.com/blog/fast-ntfs-scan-in-cloudberry-backup-5-7/).
 
-* **Force using Volume Shadow Copy Service \(VSS\)                          
+* **Force using Volume Shadow Copy Service \(VSS\)                            
   **This option forces [Volume Shadow Copy Service \(VSS\)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384649%28v=vs.85%29.aspx)
 
   **\[when backup services encounters a locked file, backup auto does shadow copy; force vss - it does not attempt to backup this file and does shadow copy beforehand \]**  
