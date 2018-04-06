@@ -27,11 +27,8 @@ After finishing a consistency check, the storage account displays an icon indica
 
 ![](/assets/consistency-check-results.png)
 
-A green icon indicates that the check has been performed successfully.
-
+A green icon indicates that the check has been performed successfully.   
 A yellow icon indicates that warnings were found during the consistency check. Clicking the link indicating the date of the last consistency check navigates you to the **History** tab where you can find detailed information about discovered inconsistencies.
 
-![](/assets/consistency-check-history-2.png)
-
-
+![](/assets/consistency-check-history-2.png)On finding any inconsistencies, you may need to [synchronize the corresponding storage](/concepts/syncing-your-repository.md) to restore the missing files.
 
