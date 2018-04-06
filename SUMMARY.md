@@ -13,7 +13,7 @@
     * [ Check Network Shares](concepts/backup-wizard/backup-filesfolders/1-check-network-shares.md)
     * [Apply Filter Criteria to Selected Files](concepts/backup-wizard/backup-filesfolders/apply-filter-criteria-to-selected-files.md)
     * [Specify the Compression and Encryption Settings](concepts/backup-wizard/backup-filesfolders/specify-the-compression-and-encryption-settings.md)
-    * Specify the Retention Policy
+    * [Specify the Retention Policy](concepts/backup-wizard/backup-filesfolders/specify-the-retention-policy.md)
     * [Schedule Your Backup Plan](concepts/backup-wizard/backup-filesfolders/schedule-your-backup-plan.md)
     * [Schedule a Full Backup](concepts/backup-wizard/backup-filesfolders/schedule-a-full-backup.md)
     * Chain Your Backups and Assign Pre-/Post Actions
