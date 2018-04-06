@@ -16,7 +16,7 @@
     * [Specify the Retention Policy](concepts/backup-wizard/backup-filesfolders/specify-the-retention-policy.md)
     * [Schedule Your Backup Plan](concepts/backup-wizard/backup-filesfolders/schedule-your-backup-plan.md)
     * [Schedule a Full Backup](concepts/backup-wizard/backup-filesfolders/schedule-a-full-backup.md)
-    * Chain Your Backups and Assign Pre-/Post Actions
+    * [Chain Your Backups and Assign Pre-/Post Actions](concepts/backup-wizard/backup-filesfolders/chain-your-backups-and-assign-pre-post-actions.md)
     * Customize Email Notifications and System Log Settings
     * Review and Run Your Backup Plan
   * [Image Based Backup](concepts/backup-wizard/image-based-backup.md)
